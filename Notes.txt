@@ -2,6 +2,7 @@
 --> Problème de doublons visiblement le mm film requété 2 fois car mentionné 2 fois dans la page d'accueil
 
 --> IL FAUT UTILISER CETTE PAGE https://www.ugc.fr/films.html qui a tout les films 
+--> Corriger le scrapper de paris cinema club qui récupère parfois le truc après le titre du film (genre tjrs à l'affiche etc)
 
 --> Potentiellement interessant de garder le nombre de séances par film en memoire, pour avoir une idée 
 de s'il est bientot plus au ciné
