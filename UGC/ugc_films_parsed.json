@@ -4,95 +4,117 @@
       "title": "Nouveautés",
       "films": [
         {
-          "title": "DRACULA",
-          "film_id": "17055",
-          "url": "film_dracula_17055.html",
-          "genre": "Epouvante-horreur, Drame, Fantastique",
+          "title": "BADH",
+          "film_id": "16981",
+          "url": "film_badh_16981.html",
+          "genre": "Action, Thriller",
           "label": "",
-          "poster_url": "https://www.ugc.fr/dynamique/films/55/17055/fr/poster/large/055c8a3544736da1c45052569a87fefc_4.jpg",
-          "age_restriction": "12+",
-          "ugc_label": null,
-          "has_trailer": true
-        },
-        {
-          "title": "ETERNAL",
-          "film_id": "16183",
-          "url": "film_eternal_16183.html",
-          "genre": "Science Fiction, Drame",
-          "label": "",
-          "poster_url": "https://www.ugc.fr/dynamique/films/83/16183/fr/poster/large/f059428a94748139091254f70d543da6_5.jpg",
+          "poster_url": "https://www.ugc.fr/dynamique/films/81/16981/fr/poster/large/9a735665cc54dfeb6c1e6cf171a28902_9.jpg",
           "age_restriction": null,
           "ugc_label": null,
           "has_trailer": true
         },
         {
-          "title": "GANGS OF TAIWAN",
-          "film_id": "16978",
-          "url": "film_gangs_of_taiwan_16978.html",
-          "genre": "Thriller, Drame",
-          "label": "",
-          "poster_url": "https://www.ugc.fr/dynamique/films/78/16978/fr/poster/large/4cfa850c8a96dd5f2c157d048897c606_11.jpg",
-          "age_restriction": "12+",
-          "ugc_label": null,
-          "has_trailer": true
-        },
-        {
-          "title": "LES BAD GUYS 2",
-          "film_id": "16571",
-          "url": "film_les_bad_guys_2_16571.html",
-          "genre": "Famille, Comédie, Animation",
-          "label": "Sélection UGC Family",
-          "poster_url": "https://www.ugc.fr/dynamique/films/71/16571/fr/poster/large/5d70ba662bd9bd973d50ff09f1c97327_30.jpg",
-          "age_restriction": null,
-          "ugc_label": "Sélection UGC Family",
-          "has_trailer": true
-        },
-        {
-          "title": "PERLA",
-          "film_id": "17433",
-          "url": "film_perla_17433.html",
+          "title": "CONFIDENTE",
+          "film_id": "17014",
+          "url": "film_confidente_17014.html",
           "genre": "Drame",
           "label": "",
-          "poster_url": "https://www.ugc.fr/dynamique/films/33/17433/fr/poster/large/4076abc32f31abd65a85dc1ece625d67_6.jpg",
+          "poster_url": "https://www.ugc.fr/dynamique/films/14/17014/fr/poster/large/aa1f987dae9034a04778f77cc1b7083a_13.jpg",
           "age_restriction": null,
           "ugc_label": null,
           "has_trailer": true
         },
         {
-          "title": "SUBSTITUTION - BRING HER BACK",
-          "film_id": "17109",
-          "url": "film_substitution_bring_her_back_17109.html",
+          "title": "EVANOUIS",
+          "film_id": "17141",
+          "url": "film_evanouis_17141.html",
           "genre": "Epouvante-horreur, Thriller",
           "label": "UGC Frissonne",
-          "poster_url": "https://www.ugc.fr/dynamique/films/09/17109/fr/poster/large/cafce8d4a616a28f941555ef1eabb2a7_44.jpg",
-          "age_restriction": "16+",
+          "poster_url": "https://www.ugc.fr/dynamique/films/41/17141/fr/poster/large/a9349d0803d1c401e217faf417099347_24.jpg",
+          "age_restriction": "12+",
           "ugc_label": "UGC Frissonne",
           "has_trailer": true
         },
         {
-          "title": "TOUCH",
-          "film_id": "17004",
-          "url": "film_touch_17004.html",
-          "genre": "Romance, Drame",
+          "title": "FREAKY FRIDAY 2 ENCORE DANS LA PEAU DE MA MERE",
+          "film_id": "16871",
+          "url": "film_freaky_friday_2_encore_dans_la_peau_de_ma_mere_16871.html",
+          "genre": "Comédie",
           "label": "",
-          "poster_url": "https://www.ugc.fr/dynamique/films/04/17004/fr/poster/large/4413b5141e51447a26e63817723147bb_12.jpg",
+          "poster_url": "https://www.ugc.fr/dynamique/films/71/16871/fr/poster/large/3263cddbb2b978d96f8c8392d7b7bb0d_15.jpg",
           "age_restriction": null,
           "ugc_label": null,
           "has_trailer": true
         },
         {
-          "title": "TRANSAMAZONIA",
-          "film_id": "17181",
-          "url": "film_transamazonia_17181.html",
+          "title": "JUJUTSU KAISEN : TRÉSOR CACHÉ - MORT PRÉMATURÉE",
+          "film_id": "17431",
+          "url": "film_jujutsu_kaisen_tresor_cache_mort_prematuree_17431.html",
+          "genre": "Action, Fantastique, Animation",
+          "label": "",
+          "poster_url": "https://www.ugc.fr/dynamique/films/31/17431/fr/poster/large/35cba930b2db3455200432cfc0c71cd4_7.jpg",
+          "age_restriction": "12+",
+          "ugc_label": null,
+          "has_trailer": true
+        },
+        {
+          "title": "L'ETE DE JAHIA",
+          "film_id": "17284",
+          "url": "film_l_ete_de_jahia_17284.html",
           "genre": "Drame",
           "label": "",
-          "poster_url": "https://www.ugc.fr/dynamique/films/81/17181/fr/poster/large/aae3519096af3f77bfedf33cd2fd6a28_7.jpg",
+          "poster_url": "https://www.ugc.fr/dynamique/films/84/17284/fr/poster/large/392189754d1bd9e8287406fb76d470a8_5.jpg",
+          "age_restriction": null,
+          "ugc_label": null,
+          "has_trailer": true
+        },
+        {
+          "title": "LAST STOP: YUMA COUNTY",
+          "film_id": "16678",
+          "url": "film_last_stop_yuma_county_16678.html",
+          "genre": "Thriller, Policier",
+          "label": "UGC Découvre",
+          "poster_url": "https://www.ugc.fr/dynamique/films/78/16678/fr/poster/large/e94bef72c177f4e0094cb0d0e98ce658_440.jpg",
+          "age_restriction": null,
+          "ugc_label": "UGC Découvre",
+          "has_trailer": true
+        },
+        {
+          "title": "RUNSEOKJIN-EP.TOUR IN AMSTERDAM : LIVE VIEWING",
+          "film_id": "17465",
+          "url": "film_runseokjin_ep_tour_in_amsterdam_live_viewing_17465.html",
+          "genre": "Concert",
+          "label": "",
+          "poster_url": "https://www.ugc.fr/dynamique/films/65/17465/fr/poster/large/44ff9c8f5df8ac0133ec8019f6ea3120_5.jpg",
+          "age_restriction": null,
+          "ugc_label": null,
+          "has_trailer": false
+        },
+        {
+          "title": "SEPT JOURS",
+          "film_id": "17226",
+          "url": "film_sept_jours_17226.html",
+          "genre": "Drame",
+          "label": "UGC Découvre",
+          "poster_url": "https://www.ugc.fr/dynamique/films/26/17226/fr/poster/large/351863d860d709e8fef0a5bd170e0a3b_14.jpg",
+          "age_restriction": null,
+          "ugc_label": "UGC Découvre",
+          "has_trailer": true
+        },
+        {
+          "title": "Y A PAS DE RESEAU",
+          "film_id": "16930",
+          "url": "film_y_a_pas_de_reseau_16930.html",
+          "genre": "Comédie",
+          "label": "",
+          "poster_url": "https://www.ugc.fr/dynamique/films/30/16930/fr/poster/large/752fb4fc173c892d0549255bb7c3311b_6.jpg",
           "age_restriction": null,
           "ugc_label": null,
           "has_trailer": true
         }
       ],
-      "film_count": 8
+      "film_count": 10
     },
     "stillOnDisplay": {
       "title": "à l'affiche",
@@ -117,17 +139,6 @@
           "poster_url": "https://www.ugc.fr/dynamique/films/95/13395/fr/poster/large/5340816_6.jpg",
           "age_restriction": null,
           "ugc_label": "Sélection UGC Culte",
-          "has_trailer": true
-        },
-        {
-          "title": "28 ANS PLUS TARD",
-          "film_id": "16557",
-          "url": "film_28_ans_plus_tard_16557.html",
-          "genre": "Epouvante-horreur, Thriller",
-          "label": "UGC Frissonne",
-          "poster_url": "https://www.ugc.fr/dynamique/films/57/16557/fr/poster/large/06ceefbccc9f512925c9af7ac11c6d56_78.jpg",
-          "age_restriction": "16+",
-          "ugc_label": "UGC Frissonne",
           "has_trailer": true
         },
         {
@@ -206,6 +217,17 @@
           "age_restriction": null,
           "ugc_label": "UGC Aime",
           "has_trailer": true
+        },
+        {
+          "title": "BADH",
+          "film_id": "16981",
+          "url": "film_badh_16981.html",
+          "genre": "Action, Thriller",
+          "label": "",
+          "poster_url": "https://www.ugc.fr/dynamique/films/81/16981/fr/poster/large/9a735665cc54dfeb6c1e6cf171a28902_9.jpg",
+          "age_restriction": null,
+          "ugc_label": null,
+          "has_trailer": true
         }
       ],
       "film_count": 10
@@ -213,17 +235,6 @@
     "onPreview": {
       "title": "Avant-Premières",
       "films": [
-        {
-          "title": "CONFIDENTE",
-          "film_id": "17014",
-          "url": "film_confidente_17014.html",
-          "genre": "",
-          "label": "",
-          "poster_url": "https://www.ugc.fr/dynamique/films/14/17014/fr/poster/large/aa1f987dae9034a04778f77cc1b7083a_12.jpg",
-          "age_restriction": null,
-          "ugc_label": null,
-          "has_trailer": true
-        },
         {
           "title": "CONNEMARA",
           "film_id": "17212",
@@ -247,14 +258,25 @@
           "has_trailer": true
         },
         {
-          "title": "EVANOUIS",
-          "film_id": "17141",
-          "url": "film_evanouis_17141.html",
-          "genre": "Epouvante-horreur, Thriller",
-          "label": "UGC Frissonne",
-          "poster_url": "https://www.ugc.fr/dynamique/films/41/17141/fr/poster/large/a9349d0803d1c401e217faf417099347_21.jpg",
-          "age_restriction": "12+",
-          "ugc_label": "UGC Frissonne",
+          "title": "EN BOUCLE",
+          "film_id": "16908",
+          "url": "film_en_boucle_16908.html",
+          "genre": "Science Fiction, Comédie, Fantastique",
+          "label": "",
+          "poster_url": "https://www.ugc.fr/dynamique/films/08/16908/fr/poster/large/4eb89acb079e2ebdc9aa65ca8eeac02e_33.jpg",
+          "age_restriction": null,
+          "ugc_label": null,
+          "has_trailer": true
+        },
+        {
+          "title": "KARATE KID: LEGENDS",
+          "film_id": "16101",
+          "url": "film_karate_kid_legends_16101.html",
+          "genre": "Arts Martiaux, Comédie, Drame",
+          "label": "",
+          "poster_url": "https://www.ugc.fr/dynamique/films/01/16101/fr/poster/large/40d86ec69c724b4128d61262c29e1417_46.jpg",
+          "age_restriction": null,
+          "ugc_label": null,
           "has_trailer": true
         },
         {
@@ -263,20 +285,20 @@
           "url": "film_la_nuit_des_clowns_16776.html",
           "genre": "Epouvante-horreur",
           "label": "",
-          "poster_url": "https://www.ugc.fr/dynamique/films/76/16776/fr/poster/large/5706719cce92266c95d41f82b1eea398_9.jpg",
+          "poster_url": "https://www.ugc.fr/dynamique/films/76/16776/fr/poster/large/5706719cce92266c95d41f82b1eea398_12.jpg",
           "age_restriction": "12+",
           "ugc_label": null,
           "has_trailer": true
         },
         {
-          "title": "LAST STOP: YUMA COUNTY",
-          "film_id": "16678",
-          "url": "film_last_stop_yuma_county_16678.html",
-          "genre": "",
-          "label": "UGC Découvre",
-          "poster_url": "https://www.ugc.fr/dynamique/films/78/16678/fr/poster/large/e94bef72c177f4e0094cb0d0e98ce658_439.jpg",
+          "title": "LES LÉGENDAIRES",
+          "film_id": "17030",
+          "url": "film_les_legendaires_17030.html",
+          "genre": "Aventure, Fantastique, Animation",
+          "label": "",
+          "poster_url": "https://www.ugc.fr/dynamique/films/30/17030/fr/poster/large/8099f412b9146ee1258bcd7b49c00398_6.jpg",
           "age_restriction": null,
-          "ugc_label": "UGC Découvre",
+          "ugc_label": null,
           "has_trailer": true
         },
         {
@@ -286,6 +308,17 @@
           "genre": "Drame",
           "label": "",
           "poster_url": "https://www.ugc.fr/dynamique/films/11/17211/fr/poster/large/c3896510ac30753f2aaa99c1318bf9e9_14.jpg",
+          "age_restriction": null,
+          "ugc_label": null,
+          "has_trailer": true
+        },
+        {
+          "title": "RENOIR",
+          "film_id": "17232",
+          "url": "film_renoir_17232.html",
+          "genre": "Drame",
+          "label": "",
+          "poster_url": "https://www.ugc.fr/dynamique/films/32/17232/fr/poster/large/4f9107704eac179bfafcdc865b18ec77_14.jpg",
           "age_restriction": null,
           "ugc_label": null,
           "has_trailer": true
@@ -302,24 +335,13 @@
           "has_trailer": true
         },
         {
-          "title": "TIMIOCHE",
-          "film_id": "17322",
-          "url": "film_timioche_17322.html",
-          "genre": "Famille, Animation",
+          "title": "TEMOINS",
+          "film_id": "16861",
+          "url": "film_temoins_16861.html",
+          "genre": "Documentaire",
           "label": "",
-          "poster_url": "https://www.ugc.fr/dynamique/films/22/17322/fr/poster/large/109a85bf1a0fb3aed45460d4a872a5bc_3.jpg",
+          "poster_url": "https://www.ugc.fr/dynamique/films/61/16861/fr/poster/large/f4827005f8935c212e7736a288ab797e_3.jpg",
           "age_restriction": null,
-          "ugc_label": null,
-          "has_trailer": true
-        },
-        {
-          "title": "TOGETHER",
-          "film_id": "17140",
-          "url": "film_together_17140.html",
-          "genre": "Epouvante-horreur",
-          "label": "",
-          "poster_url": "https://www.ugc.fr/dynamique/films/40/17140/fr/poster/large/ca9aedf79a73a54cfe2f80d2175abc5a_14.jpg",
-          "age_restriction": "12+",
           "ugc_label": null,
           "has_trailer": true
         }
@@ -388,9 +410,20 @@
           "title": "LAST STOP: YUMA COUNTY",
           "film_id": "16678",
           "url": "film_last_stop_yuma_county_16678.html",
-          "genre": "",
+          "genre": "Thriller, Policier",
           "label": "UGC Découvre",
-          "poster_url": "https://www.ugc.fr/dynamique/films/78/16678/fr/poster/large/e94bef72c177f4e0094cb0d0e98ce658_439.jpg",
+          "poster_url": "https://www.ugc.fr/dynamique/films/78/16678/fr/poster/large/e94bef72c177f4e0094cb0d0e98ce658_440.jpg",
+          "age_restriction": null,
+          "ugc_label": "UGC Découvre",
+          "has_trailer": true
+        },
+        {
+          "title": "SEPT JOURS",
+          "film_id": "17226",
+          "url": "film_sept_jours_17226.html",
+          "genre": "Drame",
+          "label": "UGC Découvre",
+          "poster_url": "https://www.ugc.fr/dynamique/films/26/17226/fr/poster/large/351863d860d709e8fef0a5bd170e0a3b_14.jpg",
           "age_restriction": null,
           "ugc_label": "UGC Découvre",
           "has_trailer": true
@@ -427,17 +460,6 @@
           "age_restriction": null,
           "ugc_label": "UGC Aime",
           "has_trailer": true
-        },
-        {
-          "title": "ZION",
-          "film_id": "16974",
-          "url": "film_zion_16974.html",
-          "genre": "Action, Thriller",
-          "label": "UGC Découvre",
-          "poster_url": "https://www.ugc.fr/dynamique/films/74/16974/fr/poster/large/d6c80edcfc206c54c67231e80270f2ee_80.jpg",
-          "age_restriction": null,
-          "ugc_label": "UGC Découvre",
-          "has_trailer": true
         }
       ],
       "film_count": 10
@@ -468,17 +490,6 @@
           "has_trailer": true
         },
         {
-          "title": "BAMBI : L'HISTOIRE D'UNE VIE DANS LES BOIS",
-          "film_id": "16730",
-          "url": "film_bambi_l_histoire_d_une_vie_dans_les_bois_16730.html",
-          "genre": "Famille, Aventure",
-          "label": "Sélection UGC Family",
-          "poster_url": "https://www.ugc.fr/dynamique/films/30/16730/fr/poster/large/07e1b5bcc39475583221142ad666ae1e_18.jpg",
-          "age_restriction": null,
-          "ugc_label": "Sélection UGC Family",
-          "has_trailer": true
-        },
-        {
           "title": "BUFFALO KIDS",
           "film_id": "16815",
           "url": "film_buffalo_kids_16815.html",
@@ -487,6 +498,17 @@
           "poster_url": "https://www.ugc.fr/dynamique/films/15/16815/fr/poster/large/b8fe2caa08b643ebab2673cb1246e6c8_16.jpg",
           "age_restriction": null,
           "ugc_label": "Sélection UGC Family",
+          "has_trailer": true
+        },
+        {
+          "title": "CINEMA PARADISO",
+          "film_id": "398",
+          "url": "film_cinema_paradiso_398.html",
+          "genre": "Comédie Dramatique",
+          "label": "Sélection UGC Culte",
+          "poster_url": "https://www.ugc.fr/dynamique/films/98/398/fr/poster/large/279596_4.jpg",
+          "age_restriction": null,
+          "ugc_label": "Sélection UGC Culte",
           "has_trailer": true
         },
         {
@@ -584,6 +606,17 @@
           "has_trailer": true
         },
         {
+          "title": "LA FAMEUSE INVASION DES OURS EN SICILE",
+          "film_id": "13190",
+          "url": "film_la_fameuse_invasion_des_ours_en_sicile_13190.html",
+          "genre": "Famille, Animation",
+          "label": "Sélection UGC Family",
+          "poster_url": "https://www.ugc.fr/dynamique/films/90/13190/fr/poster/large/4013592_5.jpg",
+          "age_restriction": null,
+          "ugc_label": "Sélection UGC Family",
+          "has_trailer": true
+        },
+        {
           "title": "LA PAT' PATROUILLE : LA SUPER PATROUILLE LE FILM",
           "film_id": "15472",
           "url": "film_la_pat_patrouille_la_super_patrouille_le_film_15472.html",
@@ -592,17 +625,6 @@
           "poster_url": "https://www.ugc.fr/dynamique/films/72/15472/fr/poster/large/4748894_25.jpg",
           "age_restriction": null,
           "ugc_label": "Sélection UGC Family",
-          "has_trailer": true
-        },
-        {
-          "title": "LA TRAVERSEE DU TEMPS",
-          "film_id": "6929",
-          "url": "film_la_traversee_du_temps_6929.html",
-          "genre": "Comédie, Drame, Animation",
-          "label": "",
-          "poster_url": "https://www.ugc.fr/dynamique/films/29/6929/fr/poster/large/aef18dac92aed9b90807339fd498484f_0.jpg",
-          "age_restriction": null,
-          "ugc_label": null,
           "has_trailer": true
         },
         {
@@ -615,6 +637,17 @@
           "age_restriction": null,
           "ugc_label": null,
           "has_trailer": false
+        },
+        {
+          "title": "LE TIGRE QUI S'INVITA POUR LE THE",
+          "film_id": "14903",
+          "url": "film_le_tigre_qui_s_invita_pour_le_the_14903.html",
+          "genre": "Famille, Animation",
+          "label": "",
+          "poster_url": "https://www.ugc.fr/dynamique/films/03/14903/fr/poster/large/1358736_3.jpg",
+          "age_restriction": null,
+          "ugc_label": null,
+          "has_trailer": true
         },
         {
           "title": "LE VENT DANS LES ROSEAUX",
@@ -650,35 +683,24 @@
           "has_trailer": true
         },
         {
-          "title": "SUMMER WARS",
-          "film_id": "8106",
-          "url": "film_summer_wars_8106.html",
+          "title": "WALLACE & GROMIT : LES INVENTURIERS",
+          "film_id": "14680",
+          "url": "film_wallace_gromit_les_inventuriers_14680.html",
           "genre": "Animation",
           "label": "",
-          "poster_url": "https://www.ugc.fr/dynamique/films/06/8106/fr/poster/large/b8ae9322f1ba57315d4c0f58a67f7afa_3.jpg",
+          "poster_url": "https://www.ugc.fr/dynamique/films/80/14680/fr/poster/large/325069_7.jpg",
           "age_restriction": null,
           "ugc_label": null,
-          "has_trailer": true
-        },
-        {
-          "title": "VAIANA 2",
-          "film_id": "16163",
-          "url": "film_vaiana_2_16163.html",
-          "genre": "Famille, Aventure, Animation",
-          "label": "Sélection UGC Family",
-          "poster_url": "https://www.ugc.fr/dynamique/films/63/16163/fr/poster/large/9ec9a076d8516b78e1923dd76806f13e_138.jpg",
-          "age_restriction": null,
-          "ugc_label": "Sélection UGC Family",
           "has_trailer": true
         }
       ],
       "film_count": 10
     }
   },
-  "total_films": 58,
+  "total_films": 60,
   "metadata": {
     "source": "UGC Films API",
-    "parsed_at": "2025-07-30T23:21:39.167900",
+    "parsed_at": "2025-08-09T19:11:44.184312",
     "parser_version": "1.0"
   }
 }

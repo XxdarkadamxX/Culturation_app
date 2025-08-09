@@ -1,176 +1,143 @@
 {
   "metadata": {
-    "fetched_at": "2025-07-31T03:29:38.558939",
+    "fetched_at": "2025-08-09T19:11:44.228076",
     "total_films_processed": 5,
-    "total_films_with_dates": 5,
+    "total_films_with_dates": 4,
     "region_id": 1,
     "note": "Cinema data fetched only for first available date per film to reduce server load"
   },
   "films": {
-    "17055": {
-      "film_id": "17055",
-      "title": "DRACULA",
+    "16981": {
+      "film_id": "16981",
+      "title": "BADH",
       "available_dates": [
-        "2025-07-31",
-        "2025-08-01",
-        "2025-08-02",
-        "2025-08-03",
-        "2025-08-04",
-        "2025-08-05"
+        "2025-08-09",
+        "2025-08-10",
+        "2025-08-11",
+        "2025-08-12"
       ],
-      "date_count": 6,
+      "date_count": 4,
       "cinemas": [
         {
           "name": "UGC Ciné Cité Les Halles",
-          "showtime_count": 10
-        },
-        {
-          "name": "UGC Ciné Cité Maillot",
-          "showtime_count": 4
-        },
-        {
-          "name": "UGC Montparnasse",
-          "showtime_count": 4
-        },
-        {
-          "name": "UGC Danton",
-          "showtime_count": 5
+          "showtime_count": 2
         },
         {
           "name": "UGC Ciné Cité Bercy",
-          "showtime_count": 10
+          "showtime_count": 2
         },
         {
           "name": "UGC Lyon Bastille",
-          "showtime_count": 4
+          "showtime_count": 2
         },
         {
-          "name": "UGC Gobelins",
-          "showtime_count": 5
+          "name": "UGC Opéra",
+          "showtime_count": 2
         },
         {
           "name": "UGC Ciné Cité Paris 19",
-          "showtime_count": 6
+          "showtime_count": 2
         }
       ],
-      "cinema_count": 8,
-      "sample_date": "2025-07-31"
+      "cinema_count": 5,
+      "sample_date": "2025-08-09"
     },
-    "16183": {
-      "film_id": "16183",
-      "title": "ETERNAL",
+    "17014": {
+      "film_id": "17014",
+      "title": "CONFIDENTE",
       "available_dates": [
-        "2025-07-31",
-        "2025-08-01",
-        "2025-08-02",
-        "2025-08-03",
-        "2025-08-04",
-        "2025-08-05"
+        "2025-08-09",
+        "2025-08-10",
+        "2025-08-11",
+        "2025-08-12"
       ],
-      "date_count": 6,
+      "date_count": 4,
       "cinemas": [
         {
           "name": "UGC Ciné Cité Les Halles",
-          "showtime_count": 7
+          "showtime_count": 2
         }
       ],
       "cinema_count": 1,
-      "sample_date": "2025-07-31"
+      "sample_date": "2025-08-09"
     },
-    "16978": {
-      "film_id": "16978",
-      "title": "GANGS OF TAIWAN",
+    "17141": {
+      "film_id": "17141",
+      "title": "EVANOUIS",
       "available_dates": [
-        "2025-07-31",
-        "2025-08-01",
-        "2025-08-02",
-        "2025-08-03",
-        "2025-08-04",
-        "2025-08-05"
+        "2025-08-09",
+        "2025-08-10",
+        "2025-08-11",
+        "2025-08-12"
       ],
-      "date_count": 6,
+      "date_count": 4,
       "cinemas": [
         {
           "name": "UGC Ciné Cité Les Halles",
-          "showtime_count": 5
-        },
-        {
-          "name": "UGC Ciné Cité Bercy",
-          "showtime_count": 5
-        },
-        {
-          "name": "UGC Gobelins",
-          "showtime_count": 5
-        }
-      ],
-      "cinema_count": 3,
-      "sample_date": "2025-07-31"
-    },
-    "16571": {
-      "film_id": "16571",
-      "title": "LES BAD GUYS 2",
-      "available_dates": [
-        "2025-07-31",
-        "2025-08-01",
-        "2025-08-02",
-        "2025-08-03",
-        "2025-08-04",
-        "2025-08-05"
-      ],
-      "date_count": 6,
-      "cinemas": [
-        {
-          "name": "UGC Ciné Cité Les Halles",
-          "showtime_count": 8
-        },
-        {
-          "name": "UGC Ciné Cité Maillot",
-          "showtime_count": 5
+          "showtime_count": 1
         },
         {
           "name": "UGC Montparnasse",
-          "showtime_count": 5
+          "showtime_count": 1
         },
         {
           "name": "UGC Ciné Cité Bercy",
-          "showtime_count": 8
+          "showtime_count": 1
         },
         {
           "name": "UGC Lyon Bastille",
-          "showtime_count": 4
+          "showtime_count": 1
         },
         {
           "name": "UGC Gobelins",
-          "showtime_count": 6
+          "showtime_count": 1
         },
         {
           "name": "UGC Ciné Cité Paris 19",
-          "showtime_count": 5
+          "showtime_count": 2
         }
       ],
-      "cinema_count": 7,
-      "sample_date": "2025-07-31"
+      "cinema_count": 6,
+      "sample_date": "2025-08-09"
     },
-    "17433": {
-      "film_id": "17433",
-      "title": "PERLA",
+    "16871": {
+      "film_id": "16871",
+      "title": "FREAKY FRIDAY 2 ENCORE DANS LA PEAU DE MA MERE",
       "available_dates": [
-        "2025-07-31",
-        "2025-08-01",
-        "2025-08-02",
-        "2025-08-03",
-        "2025-08-04",
-        "2025-08-05"
+        "2025-08-09",
+        "2025-08-10",
+        "2025-08-11",
+        "2025-08-12"
       ],
-      "date_count": 6,
+      "date_count": 4,
       "cinemas": [
         {
           "name": "UGC Ciné Cité Les Halles",
-          "showtime_count": 6
+          "showtime_count": 2
+        },
+        {
+          "name": "UGC Ciné Cité Maillot",
+          "showtime_count": 2
+        },
+        {
+          "name": "UGC Ciné Cité Bercy",
+          "showtime_count": 2
+        },
+        {
+          "name": "UGC Ciné Cité Paris 19",
+          "showtime_count": 1
         }
       ],
-      "cinema_count": 1,
-      "sample_date": "2025-07-31"
+      "cinema_count": 4,
+      "sample_date": "2025-08-09"
+    },
+    "17431": {
+      "film_id": "17431",
+      "title": "JUJUTSU KAISEN : TRÉSOR CACHÉ - MORT PRÉMATURÉE",
+      "available_dates": [],
+      "date_count": 0,
+      "cinemas": [],
+      "cinema_count": 0
     }
   }
 }

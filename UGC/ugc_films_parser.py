@@ -22,7 +22,7 @@ class UGCFilmsParser:
             'Accept-Language': 'fr-FR,fr;q=0.9,en;q=0.8',
             'Accept-Encoding': 'gzip, deflate, br',
             'Connection': 'keep-alive',
-            'Upgrade-Insecure-Requests': '1',       ²
+            'Upgrade-Insecure-Requests': '1',
         }
     
     def fetch_and_parse_films(self, page: int = 30010, cinema_id: str = "", reset: bool = True) -> Optional[Dict[str, Any]]:

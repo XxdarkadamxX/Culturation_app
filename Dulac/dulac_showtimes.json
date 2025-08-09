@@ -1,58 +1,66 @@
 {
   "metadata": {
-    "fetched_at": "2025-07-31T04:36:19.242213",
+    "fetched_at": "2025-08-09T19:11:20.175974",
     "source": "Dulac Cinemas",
     "base_url": "https://dulaccinemas.com",
     "date_range": "Next 7 days from today"
   },
   "dates": {
-    "2025-07-31": {
-      "date": "2025-07-31",
+    "2025-08-09": {
+      "date": "2025-08-09",
       "cinemas": [
         {
           "name": "Majestic Bastille",
           "cinema_id": "2736",
           "films": [
             {
-              "title": "L'Aventura",
-              "kind": "Comédie",
-              "duration": "(1 H 47 MIN)",
-              "showtimes": [
-                "11:00"
-              ],
-              "showtime_count": 1
-            },
-            {
-              "title": "Summer Wars",
+              "title": "Le Gruffalo",
               "kind": "Animation",
-              "duration": "(1 H 54 MIN)",
+              "duration": "(0 H 45 MIN)",
               "showtimes": [
-                "11:00"
+                "10:00"
               ],
               "showtime_count": 1
             },
             {
-              "title": "Pooja, Sir",
-              "kind": "Thriller",
-              "duration": "(1 H 49 MIN)",
+              "title": "STELLA DALLAS",
+              "kind": "Fiction",
+              "duration": "(1 H 46 MIN)",
               "showtimes": [
-                "13:10",
-                "17:30"
+                "11:00"
               ],
-              "showtime_count": 2
+              "showtime_count": 1
             },
             {
               "title": "Eternal",
-              "kind": "",
+              "kind": "Drame",
               "duration": "(1 H 42 MIN)",
               "showtimes": [
-                "13:20",
-                "15:20",
-                "17:20",
-                "19:20",
-                "21:30"
+                "11:00"
               ],
-              "showtime_count": 5
+              "showtime_count": 1
+            },
+            {
+              "title": "Slow",
+              "kind": "",
+              "duration": "(1 H 48 MIN)",
+              "showtimes": [
+                "13:15",
+                "17:30",
+                "19:40"
+              ],
+              "showtime_count": 3
+            },
+            {
+              "title": "Yi Yi",
+              "kind": "Drame",
+              "duration": "(2 H 53 MIN)",
+              "showtimes": [
+                "13:30",
+                "17:00",
+                "20:30"
+              ],
+              "showtime_count": 3
             },
             {
               "title": "Jardin d'été (The Friends)",
@@ -68,155 +76,7 @@
               "kind": "Drame",
               "duration": "(1 H 33 MIN)",
               "showtimes": [
-                "19:45",
-                "21:40"
-              ],
-              "showtime_count": 2
-            }
-          ]
-        },
-        {
-          "name": "L'Arlequin",
-          "cinema_id": "2625",
-          "films": [
-            {
-              "title": "La Trilogie d'Oslo / Désir",
-              "kind": "Drame",
-              "duration": "(1 H 58 MIN)",
-              "showtimes": [
-                "11:00",
-                "18:10"
-              ],
-              "showtime_count": 2
-            },
-            {
-              "title": "The Things You Kill",
-              "kind": "Drame",
-              "duration": "(1 H 53 MIN)",
-              "showtimes": [
-                "13:45",
-                "16:00",
-                "18:20",
-                "20:40"
-              ],
-              "showtime_count": 4
-            },
-            {
-              "title": "La Trilogie d'Oslo / Amour",
-              "kind": "Drame",
-              "duration": "(1 H 59 MIN)",
-              "showtimes": [
-                "15:40",
-                "17:50"
-              ],
-              "showtime_count": 2
-            },
-            {
-              "title": "La Trilogie d'Oslo / Rêves",
-              "kind": "Drame",
-              "duration": "(1 H 50 MIN)",
-              "showtimes": [
-                "15:40",
-                "20:40"
-              ],
-              "showtime_count": 2
-            },
-            {
-              "title": "Ma Mère, Dieu et Sylvie Vartan",
-              "kind": "Drame",
-              "duration": "(1 H 42 MIN)",
-              "showtimes": [
-                "20:00"
-              ],
-              "showtime_count": 1
-            }
-          ]
-        },
-        {
-          "name": "Reflet Medicis",
-          "cinema_id": "2950",
-          "films": [
-            {
-              "title": "Confusion chez Confucius",
-              "kind": "Drame",
-              "duration": "(2 H 5 MIN)",
-              "showtimes": [
-                "13:15"
-              ],
-              "showtime_count": 1
-            },
-            {
-              "title": "Le Jour de Maria",
-              "kind": "Drame",
-              "duration": "(1 H 59 MIN)",
-              "showtimes": [
-                "13:45"
-              ],
-              "showtime_count": 1
-            },
-            {
-              "title": "LE QUARTIER DU CORBEAU",
-              "kind": "Drame",
-              "duration": "(1 H 30 MIN)",
-              "showtimes": [
-                "14:00"
-              ],
-              "showtime_count": 1
-            },
-            {
-              "title": "Mahjong",
-              "kind": "Comédie",
-              "duration": "(2 H 1 MIN)",
-              "showtimes": [
-                "15:45",
-                "20:40"
-              ],
-              "showtime_count": 2
-            },
-            {
-              "title": "Ryuichi Sakamoto Opus",
-              "kind": "Documentaire",
-              "duration": "(1 H 43 MIN)",
-              "showtimes": [
-                "16:00",
-                "20:50"
-              ],
-              "showtime_count": 2
-            },
-            {
-              "title": "La Dame de Constantinople",
-              "kind": "Drame",
-              "duration": "(1 H 16 MIN)",
-              "showtimes": [
-                "16:15",
-                "20:30"
-              ],
-              "showtime_count": 2
-            },
-            {
-              "title": "Peut-être demain",
-              "kind": "Drame",
-              "duration": "(1 H 45 MIN)",
-              "showtimes": [
-                "18:00"
-              ],
-              "showtime_count": 1
-            },
-            {
-              "title": "Taipei Story",
-              "kind": "Drame",
-              "duration": "(1 H 59 MIN)",
-              "showtimes": [
-                "18:15"
-              ],
-              "showtime_count": 1
-            },
-            {
-              "title": "Amour 65",
-              "kind": "Drame",
-              "duration": "(1 H 36 MIN)",
-              "showtimes": [
-                "18:30"
+                "21:50"
               ],
               "showtime_count": 1
             }
@@ -227,43 +87,73 @@
           "cinema_id": "2853",
           "films": [
             {
-              "title": "Les Bad Guys 2",
-              "kind": "",
-              "duration": "(1 H 44 MIN)",
+              "title": "Ponyo sur la falaise",
+              "kind": "Animation",
+              "duration": "(1 H 40 MIN)",
               "showtimes": [
-                "13:30",
-                "15:40",
-                "17:50",
-                "20:00"
+                "11:00"
               ],
-              "showtime_count": 4
+              "showtime_count": 1
             },
             {
               "title": "Eddington",
               "kind": "Western",
               "duration": "(2 H 29 MIN)",
               "showtimes": [
-                "13:40",
-                "19:15"
+                "11:00"
+              ],
+              "showtime_count": 1
+            },
+            {
+              "title": "Jardins enchantés",
+              "kind": "Animation",
+              "duration": "(0 H 44 MIN)",
+              "showtimes": [
+                "11:15",
+                "16:40"
               ],
               "showtime_count": 2
+            },
+            {
+              "title": "Last Stop : Yuma County",
+              "kind": "Thriller",
+              "duration": "(1 H 30 MIN)",
+              "showtimes": [
+                "12:45",
+                "14:40",
+                "16:35",
+                "18:30",
+                "20:25"
+              ],
+              "showtime_count": 5
+            },
+            {
+              "title": "Les Bad Guys 2",
+              "kind": "Animation",
+              "duration": "(1 H 44 MIN)",
+              "showtimes": [
+                "13:30",
+                "15:40",
+                "17:50",
+                "20:10"
+              ],
+              "showtime_count": 4
             },
             {
               "title": "Superman",
               "kind": "Action",
               "duration": "(2 H 10 MIN)",
               "showtimes": [
-                "14:30",
-                "19:40"
+                "14:00"
               ],
-              "showtime_count": 2
+              "showtime_count": 1
             },
             {
               "title": "La Venue de l'avenir",
               "kind": "Comédie",
               "duration": "(2 H 4 MIN)",
               "showtimes": [
-                "16:40"
+                "17:45"
               ],
               "showtime_count": 1
             },
@@ -272,7 +162,153 @@
               "kind": "Thriller",
               "duration": "(1 H 52 MIN)",
               "showtimes": [
-                "17:15"
+                "20:00"
+              ],
+              "showtime_count": 1
+            }
+          ]
+        },
+        {
+          "name": "L'Arlequin",
+          "cinema_id": "2625",
+          "films": [
+            {
+              "title": "Oslo, 31 août",
+              "kind": "Drame",
+              "duration": "(1 H 36 MIN)",
+              "showtimes": [
+                "11:00",
+                "18:20"
+              ],
+              "showtime_count": 2
+            },
+            {
+              "title": "Yi Yi",
+              "kind": "Drame",
+              "duration": "(2 H 53 MIN)",
+              "showtimes": [
+                "13:00",
+                "16:30",
+                "20:00"
+              ],
+              "showtime_count": 3
+            },
+            {
+              "title": "The Things You Kill",
+              "kind": "Drame",
+              "duration": "(1 H 53 MIN)",
+              "showtimes": [
+                "16:00",
+                "20:30"
+              ],
+              "showtime_count": 2
+            },
+            {
+              "title": "La Trilogie d'Oslo / Rêves",
+              "kind": "Drame",
+              "duration": "(1 H 50 MIN)",
+              "showtimes": [
+                "16:15"
+              ],
+              "showtime_count": 1
+            },
+            {
+              "title": "La Trilogie d'Oslo / Amour",
+              "kind": "Drame",
+              "duration": "(1 H 59 MIN)",
+              "showtimes": [
+                "18:30"
+              ],
+              "showtime_count": 1
+            },
+            {
+              "title": "La Trilogie d'Oslo / Désir",
+              "kind": "Drame",
+              "duration": "(1 H 58 MIN)",
+              "showtimes": [
+                "20:50"
+              ],
+              "showtime_count": 1
+            }
+          ]
+        },
+        {
+          "name": "Reflet Medicis",
+          "cinema_id": "2950",
+          "films": [
+            {
+              "title": "L'été de Jahia",
+              "kind": "Drame",
+              "duration": "(1 H 30 MIN)",
+              "showtimes": [
+                "13:45",
+                "15:45",
+                "19:30",
+                "21:30"
+              ],
+              "showtime_count": 4
+            },
+            {
+              "title": "Le Jour de Maria",
+              "kind": "Drame",
+              "duration": "(1 H 59 MIN)",
+              "showtimes": [
+                "13:50"
+              ],
+              "showtime_count": 1
+            },
+            {
+              "title": "Confusion chez Confucius",
+              "kind": "Drame",
+              "duration": "(2 H 5 MIN)",
+              "showtimes": [
+                "14:00"
+              ],
+              "showtime_count": 1
+            },
+            {
+              "title": "Ryuichi Sakamoto Opus",
+              "kind": "Documentaire",
+              "duration": "(1 H 43 MIN)",
+              "showtimes": [
+                "16:15",
+                "20:50"
+              ],
+              "showtime_count": 2
+            },
+            {
+              "title": "A Brighter Summer Day",
+              "kind": "Drame",
+              "duration": "(3 H 56 MIN)",
+              "showtimes": [
+                "16:30"
+              ],
+              "showtime_count": 1
+            },
+            {
+              "title": "La Dame de Constantinople",
+              "kind": "Drame",
+              "duration": "(1 H 16 MIN)",
+              "showtimes": [
+                "17:45"
+              ],
+              "showtime_count": 1
+            },
+            {
+              "title": "Joe Hill",
+              "kind": "Drame",
+              "duration": "(1 H 54 MIN)",
+              "showtimes": [
+                "18:30"
+              ],
+              "showtime_count": 1
+            },
+            {
+              "title": "Taipei Story",
+              "kind": "Drame",
+              "duration": "(1 H 59 MIN)",
+              "showtimes": [
+                "20:50"
               ],
               "showtime_count": 1
             }
@@ -284,7 +320,7 @@
           "films": [
             {
               "title": "Perla",
-              "kind": "",
+              "kind": "Drame",
               "duration": "(1 H 48 MIN)",
               "showtimes": [
                 "14:00",
@@ -295,48 +331,41 @@
               "showtime_count": 4
             },
             {
-              "title": "Mahjong",
-              "kind": "Comédie",
-              "duration": "(2 H 1 MIN)",
+              "title": "Confidente",
+              "kind": "",
+              "duration": "(1 H 16 MIN)",
               "showtimes": [
-                "14:00"
+                "14:00",
+                "15:40",
+                "17:15",
+                "19:00",
+                "20:40"
               ],
-              "showtime_count": 1
-            },
-            {
-              "title": "Aux jours qui viennent",
-              "kind": "Drame",
-              "duration": "(1 H 40 MIN)",
-              "showtimes": [
-                "16:30",
-                "18:30",
-                "20:30"
-              ],
-              "showtime_count": 3
+              "showtime_count": 5
             }
           ]
         }
       ]
     },
-    "2025-08-01": {
-      "date": "2025-08-01",
+    "2025-08-10": {
+      "date": "2025-08-10",
       "cinemas": [
         {
           "name": "Majestic Bastille",
           "cinema_id": "2736",
           "films": [
             {
-              "title": "Les enfants loups, Ame et Yuki",
-              "kind": "Animation",
-              "duration": "(1 H 57 MIN)",
+              "title": "Eternal",
+              "kind": "Drame",
+              "duration": "(1 H 42 MIN)",
               "showtimes": [
                 "11:00"
               ],
               "showtime_count": 1
             },
             {
-              "title": "L'Aventura",
-              "kind": "Comédie",
+              "title": "Assurance sur la mort",
+              "kind": "Thriller",
               "duration": "(1 H 47 MIN)",
               "showtimes": [
                 "11:00"
@@ -344,27 +373,26 @@
               "showtime_count": 1
             },
             {
-              "title": "Pooja, Sir",
-              "kind": "Thriller",
-              "duration": "(1 H 49 MIN)",
+              "title": "Slow",
+              "kind": "",
+              "duration": "(1 H 48 MIN)",
               "showtimes": [
-                "13:10",
-                "17:30"
+                "13:15",
+                "17:30",
+                "19:40"
               ],
-              "showtime_count": 2
+              "showtime_count": 3
             },
             {
-              "title": "Eternal",
-              "kind": "",
-              "duration": "(1 H 42 MIN)",
+              "title": "Yi Yi",
+              "kind": "Drame",
+              "duration": "(2 H 53 MIN)",
               "showtimes": [
-                "13:20",
-                "15:20",
-                "17:20",
-                "19:20",
-                "21:30"
+                "13:30",
+                "17:00",
+                "20:30"
               ],
-              "showtime_count": 5
+              "showtime_count": 3
             },
             {
               "title": "Jardin d'été (The Friends)",
@@ -380,10 +408,9 @@
               "kind": "Drame",
               "duration": "(1 H 33 MIN)",
               "showtimes": [
-                "19:45",
-                "21:40"
+                "21:50"
               ],
-              "showtime_count": 2
+              "showtime_count": 1
             }
           ]
         },
@@ -392,11 +419,62 @@
           "cinema_id": "2625",
           "films": [
             {
+              "title": "La Trilogie d'Oslo / Rêves",
+              "kind": "Drame",
+              "duration": "(1 H 50 MIN)",
+              "showtimes": [
+                "11:00",
+                "16:15"
+              ],
+              "showtime_count": 2
+            },
+            {
+              "title": "La Trilogie d'Oslo / Amour",
+              "kind": "Drame",
+              "duration": "(1 H 59 MIN)",
+              "showtimes": [
+                "11:00",
+                "18:30"
+              ],
+              "showtime_count": 2
+            },
+            {
+              "title": "Oslo, 31 août",
+              "kind": "Drame",
+              "duration": "(1 H 36 MIN)",
+              "showtimes": [
+                "11:00",
+                "18:20"
+              ],
+              "showtime_count": 2
+            },
+            {
+              "title": "Yi Yi",
+              "kind": "Drame",
+              "duration": "(2 H 53 MIN)",
+              "showtimes": [
+                "13:00",
+                "16:30",
+                "20:00"
+              ],
+              "showtime_count": 3
+            },
+            {
+              "title": "La Trilogie d'Oslo / Désir",
+              "kind": "Drame",
+              "duration": "(1 H 58 MIN)",
+              "showtimes": [
+                "13:40",
+                "20:50"
+              ],
+              "showtime_count": 2
+            },
+            {
               "title": "Jardin d'été (The Friends)",
               "kind": "Drame",
               "duration": "(1 H 53 MIN)",
               "showtimes": [
-                "11:00"
+                "14:00"
               ],
               "showtime_count": 1
             },
@@ -405,42 +483,145 @@
               "kind": "Drame",
               "duration": "(1 H 53 MIN)",
               "showtimes": [
-                "13:45",
                 "16:00",
-                "18:20",
-                "20:40"
+                "20:30"
+              ],
+              "showtime_count": 2
+            }
+          ]
+        },
+        {
+          "name": "Majestic Passy",
+          "cinema_id": "2853",
+          "films": [
+            {
+              "title": "Eddington",
+              "kind": "Western",
+              "duration": "(2 H 29 MIN)",
+              "showtimes": [
+                "11:00"
+              ],
+              "showtime_count": 1
+            },
+            {
+              "title": "Ponyo sur la falaise",
+              "kind": "Animation",
+              "duration": "(1 H 40 MIN)",
+              "showtimes": [
+                "11:00"
+              ],
+              "showtime_count": 1
+            },
+            {
+              "title": "Jardins enchantés",
+              "kind": "Animation",
+              "duration": "(0 H 44 MIN)",
+              "showtimes": [
+                "11:15",
+                "16:40"
+              ],
+              "showtime_count": 2
+            },
+            {
+              "title": "Last Stop : Yuma County",
+              "kind": "Thriller",
+              "duration": "(1 H 30 MIN)",
+              "showtimes": [
+                "12:45",
+                "14:40",
+                "16:35",
+                "18:30",
+                "20:25"
+              ],
+              "showtime_count": 5
+            },
+            {
+              "title": "Les Bad Guys 2",
+              "kind": "Animation",
+              "duration": "(1 H 44 MIN)",
+              "showtimes": [
+                "13:30",
+                "15:40",
+                "17:50",
+                "20:10"
               ],
               "showtime_count": 4
             },
             {
-              "title": "La Trilogie d'Oslo / Amour",
-              "kind": "Drame",
-              "duration": "(1 H 59 MIN)",
+              "title": "Superman",
+              "kind": "Action",
+              "duration": "(2 H 10 MIN)",
               "showtimes": [
-                "15:40",
-                "20:40"
+                "14:00"
               ],
-              "showtime_count": 2
+              "showtime_count": 1
             },
             {
-              "title": "La Trilogie d'Oslo / Désir",
-              "kind": "Drame",
-              "duration": "(1 H 58 MIN)",
+              "title": "La Venue de l'avenir",
+              "kind": "Comédie",
+              "duration": "(2 H 4 MIN)",
               "showtimes": [
-                "15:40",
-                "18:10"
+                "17:45"
               ],
-              "showtime_count": 2
+              "showtime_count": 1
             },
             {
-              "title": "La Trilogie d'Oslo / Rêves",
-              "kind": "Drame",
-              "duration": "(1 H 50 MIN)",
+              "title": "13 jours, 13 nuits",
+              "kind": "Thriller",
+              "duration": "(1 H 52 MIN)",
               "showtimes": [
-                "18:10",
+                "20:00"
+              ],
+              "showtime_count": 1
+            }
+          ]
+        },
+        {
+          "name": "Escurial",
+          "cinema_id": "2794",
+          "films": [
+            {
+              "title": "Les Vacances de Mr Hulot",
+              "kind": "Comédie",
+              "duration": "(1 H 28 MIN)",
+              "showtimes": [
+                "11:00"
+              ],
+              "showtime_count": 1
+            },
+            {
+              "title": "Jardin d'été (The Friends)",
+              "kind": "Drame",
+              "duration": "(1 H 53 MIN)",
+              "showtimes": [
+                "11:30"
+              ],
+              "showtime_count": 1
+            },
+            {
+              "title": "Perla",
+              "kind": "Drame",
+              "duration": "(1 H 48 MIN)",
+              "showtimes": [
+                "14:00",
+                "16:10",
+                "18:20",
+                "20:30"
+              ],
+              "showtime_count": 4
+            },
+            {
+              "title": "Confidente",
+              "kind": "",
+              "duration": "(1 H 16 MIN)",
+              "showtimes": [
+                "14:00",
+                "15:40",
+                "17:15",
+                "19:00",
                 "20:40"
               ],
-              "showtime_count": 2
+              "showtime_count": 5
             }
           ]
         },
@@ -453,44 +634,46 @@
               "kind": "Comédie",
               "duration": "(2 H 1 MIN)",
               "showtimes": [
-                "13:15"
-              ],
-              "showtime_count": 1
-            },
-            {
-              "title": "L'Homme de Majorque",
-              "kind": "Thriller",
-              "duration": "(1 H 46 MIN)",
-              "showtimes": [
                 "13:40"
               ],
               "showtime_count": 1
             },
             {
-              "title": "Le Jour de Maria",
+              "title": "L'été de Jahia",
               "kind": "Drame",
-              "duration": "(1 H 59 MIN)",
+              "duration": "(1 H 30 MIN)",
               "showtimes": [
-                "13:45"
+                "13:45",
+                "15:45",
+                "19:30",
+                "21:30"
+              ],
+              "showtime_count": 4
+            },
+            {
+              "title": "Les Chevaux de feu",
+              "kind": "Drame",
+              "duration": "(1 H 37 MIN)",
+              "showtimes": [
+                "14:15"
               ],
               "showtime_count": 1
             },
             {
-              "title": "Confusion chez Confucius",
+              "title": "The Terrorizers",
               "kind": "Drame",
-              "duration": "(2 H 5 MIN)",
+              "duration": "(1 H 49 MIN)",
               "showtimes": [
-                "15:45",
-                "20:40"
+                "16:10"
               ],
-              "showtime_count": 2
+              "showtime_count": 1
             },
             {
               "title": "Ryuichi Sakamoto Opus",
               "kind": "Documentaire",
               "duration": "(1 H 43 MIN)",
               "showtimes": [
-                "16:00",
+                "16:15",
                 "20:50"
               ],
               "showtime_count": 2
@@ -500,17 +683,347 @@
               "kind": "Drame",
               "duration": "(1 H 16 MIN)",
               "showtimes": [
-                "16:15",
+                "17:45"
+              ],
+              "showtime_count": 1
+            },
+            {
+              "title": "La Beauté des choses",
+              "kind": "Drame",
+              "duration": "(2 H 5 MIN)",
+              "showtimes": [
+                "18:20"
+              ],
+              "showtime_count": 1
+            },
+            {
+              "title": "Taipei Story",
+              "kind": "Drame",
+              "duration": "(1 H 59 MIN)",
+              "showtimes": [
+                "18:30"
+              ],
+              "showtime_count": 1
+            },
+            {
+              "title": "Confusion chez Confucius",
+              "kind": "Drame",
+              "duration": "(2 H 5 MIN)",
+              "showtimes": [
+                "20:50"
+              ],
+              "showtime_count": 1
+            }
+          ]
+        }
+      ]
+    },
+    "2025-08-11": {
+      "date": "2025-08-11",
+      "cinemas": [
+        {
+          "name": "Majestic Bastille",
+          "cinema_id": "2736",
+          "films": [
+            {
+              "title": "Pooja, Sir",
+              "kind": "Thriller",
+              "duration": "(1 H 49 MIN)",
+              "showtimes": [
+                "11:00"
+              ],
+              "showtime_count": 1
+            },
+            {
+              "title": "Eternal",
+              "kind": "Drame",
+              "duration": "(1 H 42 MIN)",
+              "showtimes": [
+                "11:00"
+              ],
+              "showtime_count": 1
+            },
+            {
+              "title": "Slow",
+              "kind": "",
+              "duration": "(1 H 48 MIN)",
+              "showtimes": [
+                "13:15",
+                "17:30",
+                "19:40"
+              ],
+              "showtime_count": 3
+            },
+            {
+              "title": "Yi Yi",
+              "kind": "Drame",
+              "duration": "(2 H 53 MIN)",
+              "showtimes": [
+                "13:30",
+                "17:00",
+                "20:30"
+              ],
+              "showtime_count": 3
+            },
+            {
+              "title": "Jardin d'été (The Friends)",
+              "kind": "Drame",
+              "duration": "(1 H 53 MIN)",
+              "showtimes": [
+                "15:20"
+              ],
+              "showtime_count": 1
+            },
+            {
+              "title": "Les Filles désir",
+              "kind": "Drame",
+              "duration": "(1 H 33 MIN)",
+              "showtimes": [
+                "21:50"
+              ],
+              "showtime_count": 1
+            }
+          ]
+        },
+        {
+          "name": "L'Arlequin",
+          "cinema_id": "2625",
+          "films": [
+            {
+              "title": "Oslo, 31 août",
+              "kind": "Drame",
+              "duration": "(1 H 36 MIN)",
+              "showtimes": [
+                "11:00",
                 "20:30"
               ],
               "showtime_count": 2
+            },
+            {
+              "title": "Yi Yi",
+              "kind": "Drame",
+              "duration": "(2 H 53 MIN)",
+              "showtimes": [
+                "13:00",
+                "16:30",
+                "20:00"
+              ],
+              "showtime_count": 3
+            },
+            {
+              "title": "La Trilogie d'Oslo / Amour",
+              "kind": "Drame",
+              "duration": "(1 H 59 MIN)",
+              "showtimes": [
+                "15:50",
+                "18:30"
+              ],
+              "showtime_count": 2
+            },
+            {
+              "title": "La Trilogie d'Oslo / Rêves",
+              "kind": "Drame",
+              "duration": "(1 H 50 MIN)",
+              "showtimes": [
+                "16:15"
+              ],
+              "showtime_count": 1
+            },
+            {
+              "title": "The Things You Kill",
+              "kind": "Drame",
+              "duration": "(1 H 53 MIN)",
+              "showtimes": [
+                "18:15"
+              ],
+              "showtime_count": 1
+            },
+            {
+              "title": "La Trilogie d'Oslo / Désir",
+              "kind": "Drame",
+              "duration": "(1 H 58 MIN)",
+              "showtimes": [
+                "20:50"
+              ],
+              "showtime_count": 1
+            }
+          ]
+        },
+        {
+          "name": "Escurial",
+          "cinema_id": "2794",
+          "films": [
+            {
+              "title": "Les Vacances de Mr Hulot",
+              "kind": "Comédie",
+              "duration": "(1 H 28 MIN)",
+              "showtimes": [
+                "11:30"
+              ],
+              "showtime_count": 1
+            },
+            {
+              "title": "Jardin d'été (The Friends)",
+              "kind": "Drame",
+              "duration": "(1 H 53 MIN)",
+              "showtimes": [
+                "11:30"
+              ],
+              "showtime_count": 1
+            },
+            {
+              "title": "Confidente",
+              "kind": "",
+              "duration": "(1 H 16 MIN)",
+              "showtimes": [
+                "14:00",
+                "15:40",
+                "17:15",
+                "19:00",
+                "20:40"
+              ],
+              "showtime_count": 5
+            },
+            {
+              "title": "Perla",
+              "kind": "Drame",
+              "duration": "(1 H 48 MIN)",
+              "showtimes": [
+                "14:00",
+                "16:10",
+                "18:20",
+                "20:30"
+              ],
+              "showtime_count": 4
+            }
+          ]
+        },
+        {
+          "name": "Majestic Passy",
+          "cinema_id": "2853",
+          "films": [
+            {
+              "title": "Last Stop : Yuma County",
+              "kind": "Thriller",
+              "duration": "(1 H 30 MIN)",
+              "showtimes": [
+                "12:45",
+                "14:40",
+                "16:35",
+                "18:30",
+                "20:25"
+              ],
+              "showtime_count": 5
+            },
+            {
+              "title": "Superman",
+              "kind": "Action",
+              "duration": "(2 H 10 MIN)",
+              "showtimes": [
+                "13:00"
+              ],
+              "showtime_count": 1
+            },
+            {
+              "title": "Les Bad Guys 2",
+              "kind": "Animation",
+              "duration": "(1 H 44 MIN)",
+              "showtimes": [
+                "13:30",
+                "15:40",
+                "17:50",
+                "20:10"
+              ],
+              "showtime_count": 4
+            },
+            {
+              "title": "Ponyo sur la falaise",
+              "kind": "Animation",
+              "duration": "(1 H 40 MIN)",
+              "showtimes": [
+                "15:40"
+              ],
+              "showtime_count": 1
+            },
+            {
+              "title": "La Venue de l'avenir",
+              "kind": "Comédie",
+              "duration": "(2 H 4 MIN)",
+              "showtimes": [
+                "17:45"
+              ],
+              "showtime_count": 1
+            },
+            {
+              "title": "13 jours, 13 nuits",
+              "kind": "Thriller",
+              "duration": "(1 H 52 MIN)",
+              "showtimes": [
+                "20:00"
+              ],
+              "showtime_count": 1
+            }
+          ]
+        },
+        {
+          "name": "Reflet Medicis",
+          "cinema_id": "2950",
+          "films": [
+            {
+              "title": "L'été de Jahia",
+              "kind": "Drame",
+              "duration": "(1 H 30 MIN)",
+              "showtimes": [
+                "13:45",
+                "15:45",
+                "19:30",
+                "21:30"
+              ],
+              "showtime_count": 4
             },
             {
               "title": "Peut-être demain",
               "kind": "Drame",
               "duration": "(1 H 45 MIN)",
               "showtimes": [
-                "18:00"
+                "14:00"
+              ],
+              "showtime_count": 1
+            },
+            {
+              "title": "The Terrorizers",
+              "kind": "Drame",
+              "duration": "(1 H 49 MIN)",
+              "showtimes": [
+                "14:30"
+              ],
+              "showtime_count": 1
+            },
+            {
+              "title": "Ryuichi Sakamoto Opus",
+              "kind": "Documentaire",
+              "duration": "(1 H 43 MIN)",
+              "showtimes": [
+                "16:15",
+                "20:50"
+              ],
+              "showtime_count": 2
+            },
+            {
+              "title": "In Our Time",
+              "kind": "Drame",
+              "duration": "(1 H 46 MIN)",
+              "showtimes": [
+                "16:45"
+              ],
+              "showtime_count": 1
+            },
+            {
+              "title": "La Dame de Constantinople",
+              "kind": "Drame",
+              "duration": "(1 H 16 MIN)",
+              "showtimes": [
+                "17:45"
               ],
               "showtime_count": 1
             },
@@ -519,164 +1032,69 @@
               "kind": "Policier",
               "duration": "(1 H 50 MIN)",
               "showtimes": [
-                "18:10"
+                "18:30"
               ],
               "showtime_count": 1
             },
             {
-              "title": "Taipei Story",
+              "title": "A Brighter Summer Day",
               "kind": "Drame",
-              "duration": "(1 H 59 MIN)",
+              "duration": "(3 H 56 MIN)",
               "showtimes": [
-                "18:15"
+                "19:00"
               ],
               "showtime_count": 1
-            }
-          ]
-        },
-        {
-          "name": "Majestic Passy",
-          "cinema_id": "2853",
-          "films": [
-            {
-              "title": "Les Bad Guys 2",
-              "kind": "",
-              "duration": "(1 H 44 MIN)",
-              "showtimes": [
-                "13:30",
-                "15:40",
-                "17:50",
-                "20:00"
-              ],
-              "showtime_count": 4
-            },
-            {
-              "title": "Eddington",
-              "kind": "Western",
-              "duration": "(2 H 29 MIN)",
-              "showtimes": [
-                "13:40",
-                "19:15"
-              ],
-              "showtime_count": 2
-            },
-            {
-              "title": "Superman",
-              "kind": "Action",
-              "duration": "(2 H 10 MIN)",
-              "showtimes": [
-                "14:30",
-                "19:40"
-              ],
-              "showtime_count": 2
-            },
-            {
-              "title": "La Venue de l'avenir",
-              "kind": "Comédie",
-              "duration": "(2 H 4 MIN)",
-              "showtimes": [
-                "16:40"
-              ],
-              "showtime_count": 1
-            },
-            {
-              "title": "13 jours, 13 nuits",
-              "kind": "Thriller",
-              "duration": "(1 H 52 MIN)",
-              "showtimes": [
-                "17:15"
-              ],
-              "showtime_count": 1
-            }
-          ]
-        },
-        {
-          "name": "Escurial",
-          "cinema_id": "2794",
-          "films": [
-            {
-              "title": "Perla",
-              "kind": "",
-              "duration": "(1 H 48 MIN)",
-              "showtimes": [
-                "14:00",
-                "16:10",
-                "18:20",
-                "20:30"
-              ],
-              "showtime_count": 4
-            },
-            {
-              "title": "Confusion chez Confucius",
-              "kind": "Drame",
-              "duration": "(2 H 5 MIN)",
-              "showtimes": [
-                "14:00"
-              ],
-              "showtime_count": 1
-            },
-            {
-              "title": "Aux jours qui viennent",
-              "kind": "Drame",
-              "duration": "(1 H 40 MIN)",
-              "showtimes": [
-                "16:30",
-                "18:30",
-                "20:30"
-              ],
-              "showtime_count": 3
             }
           ]
         }
       ]
     },
-    "2025-08-02": {
-      "date": "2025-08-02",
+    "2025-08-12": {
+      "date": "2025-08-12",
       "cinemas": [
         {
           "name": "Majestic Bastille",
           "cinema_id": "2736",
           "films": [
             {
-              "title": "Mon ami robot",
-              "kind": "Animation",
-              "duration": "(1 H 42 MIN)",
-              "showtimes": [
-                "10:00"
-              ],
-              "showtime_count": 1
-            },
-            {
-              "title": "L'Homme de la rue",
-              "kind": "Comédie",
-              "duration": "(2 H 2 MIN)",
+              "title": "Pooja, Sir",
+              "kind": "Thriller",
+              "duration": "(1 H 49 MIN)",
               "showtimes": [
                 "11:00"
               ],
               "showtime_count": 1
             },
             {
-              "title": "Pooja, Sir",
-              "kind": "Thriller",
-              "duration": "(1 H 49 MIN)",
-              "showtimes": [
-                "13:10",
-                "17:30"
-              ],
-              "showtime_count": 2
-            },
-            {
               "title": "Eternal",
-              "kind": "",
+              "kind": "Drame",
               "duration": "(1 H 42 MIN)",
               "showtimes": [
-                "13:20",
-                "15:20",
-                "17:20",
-                "19:20",
-                "21:30"
+                "11:00"
               ],
-              "showtime_count": 5
+              "showtime_count": 1
+            },
+            {
+              "title": "Slow",
+              "kind": "",
+              "duration": "(1 H 48 MIN)",
+              "showtimes": [
+                "13:15",
+                "17:30",
+                "19:40"
+              ],
+              "showtime_count": 3
+            },
+            {
+              "title": "Yi Yi",
+              "kind": "Drame",
+              "duration": "(2 H 53 MIN)",
+              "showtimes": [
+                "13:30",
+                "17:00",
+                "20:30"
+              ],
+              "showtime_count": 3
             },
             {
               "title": "Jardin d'été (The Friends)",
@@ -692,83 +1110,7 @@
               "kind": "Drame",
               "duration": "(1 H 33 MIN)",
               "showtimes": [
-                "19:45",
-                "21:40"
-              ],
-              "showtime_count": 2
-            }
-          ]
-        },
-        {
-          "name": "Majestic Passy",
-          "cinema_id": "2853",
-          "films": [
-            {
-              "title": "Buffalo Kids",
-              "kind": "Animation",
-              "duration": "(1 H 23 MIN)",
-              "showtimes": [
-                "11:00"
-              ],
-              "showtime_count": 1
-            },
-            {
-              "title": "La Venue de l'avenir",
-              "kind": "Comédie",
-              "duration": "(2 H 4 MIN)",
-              "showtimes": [
-                "11:00",
-                "16:40"
-              ],
-              "showtime_count": 2
-            },
-            {
-              "title": "Ponyo sur la falaise",
-              "kind": "Animation",
-              "duration": "(1 H 40 MIN)",
-              "showtimes": [
-                "11:00"
-              ],
-              "showtime_count": 1
-            },
-            {
-              "title": "Les Bad Guys 2",
-              "kind": "",
-              "duration": "(1 H 44 MIN)",
-              "showtimes": [
-                "13:30",
-                "15:40",
-                "17:50",
-                "20:00"
-              ],
-              "showtime_count": 4
-            },
-            {
-              "title": "Eddington",
-              "kind": "Western",
-              "duration": "(2 H 29 MIN)",
-              "showtimes": [
-                "13:40",
-                "19:15"
-              ],
-              "showtime_count": 2
-            },
-            {
-              "title": "Superman",
-              "kind": "Action",
-              "duration": "(2 H 10 MIN)",
-              "showtimes": [
-                "14:30",
-                "19:40"
-              ],
-              "showtime_count": 2
-            },
-            {
-              "title": "13 jours, 13 nuits",
-              "kind": "Thriller",
-              "duration": "(1 H 52 MIN)",
-              "showtimes": [
-                "17:15"
+                "21:50"
               ],
               "showtime_count": 1
             }
@@ -779,33 +1121,42 @@
           "cinema_id": "2625",
           "films": [
             {
-              "title": "Jardin d'été (The Friends)",
+              "title": "Oslo, 31 août",
               "kind": "Drame",
-              "duration": "(1 H 53 MIN)",
+              "duration": "(1 H 36 MIN)",
               "showtimes": [
-                "11:00"
+                "11:00",
+                "18:20"
               ],
-              "showtime_count": 1
+              "showtime_count": 2
             },
             {
-              "title": "The Things You Kill",
+              "title": "Yi Yi",
               "kind": "Drame",
-              "duration": "(1 H 53 MIN)",
+              "duration": "(2 H 53 MIN)",
               "showtimes": [
-                "13:45",
-                "16:00",
-                "18:20",
-                "20:40"
+                "13:00",
+                "16:30",
+                "20:00"
               ],
-              "showtime_count": 4
+              "showtime_count": 3
             },
             {
               "title": "La Trilogie d'Oslo / Désir",
               "kind": "Drame",
               "duration": "(1 H 58 MIN)",
               "showtimes": [
-                "15:40",
-                "18:10"
+                "15:50"
+              ],
+              "showtime_count": 1
+            },
+            {
+              "title": "La Trilogie d'Oslo / Rêves",
+              "kind": "Drame",
+              "duration": "(1 H 50 MIN)",
+              "showtimes": [
+                "16:15",
+                "20:50"
               ],
               "showtime_count": 2
             },
@@ -813,370 +1164,19 @@
               "title": "La Trilogie d'Oslo / Amour",
               "kind": "Drame",
               "duration": "(1 H 59 MIN)",
-              "showtimes": [
-                "15:40",
-                "20:40"
-              ],
-              "showtime_count": 2
-            },
-            {
-              "title": "La Trilogie d'Oslo / Rêves",
-              "kind": "Drame",
-              "duration": "(1 H 50 MIN)",
-              "showtimes": [
-                "18:10",
-                "20:40"
-              ],
-              "showtime_count": 2
-            }
-          ]
-        },
-        {
-          "name": "Escurial",
-          "cinema_id": "2794",
-          "films": [
-            {
-              "title": "Des Feux dans la Plaine",
-              "kind": "Drame",
-              "duration": "(1 H 41 MIN)",
-              "showtimes": [
-                "11:30"
-              ],
-              "showtime_count": 1
-            },
-            {
-              "title": "Jardin d'été (The Friends)",
-              "kind": "Drame",
-              "duration": "(1 H 53 MIN)",
-              "showtimes": [
-                "11:30"
-              ],
-              "showtime_count": 1
-            },
-            {
-              "title": "Mahjong",
-              "kind": "Comédie",
-              "duration": "(2 H 1 MIN)",
-              "showtimes": [
-                "14:00"
-              ],
-              "showtime_count": 1
-            },
-            {
-              "title": "Perla",
-              "kind": "",
-              "duration": "(1 H 48 MIN)",
-              "showtimes": [
-                "14:00",
-                "16:10",
-                "18:20",
-                "20:30"
-              ],
-              "showtime_count": 4
-            },
-            {
-              "title": "Aux jours qui viennent",
-              "kind": "Drame",
-              "duration": "(1 H 40 MIN)",
-              "showtimes": [
-                "16:30",
-                "18:30",
-                "20:30"
-              ],
-              "showtime_count": 3
-            }
-          ]
-        },
-        {
-          "name": "Reflet Medicis",
-          "cinema_id": "2950",
-          "films": [
-            {
-              "title": "Confusion chez Confucius",
-              "kind": "Drame",
-              "duration": "(2 H 5 MIN)",
-              "showtimes": [
-                "13:15"
-              ],
-              "showtime_count": 1
-            },
-            {
-              "title": "Le Jour de Maria",
-              "kind": "Drame",
-              "duration": "(1 H 59 MIN)",
-              "showtimes": [
-                "13:45"
-              ],
-              "showtime_count": 1
-            },
-            {
-              "title": "Les Chevaux de feu",
-              "kind": "Drame",
-              "duration": "(1 H 37 MIN)",
-              "showtimes": [
-                "14:00"
-              ],
-              "showtime_count": 1
-            },
-            {
-              "title": "Mahjong",
-              "kind": "Comédie",
-              "duration": "(2 H 1 MIN)",
-              "showtimes": [
-                "15:45",
-                "20:40"
-              ],
-              "showtime_count": 2
-            },
-            {
-              "title": "Ryuichi Sakamoto Opus",
-              "kind": "Documentaire",
-              "duration": "(1 H 43 MIN)",
-              "showtimes": [
-                "16:00",
-                "20:50"
-              ],
-              "showtime_count": 2
-            },
-            {
-              "title": "La Dame de Constantinople",
-              "kind": "Drame",
-              "duration": "(1 H 16 MIN)",
-              "showtimes": [
-                "16:15",
-                "20:30"
-              ],
-              "showtime_count": 2
-            },
-            {
-              "title": "Peut-être demain",
-              "kind": "Drame",
-              "duration": "(1 H 45 MIN)",
-              "showtimes": [
-                "18:00"
-              ],
-              "showtime_count": 1
-            },
-            {
-              "title": "Taipei Story",
-              "kind": "Drame",
-              "duration": "(1 H 59 MIN)",
-              "showtimes": [
-                "18:15"
-              ],
-              "showtime_count": 1
-            },
-            {
-              "title": "Joe Hill",
-              "kind": "Drame",
-              "duration": "(1 H 54 MIN)",
               "showtimes": [
                 "18:30"
               ],
               "showtime_count": 1
-            }
-          ]
-        }
-      ]
-    },
-    "2025-08-03": {
-      "date": "2025-08-03",
-      "cinemas": [
-        {
-          "name": "Majestic Passy",
-          "cinema_id": "2853",
-          "films": [
-            {
-              "title": "Buffalo Kids",
-              "kind": "Animation",
-              "duration": "(1 H 23 MIN)",
-              "showtimes": [
-                "11:00"
-              ],
-              "showtime_count": 1
-            },
-            {
-              "title": "La Venue de l'avenir",
-              "kind": "Comédie",
-              "duration": "(2 H 4 MIN)",
-              "showtimes": [
-                "11:00",
-                "16:40"
-              ],
-              "showtime_count": 2
-            },
-            {
-              "title": "Ponyo sur la falaise",
-              "kind": "Animation",
-              "duration": "(1 H 40 MIN)",
-              "showtimes": [
-                "11:00"
-              ],
-              "showtime_count": 1
-            },
-            {
-              "title": "Les Bad Guys 2",
-              "kind": "",
-              "duration": "(1 H 44 MIN)",
-              "showtimes": [
-                "13:30",
-                "15:40",
-                "17:50",
-                "20:00"
-              ],
-              "showtime_count": 4
-            },
-            {
-              "title": "Eddington",
-              "kind": "Western",
-              "duration": "(2 H 29 MIN)",
-              "showtimes": [
-                "13:40",
-                "19:15"
-              ],
-              "showtime_count": 2
-            },
-            {
-              "title": "Superman",
-              "kind": "Action",
-              "duration": "(2 H 10 MIN)",
-              "showtimes": [
-                "14:30",
-                "19:40"
-              ],
-              "showtime_count": 2
-            },
-            {
-              "title": "13 jours, 13 nuits",
-              "kind": "Thriller",
-              "duration": "(1 H 52 MIN)",
-              "showtimes": [
-                "17:15"
-              ],
-              "showtime_count": 1
-            }
-          ]
-        },
-        {
-          "name": "L'Arlequin",
-          "cinema_id": "2625",
-          "films": [
-            {
-              "title": "Jardin d'été (The Friends)",
-              "kind": "Drame",
-              "duration": "(1 H 53 MIN)",
-              "showtimes": [
-                "11:00"
-              ],
-              "showtime_count": 1
             },
             {
               "title": "The Things You Kill",
               "kind": "Drame",
               "duration": "(1 H 53 MIN)",
               "showtimes": [
-                "13:45",
-                "16:00",
-                "18:20",
-                "20:40"
-              ],
-              "showtime_count": 4
-            },
-            {
-              "title": "La Trilogie d'Oslo / Désir",
-              "kind": "Drame",
-              "duration": "(1 H 58 MIN)",
-              "showtimes": [
-                "15:40",
-                "18:10"
-              ],
-              "showtime_count": 2
-            },
-            {
-              "title": "La Trilogie d'Oslo / Amour",
-              "kind": "Drame",
-              "duration": "(1 H 59 MIN)",
-              "showtimes": [
-                "15:40",
-                "20:40"
-              ],
-              "showtime_count": 2
-            },
-            {
-              "title": "La Trilogie d'Oslo / Rêves",
-              "kind": "Drame",
-              "duration": "(1 H 50 MIN)",
-              "showtimes": [
-                "18:10",
-                "20:40"
-              ],
-              "showtime_count": 2
-            }
-          ]
-        },
-        {
-          "name": "Majestic Bastille",
-          "cinema_id": "2736",
-          "films": [
-            {
-              "title": "La Traversée du temps",
-              "kind": "Animation",
-              "duration": "(1 H 44 MIN)",
-              "showtimes": [
-                "11:00"
+                "20:30"
               ],
               "showtime_count": 1
-            },
-            {
-              "title": "Boule de feu",
-              "kind": "Comédie",
-              "duration": "(1 H 51 MIN)",
-              "showtimes": [
-                "11:00"
-              ],
-              "showtime_count": 1
-            },
-            {
-              "title": "Pooja, Sir",
-              "kind": "Thriller",
-              "duration": "(1 H 49 MIN)",
-              "showtimes": [
-                "13:10",
-                "17:30"
-              ],
-              "showtime_count": 2
-            },
-            {
-              "title": "Eternal",
-              "kind": "",
-              "duration": "(1 H 42 MIN)",
-              "showtimes": [
-                "13:20",
-                "15:20",
-                "17:20",
-                "19:20",
-                "21:30"
-              ],
-              "showtime_count": 5
-            },
-            {
-              "title": "Jardin d'été (The Friends)",
-              "kind": "Drame",
-              "duration": "(1 H 53 MIN)",
-              "showtimes": [
-                "15:20"
-              ],
-              "showtime_count": 1
-            },
-            {
-              "title": "Les Filles désir",
-              "kind": "Drame",
-              "duration": "(1 H 33 MIN)",
-              "showtimes": [
-                "19:45",
-                "21:40"
-              ],
-              "showtime_count": 2
             }
           ]
         },
@@ -1185,35 +1185,39 @@
           "cinema_id": "2794",
           "films": [
             {
-              "title": "Mon ami robot",
-              "kind": "Animation",
-              "duration": "(1 H 42 MIN)",
-              "showtimes": [
-                "11:00"
-              ],
-              "showtime_count": 1
-            },
-            {
-              "title": "Des Feux dans la Plaine",
-              "kind": "Drame",
-              "duration": "(1 H 41 MIN)",
+              "title": "Les Vacances de Mr Hulot",
+              "kind": "Comédie",
+              "duration": "(1 H 28 MIN)",
               "showtimes": [
                 "11:30"
               ],
               "showtime_count": 1
             },
             {
-              "title": "Confusion chez Confucius",
+              "title": "Jardin d'été (The Friends)",
               "kind": "Drame",
-              "duration": "(2 H 5 MIN)",
+              "duration": "(1 H 53 MIN)",
               "showtimes": [
-                "14:00"
+                "11:30"
               ],
               "showtime_count": 1
             },
             {
-              "title": "Perla",
+              "title": "Confidente",
               "kind": "",
+              "duration": "(1 H 16 MIN)",
+              "showtimes": [
+                "14:00",
+                "15:40",
+                "17:15",
+                "19:00",
+                "20:40"
+              ],
+              "showtime_count": 5
+            },
+            {
+              "title": "Perla",
+              "kind": "Drame",
               "duration": "(1 H 48 MIN)",
               "showtimes": [
                 "14:00",
@@ -1222,17 +1226,73 @@
                 "20:30"
               ],
               "showtime_count": 4
+            }
+          ]
+        },
+        {
+          "name": "Majestic Passy",
+          "cinema_id": "2853",
+          "films": [
+            {
+              "title": "Last Stop : Yuma County",
+              "kind": "Thriller",
+              "duration": "(1 H 30 MIN)",
+              "showtimes": [
+                "12:45",
+                "14:40",
+                "16:35",
+                "18:30",
+                "20:25"
+              ],
+              "showtime_count": 5
             },
             {
-              "title": "Aux jours qui viennent",
-              "kind": "Drame",
+              "title": "Superman",
+              "kind": "Action",
+              "duration": "(2 H 10 MIN)",
+              "showtimes": [
+                "13:00"
+              ],
+              "showtime_count": 1
+            },
+            {
+              "title": "Les Bad Guys 2",
+              "kind": "Animation",
+              "duration": "(1 H 44 MIN)",
+              "showtimes": [
+                "13:30",
+                "15:40",
+                "17:50",
+                "20:10"
+              ],
+              "showtime_count": 4
+            },
+            {
+              "title": "Ponyo sur la falaise",
+              "kind": "Animation",
               "duration": "(1 H 40 MIN)",
               "showtimes": [
-                "16:30",
-                "18:30",
-                "20:30"
+                "15:40"
               ],
-              "showtime_count": 3
+              "showtime_count": 1
+            },
+            {
+              "title": "La Venue de l'avenir",
+              "kind": "Comédie",
+              "duration": "(2 H 4 MIN)",
+              "showtimes": [
+                "17:45"
+              ],
+              "showtime_count": 1
+            },
+            {
+              "title": "13 jours, 13 nuits",
+              "kind": "Thriller",
+              "duration": "(1 H 52 MIN)",
+              "showtimes": [
+                "20:00"
+              ],
+              "showtime_count": 1
             }
           ]
         },
@@ -1241,48 +1301,50 @@
           "cinema_id": "2950",
           "films": [
             {
-              "title": "Mahjong",
-              "kind": "Comédie",
-              "duration": "(2 H 1 MIN)",
+              "title": "Confusion chez Confucius",
+              "kind": "Drame",
+              "duration": "(2 H 5 MIN)",
               "showtimes": [
-                "13:15"
+                "13:30"
               ],
               "showtime_count": 1
             },
             {
-              "title": "Being Bo Widerberg",
-              "kind": "Documentaire",
-              "duration": "(1 H 45 MIN)",
+              "title": "L'été de Jahia",
+              "kind": "Drame",
+              "duration": "(1 H 30 MIN)",
               "showtimes": [
-                "13:45"
+                "13:45",
+                "15:45",
+                "19:30",
+                "21:30"
               ],
-              "showtime_count": 1
+              "showtime_count": 4
             },
             {
               "title": "Le Jour de Maria",
               "kind": "Drame",
               "duration": "(1 H 59 MIN)",
               "showtimes": [
-                "13:45"
+                "13:50"
               ],
               "showtime_count": 1
             },
             {
-              "title": "Confusion chez Confucius",
+              "title": "Taipei Story",
               "kind": "Drame",
-              "duration": "(2 H 5 MIN)",
+              "duration": "(1 H 59 MIN)",
               "showtimes": [
-                "15:45",
-                "20:40"
+                "16:00"
               ],
-              "showtime_count": 2
+              "showtime_count": 1
             },
             {
               "title": "Ryuichi Sakamoto Opus",
               "kind": "Documentaire",
               "duration": "(1 H 43 MIN)",
               "showtimes": [
-                "16:00",
+                "16:15",
                 "20:50"
               ],
               "showtime_count": 2
@@ -1292,243 +1354,7 @@
               "kind": "Drame",
               "duration": "(1 H 16 MIN)",
               "showtimes": [
-                "16:15",
-                "20:30"
-              ],
-              "showtime_count": 2
-            },
-            {
-              "title": "Peut-être demain",
-              "kind": "Drame",
-              "duration": "(1 H 45 MIN)",
-              "showtimes": [
-                "18:00"
-              ],
-              "showtime_count": 1
-            },
-            {
-              "title": "La Beauté des choses",
-              "kind": "Drame",
-              "duration": "(2 H 5 MIN)",
-              "showtimes": [
-                "18:10"
-              ],
-              "showtime_count": 1
-            },
-            {
-              "title": "Taipei Story",
-              "kind": "Drame",
-              "duration": "(1 H 59 MIN)",
-              "showtimes": [
-                "18:15"
-              ],
-              "showtime_count": 1
-            }
-          ]
-        }
-      ]
-    },
-    "2025-08-04": {
-      "date": "2025-08-04",
-      "cinemas": [
-        {
-          "name": "Majestic Bastille",
-          "cinema_id": "2736",
-          "films": [
-            {
-              "title": "Summer Wars",
-              "kind": "Animation",
-              "duration": "(1 H 54 MIN)",
-              "showtimes": [
-                "11:00"
-              ],
-              "showtime_count": 1
-            },
-            {
-              "title": "L'Aventura",
-              "kind": "Comédie",
-              "duration": "(1 H 47 MIN)",
-              "showtimes": [
-                "11:00"
-              ],
-              "showtime_count": 1
-            },
-            {
-              "title": "Pooja, Sir",
-              "kind": "Thriller",
-              "duration": "(1 H 49 MIN)",
-              "showtimes": [
-                "13:10",
-                "17:30"
-              ],
-              "showtime_count": 2
-            },
-            {
-              "title": "Eternal",
-              "kind": "",
-              "duration": "(1 H 42 MIN)",
-              "showtimes": [
-                "13:20",
-                "15:20",
-                "17:20",
-                "19:20",
-                "21:30"
-              ],
-              "showtime_count": 5
-            },
-            {
-              "title": "Jardin d'été (The Friends)",
-              "kind": "Drame",
-              "duration": "(1 H 53 MIN)",
-              "showtimes": [
-                "15:20"
-              ],
-              "showtime_count": 1
-            },
-            {
-              "title": "Les Filles désir",
-              "kind": "Drame",
-              "duration": "(1 H 33 MIN)",
-              "showtimes": [
-                "19:45",
-                "21:40"
-              ],
-              "showtime_count": 2
-            }
-          ]
-        },
-        {
-          "name": "L'Arlequin",
-          "cinema_id": "2625",
-          "films": [
-            {
-              "title": "Jardin d'été (The Friends)",
-              "kind": "Drame",
-              "duration": "(1 H 53 MIN)",
-              "showtimes": [
-                "11:00"
-              ],
-              "showtime_count": 1
-            },
-            {
-              "title": "The Things You Kill",
-              "kind": "Drame",
-              "duration": "(1 H 53 MIN)",
-              "showtimes": [
-                "13:45",
-                "16:00",
-                "18:20",
-                "20:40"
-              ],
-              "showtime_count": 4
-            },
-            {
-              "title": "La Trilogie d'Oslo / Amour",
-              "kind": "Drame",
-              "duration": "(1 H 59 MIN)",
-              "showtimes": [
-                "15:40",
-                "20:40"
-              ],
-              "showtime_count": 2
-            },
-            {
-              "title": "La Trilogie d'Oslo / Désir",
-              "kind": "Drame",
-              "duration": "(1 H 58 MIN)",
-              "showtimes": [
-                "15:40",
-                "18:10"
-              ],
-              "showtime_count": 2
-            },
-            {
-              "title": "La Trilogie d'Oslo / Rêves",
-              "kind": "Drame",
-              "duration": "(1 H 50 MIN)",
-              "showtimes": [
-                "18:10",
-                "20:40"
-              ],
-              "showtime_count": 2
-            }
-          ]
-        },
-        {
-          "name": "Escurial",
-          "cinema_id": "2794",
-          "films": [
-            {
-              "title": "L'Aventura",
-              "kind": "Comédie",
-              "duration": "(1 H 47 MIN)",
-              "showtimes": [
-                "11:15"
-              ],
-              "showtime_count": 1
-            },
-            {
-              "title": "Jardin d'été (The Friends)",
-              "kind": "Drame",
-              "duration": "(1 H 53 MIN)",
-              "showtimes": [
-                "11:30"
-              ],
-              "showtime_count": 1
-            },
-            {
-              "title": "Mahjong",
-              "kind": "Comédie",
-              "duration": "(2 H 1 MIN)",
-              "showtimes": [
-                "14:00"
-              ],
-              "showtime_count": 1
-            },
-            {
-              "title": "Perla",
-              "kind": "",
-              "duration": "(1 H 48 MIN)",
-              "showtimes": [
-                "14:00",
-                "16:10",
-                "18:20",
-                "20:30"
-              ],
-              "showtime_count": 4
-            },
-            {
-              "title": "Aux jours qui viennent",
-              "kind": "Drame",
-              "duration": "(1 H 40 MIN)",
-              "showtimes": [
-                "16:30",
-                "18:30",
-                "20:30"
-              ],
-              "showtime_count": 3
-            }
-          ]
-        },
-        {
-          "name": "Reflet Medicis",
-          "cinema_id": "2950",
-          "films": [
-            {
-              "title": "Confusion chez Confucius",
-              "kind": "Drame",
-              "duration": "(2 H 5 MIN)",
-              "showtimes": [
-                "13:15"
-              ],
-              "showtime_count": 1
-            },
-            {
-              "title": "Le Jour de Maria",
-              "kind": "Drame",
-              "duration": "(1 H 59 MIN)",
-              "showtimes": [
-                "13:45"
+                "17:45"
               ],
               "showtime_count": 1
             },
@@ -1537,7 +1363,7 @@
               "kind": "Drame",
               "duration": "(1 H 35 MIN)",
               "showtimes": [
-                "14:00"
+                "18:30"
               ],
               "showtime_count": 1
             },
@@ -1546,111 +1372,16 @@
               "kind": "Comédie",
               "duration": "(2 H 1 MIN)",
               "showtimes": [
-                "15:45",
-                "20:40"
-              ],
-              "showtime_count": 2
-            },
-            {
-              "title": "Ryuichi Sakamoto Opus",
-              "kind": "Documentaire",
-              "duration": "(1 H 43 MIN)",
-              "showtimes": [
-                "16:00",
-                "20:50"
-              ],
-              "showtime_count": 2
-            },
-            {
-              "title": "La Dame de Constantinople",
-              "kind": "Drame",
-              "duration": "(1 H 16 MIN)",
-              "showtimes": [
-                "16:15",
-                "20:30"
-              ],
-              "showtime_count": 2
-            },
-            {
-              "title": "Peut-être demain",
-              "kind": "Drame",
-              "duration": "(1 H 45 MIN)",
-              "showtimes": [
-                "18:00"
+                "18:30"
               ],
               "showtime_count": 1
             },
             {
-              "title": "Le Chemin du serpent",
+              "title": "In Our Time",
               "kind": "Drame",
-              "duration": "(2 H 10 MIN)",
+              "duration": "(1 H 46 MIN)",
               "showtimes": [
-                "18:10"
-              ],
-              "showtime_count": 1
-            },
-            {
-              "title": "Taipei Story",
-              "kind": "Drame",
-              "duration": "(1 H 59 MIN)",
-              "showtimes": [
-                "18:15"
-              ],
-              "showtime_count": 1
-            }
-          ]
-        },
-        {
-          "name": "Majestic Passy",
-          "cinema_id": "2853",
-          "films": [
-            {
-              "title": "Les Bad Guys 2",
-              "kind": "",
-              "duration": "(1 H 44 MIN)",
-              "showtimes": [
-                "13:30",
-                "15:40",
-                "17:50",
-                "20:00"
-              ],
-              "showtime_count": 4
-            },
-            {
-              "title": "Eddington",
-              "kind": "Western",
-              "duration": "(2 H 29 MIN)",
-              "showtimes": [
-                "13:40",
-                "19:15"
-              ],
-              "showtime_count": 2
-            },
-            {
-              "title": "Superman",
-              "kind": "Action",
-              "duration": "(2 H 10 MIN)",
-              "showtimes": [
-                "14:30",
-                "19:40"
-              ],
-              "showtime_count": 2
-            },
-            {
-              "title": "La Venue de l'avenir",
-              "kind": "Comédie",
-              "duration": "(2 H 4 MIN)",
-              "showtimes": [
-                "16:40"
-              ],
-              "showtime_count": 1
-            },
-            {
-              "title": "13 jours, 13 nuits",
-              "kind": "Thriller",
-              "duration": "(1 H 52 MIN)",
-              "showtimes": [
-                "17:15"
+                "21:00"
               ],
               "showtime_count": 1
             }
@@ -1658,329 +1389,23 @@
         }
       ]
     },
-    "2025-08-05": {
-      "date": "2025-08-05",
+    "2025-08-13": {
+      "date": "2025-08-13",
+      "cinemas": []
+    },
+    "2025-08-14": {
+      "date": "2025-08-14",
       "cinemas": [
         {
           "name": "L'Arlequin",
           "cinema_id": "2625",
           "films": [
             {
-              "title": "Jardin d'été (The Friends)",
-              "kind": "Drame",
-              "duration": "(1 H 53 MIN)",
-              "showtimes": [
-                "11:00"
-              ],
-              "showtime_count": 1
-            },
-            {
-              "title": "The Things You Kill",
-              "kind": "Drame",
-              "duration": "(1 H 53 MIN)",
-              "showtimes": [
-                "13:45",
-                "16:00",
-                "18:20",
-                "20:40"
-              ],
-              "showtime_count": 4
-            },
-            {
-              "title": "La Trilogie d'Oslo / Amour",
-              "kind": "Drame",
-              "duration": "(1 H 59 MIN)",
-              "showtimes": [
-                "15:40",
-                "20:40"
-              ],
-              "showtime_count": 2
-            },
-            {
-              "title": "La Trilogie d'Oslo / Désir",
-              "kind": "Drame",
-              "duration": "(1 H 58 MIN)",
-              "showtimes": [
-                "15:40",
-                "18:10"
-              ],
-              "showtime_count": 2
-            },
-            {
-              "title": "La Trilogie d'Oslo / Rêves",
-              "kind": "Drame",
-              "duration": "(1 H 50 MIN)",
-              "showtimes": [
-                "18:10",
-                "20:40"
-              ],
-              "showtime_count": 2
-            }
-          ]
-        },
-        {
-          "name": "Majestic Bastille",
-          "cinema_id": "2736",
-          "films": [
-            {
-              "title": "L'Aventura",
+              "title": "En fanfare",
               "kind": "Comédie",
-              "duration": "(1 H 47 MIN)",
-              "showtimes": [
-                "11:00"
-              ],
-              "showtime_count": 1
-            },
-            {
-              "title": "Les enfants loups, Ame et Yuki",
-              "kind": "Animation",
-              "duration": "(1 H 57 MIN)",
-              "showtimes": [
-                "11:00"
-              ],
-              "showtime_count": 1
-            },
-            {
-              "title": "Pooja, Sir",
-              "kind": "Thriller",
-              "duration": "(1 H 49 MIN)",
-              "showtimes": [
-                "13:10",
-                "17:30"
-              ],
-              "showtime_count": 2
-            },
-            {
-              "title": "Eternal",
-              "kind": "",
-              "duration": "(1 H 42 MIN)",
-              "showtimes": [
-                "13:20",
-                "15:20",
-                "17:20",
-                "19:20",
-                "21:30"
-              ],
-              "showtime_count": 5
-            },
-            {
-              "title": "Jardin d'été (The Friends)",
-              "kind": "Drame",
-              "duration": "(1 H 53 MIN)",
-              "showtimes": [
-                "15:20"
-              ],
-              "showtime_count": 1
-            },
-            {
-              "title": "Les Filles désir",
-              "kind": "Drame",
-              "duration": "(1 H 33 MIN)",
-              "showtimes": [
-                "19:45",
-                "21:40"
-              ],
-              "showtime_count": 2
-            }
-          ]
-        },
-        {
-          "name": "Escurial",
-          "cinema_id": "2794",
-          "films": [
-            {
-              "title": "L'Aventura",
-              "kind": "Comédie",
-              "duration": "(1 H 47 MIN)",
-              "showtimes": [
-                "11:15"
-              ],
-              "showtime_count": 1
-            },
-            {
-              "title": "Des Feux dans la Plaine",
-              "kind": "Drame",
-              "duration": "(1 H 41 MIN)",
-              "showtimes": [
-                "11:30"
-              ],
-              "showtime_count": 1
-            },
-            {
-              "title": "Perla",
-              "kind": "",
-              "duration": "(1 H 48 MIN)",
-              "showtimes": [
-                "14:00",
-                "16:10",
-                "18:20",
-                "20:30"
-              ],
-              "showtime_count": 4
-            },
-            {
-              "title": "Confusion chez Confucius",
-              "kind": "Drame",
-              "duration": "(2 H 5 MIN)",
-              "showtimes": [
-                "14:00"
-              ],
-              "showtime_count": 1
-            },
-            {
-              "title": "Aux jours qui viennent",
-              "kind": "Drame",
-              "duration": "(1 H 40 MIN)",
-              "showtimes": [
-                "16:30",
-                "18:30",
-                "20:30"
-              ],
-              "showtime_count": 3
-            }
-          ]
-        },
-        {
-          "name": "Reflet Medicis",
-          "cinema_id": "2950",
-          "films": [
-            {
-              "title": "Mahjong",
-              "kind": "Comédie",
-              "duration": "(2 H 1 MIN)",
-              "showtimes": [
-                "13:15"
-              ],
-              "showtime_count": 1
-            },
-            {
-              "title": "Joe Hill",
-              "kind": "Drame",
-              "duration": "(1 H 54 MIN)",
-              "showtimes": [
-                "13:40"
-              ],
-              "showtime_count": 1
-            },
-            {
-              "title": "Le Jour de Maria",
-              "kind": "Drame",
-              "duration": "(1 H 59 MIN)",
-              "showtimes": [
-                "13:45"
-              ],
-              "showtime_count": 1
-            },
-            {
-              "title": "Confusion chez Confucius",
-              "kind": "Drame",
-              "duration": "(2 H 5 MIN)",
-              "showtimes": [
-                "15:45",
-                "20:40"
-              ],
-              "showtime_count": 2
-            },
-            {
-              "title": "Ryuichi Sakamoto Opus",
-              "kind": "Documentaire",
               "duration": "(1 H 43 MIN)",
               "showtimes": [
-                "16:00",
-                "20:50"
-              ],
-              "showtime_count": 2
-            },
-            {
-              "title": "La Dame de Constantinople",
-              "kind": "Drame",
-              "duration": "(1 H 16 MIN)",
-              "showtimes": [
-                "16:15",
-                "20:30"
-              ],
-              "showtime_count": 2
-            },
-            {
-              "title": "Peut-être demain",
-              "kind": "Drame",
-              "duration": "(1 H 45 MIN)",
-              "showtimes": [
-                "18:00"
-              ],
-              "showtime_count": 1
-            },
-            {
-              "title": "La Beauté des choses",
-              "kind": "Drame",
-              "duration": "(2 H 5 MIN)",
-              "showtimes": [
-                "18:10"
-              ],
-              "showtime_count": 1
-            },
-            {
-              "title": "Taipei Story",
-              "kind": "Drame",
-              "duration": "(1 H 59 MIN)",
-              "showtimes": [
-                "18:15"
-              ],
-              "showtime_count": 1
-            }
-          ]
-        },
-        {
-          "name": "Majestic Passy",
-          "cinema_id": "2853",
-          "films": [
-            {
-              "title": "Les Bad Guys 2",
-              "kind": "",
-              "duration": "(1 H 44 MIN)",
-              "showtimes": [
-                "13:30",
-                "15:40",
-                "17:50",
                 "20:00"
-              ],
-              "showtime_count": 4
-            },
-            {
-              "title": "Ponyo sur la falaise",
-              "kind": "Animation",
-              "duration": "(1 H 40 MIN)",
-              "showtimes": [
-                "14:00"
-              ],
-              "showtime_count": 1
-            },
-            {
-              "title": "Superman",
-              "kind": "Action",
-              "duration": "(2 H 10 MIN)",
-              "showtimes": [
-                "14:30",
-                "19:40"
-              ],
-              "showtime_count": 2
-            },
-            {
-              "title": "Eddington",
-              "kind": "Western",
-              "duration": "(2 H 29 MIN)",
-              "showtimes": [
-                "16:15",
-                "19:15"
-              ],
-              "showtime_count": 2
-            },
-            {
-              "title": "13 jours, 13 nuits",
-              "kind": "Thriller",
-              "duration": "(1 H 52 MIN)",
-              "showtimes": [
-                "17:15"
               ],
               "showtime_count": 1
             }
@@ -1988,8 +1413,8 @@
         }
       ]
     },
-    "2025-08-06": {
-      "date": "2025-08-06",
+    "2025-08-15": {
+      "date": "2025-08-15",
       "cinemas": []
     }
   }
