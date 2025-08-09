@@ -5,7 +5,7 @@ from typing import Dict, Any, Optional, List
 from bs4 import BeautifulSoup
 from datetime import datetime, date, timedelta
 import time
-
+#test
 class DulacShowtimesFetcher:
     """
     A class to fetch movie showtimes from Dulac Cinemas
