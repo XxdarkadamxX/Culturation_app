@@ -4,7 +4,7 @@ from pathlib import Path
 
 st.write("Culturation watchlist")
 
-watchlist_csv_path = Path(r"C:\Users\adamh\OneDrive\Bureau\Cinema showtime app\Cinema-showtimes-app\watchlist_culturation_copy.csv")
+watchlist_csv_path = Path(r"C:\Users\adamh\OneDrive\Bureau\Cinema showtime app\Cinema-showtimes-app\watchlist_culturation.csv")
 
 watchlist_df = pd.read_csv(watchlist_csv_path)
 

@@ -1,36 +1,107 @@
 import streamlit as st
 import pandas as pd
+import unicodedata
 from pathlib import Path
 
 st.write("Showtimes")
 
+# First get the showtimes previously scraped
 showtimes_csv_path = Path(r"C:\Users\adamh\OneDrive\Bureau\Cinema showtime app\Cinema-showtimes-app\combined_showtimes.csv")
-
 showtimes_df = pd.read_csv(showtimes_csv_path)
 
-st.write(showtimes_df)
+
+import datetime
+
+# French day and month names
+jours = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"]
+mois = [
+    "Janvier", "Février", "Mars", "Avril", "Mai", "Juin",
+    "Juillet", "Aout", "Septembre", "Octobre", "Novembre", "Décembre"
+]
+
+def date_to_french(date_str):
+    # date_str: "2025-08-11"
+    d = datetime.datetime.strptime(date_str, "%Y-%m-%d")
+    jour = jours[d.weekday()]
+    nom_mois = mois[d.month - 1]
+    return f"{jour} {d.day} {nom_mois}"
+
+dates_raw = showtimes_df['showtime_day'].unique()
+dates = [date_to_french(d) for d in dates_raw]
+dates_selection = st.pills("Selectionner la date", dates, selection_mode="single")
+
+# Convert selected French dates back to raw date strings for filtering
+if dates_selection:
+    selected_raw_dates = [d for d, f in zip(dates_raw, dates) if f in dates_selection]
+else : selected_raw_dates=showtimes_df['showtime_day'].unique()
 
 
-st.write("culturation watchlist")
+if not dates_selection:
+    st.info('Selectionner une date pour voir le programme', icon="ℹ️")
+else:
+    # Prepare DataFrame for display
+        df_display = showtimes_df.loc[
+            showtimes_df['showtime_day'].isin(selected_raw_dates)
+        ].copy()
+        # Drop 'showtime_day' column
+        if 'showtime_day' in df_display.columns:
+            df_display = df_display.drop(columns=['showtime_day'])
+        # Rename columns: capitalize all, and special case for 'nb_showings'
+        rename_dict = {col: col.capitalize() for col in df_display.columns}
+        if 'nb_showings' in df_display.columns:
+            rename_dict['nb_showings'] = 'Nb of showings'
+        df_display = df_display.rename(columns=rename_dict)
+        # Use st.dataframe with column_config to wrap or expand the 'Showtimes' column
+        # so that long lists are not truncated visually.
+        from streamlit import column_config
 
+        # If 'Showtimes' column exists, set it to display as a wide, wrapped column
+        col_config = {}
+        if 'Showtimes' in df_display.columns:
+            col_config['Showtimes'] = st.column_config.TextColumn(
+                "Showtimes",
+                width="large",  # or "medium", or a pixel value like 400
+                help="All showtimes for this movie"
+            )
+        st.dataframe(
+            df_display,
+            use_container_width=True,
+            hide_index=True,
+            column_config=col_config if col_config else None
+        )
+
+
+# Then we get the movies from the watchlist
 watchlist_csv_path = Path(r"C:\Users\adamh\OneDrive\Bureau\Cinema showtime app\Cinema-showtimes-app\watchlist_culturation.csv")
-
-# try:
 watchlist_df = pd.read_csv(watchlist_csv_path)
-# st.write(watchlist_df)
 
-#     if showtimes_df is not None:
-#         # Get unique movies from showtimes
 shows_available = showtimes_df['movie'].unique()
-st.write("Available movies in showtimes:")
-st.write(shows_available)
         
-#         # Find movies in watchlist that are available in showtimes
+# Finally we find movies in watchlist that are available in cinemas
+
+# Remove accents and convert to lowercase so that syntax errors are minimized 
+def normalize_str(s):
+    if pd.isna(s):
+        return ""
+    return ''.join(
+        c for c in unicodedata.normalize('NFKD', str(s))
+        if not unicodedata.combining(c)
+    ).lower().strip()
+
+# Normalize showtimes movie titles
+normalized_shows_available = set(normalize_str(m) for m in shows_available)
+
+# Normalize watchlist columns
+watchlist_df['Nom Anglais norm'] = watchlist_df['Nom Anglais'].apply(normalize_str)
+watchlist_df['Nom Francais norm'] = watchlist_df['Nom Francais'].apply(normalize_str)
+
+# Only keep movies from watchlist that are in cinemas
 available_in_watchlist = watchlist_df[
-    watchlist_df['Nom Anglais'].isin(shows_available) | watchlist_df['Nom Francais'].isin(shows_available)
+    watchlist_df['Nom Anglais norm'].isin(normalized_shows_available) |
+    watchlist_df['Nom Francais norm'].isin(normalized_shows_available)
 ]
 st.write("Movies from watchlist that are available:")
-st.write(available_in_watchlist)
+st.write(available_in_watchlist[['Nom Francais','Nom Anglais','Classification','Lien trailer']])
 
 
 
