@@ -172,8 +172,11 @@ available_in_watchlist['Showtime Days'] = available_in_watchlist.apply(
 )
 
 st.write("Movies from watchlist that are available:")
-st.write(available_in_watchlist[['Nom Francais','Nom Anglais','Showtime Days','Classification','Lien trailer']])
-
+st.dataframe(
+                available_in_watchlist[['Nom Francais','Nom Anglais','Showtime Days','Classification','Lien trailer']],
+                use_container_width=True,
+                hide_index=True
+            )
 
 
 
