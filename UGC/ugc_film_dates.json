@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "fetched_at": "2025-08-09T19:11:44.228076",
+    "fetched_at": "2025-08-12T21:37:31.700344",
     "total_films_processed": 5,
-    "total_films_with_dates": 4,
+    "total_films_with_dates": 5,
     "region_id": 1,
     "note": "Cinema data fetched only for first available date per film to reduce server load"
   },
@@ -11,71 +11,78 @@
       "film_id": "16981",
       "title": "BADH",
       "available_dates": [
-        "2025-08-09",
-        "2025-08-10",
-        "2025-08-11",
-        "2025-08-12"
+        "2025-08-12",
+        "2025-08-13",
+        "2025-08-14",
+        "2025-08-15",
+        "2025-08-16",
+        "2025-08-17",
+        "2025-08-18",
+        "2025-08-19"
       ],
-      "date_count": 4,
-      "cinemas": [
-        {
-          "name": "UGC Ciné Cité Les Halles",
-          "showtime_count": 2
-        },
-        {
-          "name": "UGC Ciné Cité Bercy",
-          "showtime_count": 2
-        },
-        {
-          "name": "UGC Lyon Bastille",
-          "showtime_count": 2
-        },
-        {
-          "name": "UGC Opéra",
-          "showtime_count": 2
-        },
-        {
-          "name": "UGC Ciné Cité Paris 19",
-          "showtime_count": 2
-        }
-      ],
-      "cinema_count": 5,
-      "sample_date": "2025-08-09"
-    },
-    "17014": {
-      "film_id": "17014",
-      "title": "CONFIDENTE",
-      "available_dates": [
-        "2025-08-09",
-        "2025-08-10",
-        "2025-08-11",
-        "2025-08-12"
-      ],
-      "date_count": 4,
-      "cinemas": [
-        {
-          "name": "UGC Ciné Cité Les Halles",
-          "showtime_count": 2
-        }
-      ],
-      "cinema_count": 1,
-      "sample_date": "2025-08-09"
-    },
-    "17141": {
-      "film_id": "17141",
-      "title": "EVANOUIS",
-      "available_dates": [
-        "2025-08-09",
-        "2025-08-10",
-        "2025-08-11",
-        "2025-08-12"
-      ],
-      "date_count": 4,
+      "date_count": 8,
       "cinemas": [
         {
           "name": "UGC Ciné Cité Les Halles",
           "showtime_count": 1
         },
+        {
+          "name": "UGC Ciné Cité Bercy",
+          "showtime_count": 1
+        },
+        {
+          "name": "UGC Opéra",
+          "showtime_count": 1
+        },
+        {
+          "name": "UGC Ciné Cité Paris 19",
+          "showtime_count": 1
+        },
+        {
+          "name": "UGC Lyon Bastille",
+          "showtime_count": 0
+        }
+      ],
+      "cinema_count": 5,
+      "sample_date": "2025-08-12"
+    },
+    "17014": {
+      "film_id": "17014",
+      "title": "CONFIDENTE",
+      "available_dates": [
+        "2025-08-13",
+        "2025-08-14",
+        "2025-08-15",
+        "2025-08-16",
+        "2025-08-17",
+        "2025-08-18",
+        "2025-08-19"
+      ],
+      "date_count": 7,
+      "cinemas": [
+        {
+          "name": "UGC Ciné Cité Les Halles",
+          "showtime_count": 8
+        }
+      ],
+      "cinema_count": 1,
+      "sample_date": "2025-08-13"
+    },
+    "17141": {
+      "film_id": "17141",
+      "title": "EVANOUIS",
+      "available_dates": [
+        "2025-08-12",
+        "2025-08-13",
+        "2025-08-14",
+        "2025-08-15",
+        "2025-08-16",
+        "2025-08-17",
+        "2025-08-18",
+        "2025-08-19"
+      ],
+      "date_count": 8,
+      "cinemas": [
         {
           "name": "UGC Montparnasse",
           "showtime_count": 1
@@ -85,43 +92,51 @@
           "showtime_count": 1
         },
         {
+          "name": "UGC Ciné Cité Les Halles",
+          "showtime_count": 0
+        },
+        {
           "name": "UGC Lyon Bastille",
-          "showtime_count": 1
+          "showtime_count": 0
         },
         {
           "name": "UGC Gobelins",
-          "showtime_count": 1
+          "showtime_count": 0
         },
         {
           "name": "UGC Ciné Cité Paris 19",
-          "showtime_count": 2
+          "showtime_count": 0
         }
       ],
       "cinema_count": 6,
-      "sample_date": "2025-08-09"
+      "sample_date": "2025-08-12"
     },
     "16871": {
       "film_id": "16871",
       "title": "FREAKY FRIDAY 2 ENCORE DANS LA PEAU DE MA MERE",
       "available_dates": [
-        "2025-08-09",
-        "2025-08-10",
-        "2025-08-11",
-        "2025-08-12"
+        "2025-08-12",
+        "2025-08-13",
+        "2025-08-14",
+        "2025-08-15",
+        "2025-08-16",
+        "2025-08-17",
+        "2025-08-18",
+        "2025-08-19"
       ],
-      "date_count": 4,
+      "date_count": 8,
       "cinemas": [
         {
           "name": "UGC Ciné Cité Les Halles",
-          "showtime_count": 2
+          "showtime_count": 1
         },
         {
           "name": "UGC Ciné Cité Maillot",
-          "showtime_count": 2
+          "showtime_count": 1
         },
         {
           "name": "UGC Ciné Cité Bercy",
-          "showtime_count": 2
+          "showtime_count": 1
         },
         {
           "name": "UGC Ciné Cité Paris 19",
@@ -129,15 +144,30 @@
         }
       ],
       "cinema_count": 4,
-      "sample_date": "2025-08-09"
+      "sample_date": "2025-08-12"
     },
-    "17431": {
-      "film_id": "17431",
-      "title": "JUJUTSU KAISEN : TRÉSOR CACHÉ - MORT PRÉMATURÉE",
-      "available_dates": [],
-      "date_count": 0,
-      "cinemas": [],
-      "cinema_count": 0
+    "17284": {
+      "film_id": "17284",
+      "title": "L'ETE DE JAHIA",
+      "available_dates": [
+        "2025-08-12",
+        "2025-08-13",
+        "2025-08-14",
+        "2025-08-15",
+        "2025-08-16",
+        "2025-08-17",
+        "2025-08-18",
+        "2025-08-19"
+      ],
+      "date_count": 8,
+      "cinemas": [
+        {
+          "name": "UGC Ciné Cité Les Halles",
+          "showtime_count": 1
+        }
+      ],
+      "cinema_count": 1,
+      "sample_date": "2025-08-12"
     }
   }
 }

@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "created_at": "2025-08-09T19:11:50.946206",
-    "total_records": 316,
+    "created_at": "2025-08-12T21:37:37.514049",
+    "total_records": 437,
     "cinemas": [
       "Christine",
       "Ecoles",
@@ -20,1771 +20,11 @@
       "UGC Opéra"
     ],
     "date_range": {
-      "start": "2025-08-09",
-      "end": "2025-08-15"
+      "start": "2025-08-12",
+      "end": "2025-08-19"
     }
   },
   "records": [
-    {
-      "movie": "American Graffiti",
-      "cinema": "Christine",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 1,
-      "showtimes": [
-        "17h10"
-      ]
-    },
-    {
-      "movie": "Chungking Express",
-      "cinema": "Christine",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 1,
-      "showtimes": [
-        "15h20"
-      ]
-    },
-    {
-      "movie": "Her Toujours à l’affiche",
-      "cinema": "Christine",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 1,
-      "showtimes": [
-        "19h10"
-      ]
-    },
-    {
-      "movie": "La Dernière Piste",
-      "cinema": "Christine",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 1,
-      "showtimes": [
-        "18h00"
-      ]
-    },
-    {
-      "movie": "La Porte du paradis",
-      "cinema": "Christine",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 1,
-      "showtimes": [
-        "20h00"
-      ]
-    },
-    {
-      "movie": "Memories of Murder Toujours à l’affiche",
-      "cinema": "Christine",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 1,
-      "showtimes": [
-        "21h30"
-      ]
-    },
-    {
-      "movie": "Mon nom est Personne",
-      "cinema": "Christine",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 1,
-      "showtimes": [
-        "13h30"
-      ]
-    },
-    {
-      "movie": "The Grand Budapest Hotel",
-      "cinema": "Christine",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 1,
-      "showtimes": [
-        "13h30"
-      ]
-    },
-    {
-      "movie": "The Misfits",
-      "cinema": "Christine",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 1,
-      "showtimes": [
-        "15h40"
-      ]
-    },
-    {
-      "movie": "Annie Hall",
-      "cinema": "Ecoles",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 1,
-      "showtimes": [
-        "22h00"
-      ]
-    },
-    {
-      "movie": "Cinema Paradiso",
-      "cinema": "Ecoles",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 1,
-      "showtimes": [
-        "16h10"
-      ]
-    },
-    {
-      "movie": "Kramer Contre Kramer",
-      "cinema": "Ecoles",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 1,
-      "showtimes": [
-        "20h40"
-      ]
-    },
-    {
-      "movie": "Le Bon, la Brute et le Truand Sergio Leone",
-      "cinema": "Ecoles",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 1,
-      "showtimes": [
-        "20h40"
-      ]
-    },
-    {
-      "movie": "Le Jardin des Finzi-Contini",
-      "cinema": "Ecoles",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 1,
-      "showtimes": [
-        "16h00"
-      ]
-    },
-    {
-      "movie": "Le Lauréat",
-      "cinema": "Ecoles",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 1,
-      "showtimes": [
-        "14h00"
-      ]
-    },
-    {
-      "movie": "Old Boy",
-      "cinema": "Ecoles",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 1,
-      "showtimes": [
-        "18h30"
-      ]
-    },
-    {
-      "movie": "Taxi Driver",
-      "cinema": "Ecoles",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 1,
-      "showtimes": [
-        "14h00"
-      ]
-    },
-    {
-      "movie": "The Swimmer",
-      "cinema": "Ecoles",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 1,
-      "showtimes": [
-        "18h00"
-      ]
-    },
-    {
-      "movie": "Confidente",
-      "cinema": "Escurial",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 5,
-      "showtimes": [
-        "14:00",
-        "15:40",
-        "17:15",
-        "19:00",
-        "20:40"
-      ]
-    },
-    {
-      "movie": "Perla",
-      "cinema": "Escurial",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 4,
-      "showtimes": [
-        "14:00",
-        "16:10",
-        "18:20",
-        "20:30"
-      ]
-    },
-    {
-      "movie": "La Trilogie d'Oslo / Amour",
-      "cinema": "L'Arlequin",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 1,
-      "showtimes": [
-        "18:30"
-      ]
-    },
-    {
-      "movie": "La Trilogie d'Oslo / Désir",
-      "cinema": "L'Arlequin",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 1,
-      "showtimes": [
-        "20:50"
-      ]
-    },
-    {
-      "movie": "La Trilogie d'Oslo / Rêves",
-      "cinema": "L'Arlequin",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 1,
-      "showtimes": [
-        "16:15"
-      ]
-    },
-    {
-      "movie": "Oslo, 31 août",
-      "cinema": "L'Arlequin",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 2,
-      "showtimes": [
-        "11:00",
-        "18:20"
-      ]
-    },
-    {
-      "movie": "The Things You Kill",
-      "cinema": "L'Arlequin",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 2,
-      "showtimes": [
-        "16:00",
-        "20:30"
-      ]
-    },
-    {
-      "movie": "Yi Yi",
-      "cinema": "L'Arlequin",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 3,
-      "showtimes": [
-        "13:00",
-        "16:30",
-        "20:00"
-      ]
-    },
-    {
-      "movie": "Eternal",
-      "cinema": "Majestic Bastille",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 1,
-      "showtimes": [
-        "11:00"
-      ]
-    },
-    {
-      "movie": "Jardin d'été (The Friends)",
-      "cinema": "Majestic Bastille",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 1,
-      "showtimes": [
-        "15:20"
-      ]
-    },
-    {
-      "movie": "Le Gruffalo",
-      "cinema": "Majestic Bastille",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 1,
-      "showtimes": [
-        "10:00"
-      ]
-    },
-    {
-      "movie": "Les Filles désir",
-      "cinema": "Majestic Bastille",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 1,
-      "showtimes": [
-        "21:50"
-      ]
-    },
-    {
-      "movie": "STELLA DALLAS",
-      "cinema": "Majestic Bastille",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 1,
-      "showtimes": [
-        "11:00"
-      ]
-    },
-    {
-      "movie": "Slow",
-      "cinema": "Majestic Bastille",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 3,
-      "showtimes": [
-        "13:15",
-        "17:30",
-        "19:40"
-      ]
-    },
-    {
-      "movie": "Yi Yi",
-      "cinema": "Majestic Bastille",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 3,
-      "showtimes": [
-        "13:30",
-        "17:00",
-        "20:30"
-      ]
-    },
-    {
-      "movie": "13 jours, 13 nuits",
-      "cinema": "Majestic Passy",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 1,
-      "showtimes": [
-        "20:00"
-      ]
-    },
-    {
-      "movie": "Eddington",
-      "cinema": "Majestic Passy",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 1,
-      "showtimes": [
-        "11:00"
-      ]
-    },
-    {
-      "movie": "Jardins enchantés",
-      "cinema": "Majestic Passy",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 2,
-      "showtimes": [
-        "11:15",
-        "16:40"
-      ]
-    },
-    {
-      "movie": "La Venue de l'avenir",
-      "cinema": "Majestic Passy",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 1,
-      "showtimes": [
-        "17:45"
-      ]
-    },
-    {
-      "movie": "Last Stop : Yuma County",
-      "cinema": "Majestic Passy",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 5,
-      "showtimes": [
-        "12:45",
-        "14:40",
-        "16:35",
-        "18:30",
-        "20:25"
-      ]
-    },
-    {
-      "movie": "Les Bad Guys 2",
-      "cinema": "Majestic Passy",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 4,
-      "showtimes": [
-        "13:30",
-        "15:40",
-        "17:50",
-        "20:10"
-      ]
-    },
-    {
-      "movie": "Ponyo sur la falaise",
-      "cinema": "Majestic Passy",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 1,
-      "showtimes": [
-        "11:00"
-      ]
-    },
-    {
-      "movie": "Superman",
-      "cinema": "Majestic Passy",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 1,
-      "showtimes": [
-        "14:00"
-      ]
-    },
-    {
-      "movie": "A Brighter Summer Day",
-      "cinema": "Reflet Medicis",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 1,
-      "showtimes": [
-        "16:30"
-      ]
-    },
-    {
-      "movie": "Confusion chez Confucius",
-      "cinema": "Reflet Medicis",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 1,
-      "showtimes": [
-        "14:00"
-      ]
-    },
-    {
-      "movie": "Joe Hill",
-      "cinema": "Reflet Medicis",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 1,
-      "showtimes": [
-        "18:30"
-      ]
-    },
-    {
-      "movie": "L'été de Jahia",
-      "cinema": "Reflet Medicis",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 4,
-      "showtimes": [
-        "13:45",
-        "15:45",
-        "19:30",
-        "21:30"
-      ]
-    },
-    {
-      "movie": "La Dame de Constantinople",
-      "cinema": "Reflet Medicis",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 1,
-      "showtimes": [
-        "17:45"
-      ]
-    },
-    {
-      "movie": "Le Jour de Maria",
-      "cinema": "Reflet Medicis",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 1,
-      "showtimes": [
-        "13:50"
-      ]
-    },
-    {
-      "movie": "Ryuichi Sakamoto Opus",
-      "cinema": "Reflet Medicis",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 2,
-      "showtimes": [
-        "16:15",
-        "20:50"
-      ]
-    },
-    {
-      "movie": "Taipei Story",
-      "cinema": "Reflet Medicis",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 1,
-      "showtimes": [
-        "20:50"
-      ]
-    },
-    {
-      "movie": "BADH",
-      "cinema": "UGC Ciné Cité Bercy",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 2,
-      "showtimes": []
-    },
-    {
-      "movie": "EVANOUIS",
-      "cinema": "UGC Ciné Cité Bercy",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 1,
-      "showtimes": []
-    },
-    {
-      "movie": "FREAKY FRIDAY 2 ENCORE DANS LA PEAU DE MA MERE",
-      "cinema": "UGC Ciné Cité Bercy",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 2,
-      "showtimes": []
-    },
-    {
-      "movie": "BADH",
-      "cinema": "UGC Ciné Cité Les Halles",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 2,
-      "showtimes": []
-    },
-    {
-      "movie": "CONFIDENTE",
-      "cinema": "UGC Ciné Cité Les Halles",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 2,
-      "showtimes": []
-    },
-    {
-      "movie": "EVANOUIS",
-      "cinema": "UGC Ciné Cité Les Halles",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 1,
-      "showtimes": []
-    },
-    {
-      "movie": "FREAKY FRIDAY 2 ENCORE DANS LA PEAU DE MA MERE",
-      "cinema": "UGC Ciné Cité Les Halles",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 2,
-      "showtimes": []
-    },
-    {
-      "movie": "FREAKY FRIDAY 2 ENCORE DANS LA PEAU DE MA MERE",
-      "cinema": "UGC Ciné Cité Maillot",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 2,
-      "showtimes": []
-    },
-    {
-      "movie": "BADH",
-      "cinema": "UGC Ciné Cité Paris 19",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 2,
-      "showtimes": []
-    },
-    {
-      "movie": "EVANOUIS",
-      "cinema": "UGC Ciné Cité Paris 19",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 2,
-      "showtimes": []
-    },
-    {
-      "movie": "FREAKY FRIDAY 2 ENCORE DANS LA PEAU DE MA MERE",
-      "cinema": "UGC Ciné Cité Paris 19",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 1,
-      "showtimes": []
-    },
-    {
-      "movie": "EVANOUIS",
-      "cinema": "UGC Gobelins",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 1,
-      "showtimes": []
-    },
-    {
-      "movie": "BADH",
-      "cinema": "UGC Lyon Bastille",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 2,
-      "showtimes": []
-    },
-    {
-      "movie": "EVANOUIS",
-      "cinema": "UGC Lyon Bastille",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 1,
-      "showtimes": []
-    },
-    {
-      "movie": "EVANOUIS",
-      "cinema": "UGC Montparnasse",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 1,
-      "showtimes": []
-    },
-    {
-      "movie": "BADH",
-      "cinema": "UGC Opéra",
-      "showtime_day": "2025-08-09",
-      "nb_showings": 2,
-      "showtimes": []
-    },
-    {
-      "movie": "Géant",
-      "cinema": "Christine",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 1,
-      "showtimes": [
-        "20h15"
-      ]
-    },
-    {
-      "movie": "In the Mood for Love",
-      "cinema": "Christine",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 1,
-      "showtimes": [
-        "13h35"
-      ]
-    },
-    {
-      "movie": "John McCabe",
-      "cinema": "Christine",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 1,
-      "showtimes": [
-        "18h05"
-      ]
-    },
-    {
-      "movie": "Le Trésor de la Sierra Madre",
-      "cinema": "Christine",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 1,
-      "showtimes": [
-        "13h35"
-      ]
-    },
-    {
-      "movie": "L’Homme qui tua Liberty Valance",
-      "cinema": "Christine",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 1,
-      "showtimes": [
-        "15h50"
-      ]
-    },
-    {
-      "movie": "Midsommar",
-      "cinema": "Christine",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 1,
-      "showtimes": [
-        "19h10"
-      ]
-    },
-    {
-      "movie": "Moonrise Kingdom",
-      "cinema": "Christine",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 1,
-      "showtimes": [
-        "15h30"
-      ]
-    },
-    {
-      "movie": "Phantom of the Paradise Brian De Palma",
-      "cinema": "Christine",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 1,
-      "showtimes": [
-        "17h20"
-      ]
-    },
-    {
-      "movie": "The Thing Toujours à l’affiche",
-      "cinema": "Christine",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 1,
-      "showtimes": [
-        "21h50"
-      ]
-    },
-    {
-      "movie": "Certains l’aiment chaud",
-      "cinema": "Ecoles",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 1,
-      "showtimes": [
-        "14h00"
-      ]
-    },
-    {
-      "movie": "Il était une fois en Amérique Sergio Leone",
-      "cinema": "Ecoles",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 1,
-      "showtimes": [
-        "17h30"
-      ]
-    },
-    {
-      "movie": "Les Roseaux Sauvages",
-      "cinema": "Ecoles",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 1,
-      "showtimes": [
-        "16h15"
-      ]
-    },
-    {
-      "movie": "Magnolia Paul Thomas Anderson",
-      "cinema": "Ecoles",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 1,
-      "showtimes": [
-        "18h25"
-      ]
-    },
-    {
-      "movie": "Melancholia",
-      "cinema": "Ecoles",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 1,
-      "showtimes": [
-        "21h30"
-      ]
-    },
-    {
-      "movie": "No Country for Old Men",
-      "cinema": "Ecoles",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 1,
-      "showtimes": [
-        "13h45"
-      ]
-    },
-    {
-      "movie": "Vittoria",
-      "cinema": "Ecoles",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 1,
-      "showtimes": [
-        "16h00"
-      ]
-    },
-    {
-      "movie": "À bout de course",
-      "cinema": "Ecoles",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 1,
-      "showtimes": [
-        "21h45"
-      ]
-    },
-    {
-      "movie": "Confidente",
-      "cinema": "Escurial",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 5,
-      "showtimes": [
-        "14:00",
-        "15:40",
-        "17:15",
-        "19:00",
-        "20:40"
-      ]
-    },
-    {
-      "movie": "Jardin d'été (The Friends)",
-      "cinema": "Escurial",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 1,
-      "showtimes": [
-        "11:30"
-      ]
-    },
-    {
-      "movie": "Les Vacances de Mr Hulot",
-      "cinema": "Escurial",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 1,
-      "showtimes": [
-        "11:00"
-      ]
-    },
-    {
-      "movie": "Perla",
-      "cinema": "Escurial",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 4,
-      "showtimes": [
-        "14:00",
-        "16:10",
-        "18:20",
-        "20:30"
-      ]
-    },
-    {
-      "movie": "Jardin d'été (The Friends)",
-      "cinema": "L'Arlequin",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 1,
-      "showtimes": [
-        "14:00"
-      ]
-    },
-    {
-      "movie": "La Trilogie d'Oslo / Amour",
-      "cinema": "L'Arlequin",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 2,
-      "showtimes": [
-        "11:00",
-        "18:30"
-      ]
-    },
-    {
-      "movie": "La Trilogie d'Oslo / Désir",
-      "cinema": "L'Arlequin",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 2,
-      "showtimes": [
-        "13:40",
-        "20:50"
-      ]
-    },
-    {
-      "movie": "La Trilogie d'Oslo / Rêves",
-      "cinema": "L'Arlequin",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 2,
-      "showtimes": [
-        "11:00",
-        "16:15"
-      ]
-    },
-    {
-      "movie": "Oslo, 31 août",
-      "cinema": "L'Arlequin",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 2,
-      "showtimes": [
-        "11:00",
-        "18:20"
-      ]
-    },
-    {
-      "movie": "The Things You Kill",
-      "cinema": "L'Arlequin",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 2,
-      "showtimes": [
-        "16:00",
-        "20:30"
-      ]
-    },
-    {
-      "movie": "Yi Yi",
-      "cinema": "L'Arlequin",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 3,
-      "showtimes": [
-        "13:00",
-        "16:30",
-        "20:00"
-      ]
-    },
-    {
-      "movie": "Assurance sur la mort",
-      "cinema": "Majestic Bastille",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 1,
-      "showtimes": [
-        "11:00"
-      ]
-    },
-    {
-      "movie": "Eternal",
-      "cinema": "Majestic Bastille",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 1,
-      "showtimes": [
-        "11:00"
-      ]
-    },
-    {
-      "movie": "Jardin d'été (The Friends)",
-      "cinema": "Majestic Bastille",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 1,
-      "showtimes": [
-        "15:20"
-      ]
-    },
-    {
-      "movie": "Les Filles désir",
-      "cinema": "Majestic Bastille",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 1,
-      "showtimes": [
-        "21:50"
-      ]
-    },
-    {
-      "movie": "Slow",
-      "cinema": "Majestic Bastille",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 3,
-      "showtimes": [
-        "13:15",
-        "17:30",
-        "19:40"
-      ]
-    },
-    {
-      "movie": "Yi Yi",
-      "cinema": "Majestic Bastille",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 3,
-      "showtimes": [
-        "13:30",
-        "17:00",
-        "20:30"
-      ]
-    },
-    {
-      "movie": "13 jours, 13 nuits",
-      "cinema": "Majestic Passy",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 1,
-      "showtimes": [
-        "20:00"
-      ]
-    },
-    {
-      "movie": "Eddington",
-      "cinema": "Majestic Passy",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 1,
-      "showtimes": [
-        "11:00"
-      ]
-    },
-    {
-      "movie": "Jardins enchantés",
-      "cinema": "Majestic Passy",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 2,
-      "showtimes": [
-        "11:15",
-        "16:40"
-      ]
-    },
-    {
-      "movie": "La Venue de l'avenir",
-      "cinema": "Majestic Passy",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 1,
-      "showtimes": [
-        "17:45"
-      ]
-    },
-    {
-      "movie": "Last Stop : Yuma County",
-      "cinema": "Majestic Passy",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 5,
-      "showtimes": [
-        "12:45",
-        "14:40",
-        "16:35",
-        "18:30",
-        "20:25"
-      ]
-    },
-    {
-      "movie": "Les Bad Guys 2",
-      "cinema": "Majestic Passy",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 4,
-      "showtimes": [
-        "13:30",
-        "15:40",
-        "17:50",
-        "20:10"
-      ]
-    },
-    {
-      "movie": "Ponyo sur la falaise",
-      "cinema": "Majestic Passy",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 1,
-      "showtimes": [
-        "11:00"
-      ]
-    },
-    {
-      "movie": "Superman",
-      "cinema": "Majestic Passy",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 1,
-      "showtimes": [
-        "14:00"
-      ]
-    },
-    {
-      "movie": "Confusion chez Confucius",
-      "cinema": "Reflet Medicis",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 1,
-      "showtimes": [
-        "20:50"
-      ]
-    },
-    {
-      "movie": "L'été de Jahia",
-      "cinema": "Reflet Medicis",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 4,
-      "showtimes": [
-        "13:45",
-        "15:45",
-        "19:30",
-        "21:30"
-      ]
-    },
-    {
-      "movie": "La Beauté des choses",
-      "cinema": "Reflet Medicis",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 1,
-      "showtimes": [
-        "18:20"
-      ]
-    },
-    {
-      "movie": "La Dame de Constantinople",
-      "cinema": "Reflet Medicis",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 1,
-      "showtimes": [
-        "17:45"
-      ]
-    },
-    {
-      "movie": "Les Chevaux de feu",
-      "cinema": "Reflet Medicis",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 1,
-      "showtimes": [
-        "14:15"
-      ]
-    },
-    {
-      "movie": "Mahjong",
-      "cinema": "Reflet Medicis",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 1,
-      "showtimes": [
-        "13:40"
-      ]
-    },
-    {
-      "movie": "Ryuichi Sakamoto Opus",
-      "cinema": "Reflet Medicis",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 2,
-      "showtimes": [
-        "16:15",
-        "20:50"
-      ]
-    },
-    {
-      "movie": "Taipei Story",
-      "cinema": "Reflet Medicis",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 1,
-      "showtimes": [
-        "18:30"
-      ]
-    },
-    {
-      "movie": "The Terrorizers",
-      "cinema": "Reflet Medicis",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 1,
-      "showtimes": [
-        "16:10"
-      ]
-    },
-    {
-      "movie": "BADH",
-      "cinema": "UGC Ciné Cité Bercy",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 2,
-      "showtimes": []
-    },
-    {
-      "movie": "EVANOUIS",
-      "cinema": "UGC Ciné Cité Bercy",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 1,
-      "showtimes": []
-    },
-    {
-      "movie": "FREAKY FRIDAY 2 ENCORE DANS LA PEAU DE MA MERE",
-      "cinema": "UGC Ciné Cité Bercy",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 2,
-      "showtimes": []
-    },
-    {
-      "movie": "BADH",
-      "cinema": "UGC Ciné Cité Les Halles",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 2,
-      "showtimes": []
-    },
-    {
-      "movie": "CONFIDENTE",
-      "cinema": "UGC Ciné Cité Les Halles",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 2,
-      "showtimes": []
-    },
-    {
-      "movie": "EVANOUIS",
-      "cinema": "UGC Ciné Cité Les Halles",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 1,
-      "showtimes": []
-    },
-    {
-      "movie": "FREAKY FRIDAY 2 ENCORE DANS LA PEAU DE MA MERE",
-      "cinema": "UGC Ciné Cité Les Halles",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 2,
-      "showtimes": []
-    },
-    {
-      "movie": "FREAKY FRIDAY 2 ENCORE DANS LA PEAU DE MA MERE",
-      "cinema": "UGC Ciné Cité Maillot",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 2,
-      "showtimes": []
-    },
-    {
-      "movie": "BADH",
-      "cinema": "UGC Ciné Cité Paris 19",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 2,
-      "showtimes": []
-    },
-    {
-      "movie": "EVANOUIS",
-      "cinema": "UGC Ciné Cité Paris 19",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 2,
-      "showtimes": []
-    },
-    {
-      "movie": "FREAKY FRIDAY 2 ENCORE DANS LA PEAU DE MA MERE",
-      "cinema": "UGC Ciné Cité Paris 19",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 1,
-      "showtimes": []
-    },
-    {
-      "movie": "EVANOUIS",
-      "cinema": "UGC Gobelins",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 1,
-      "showtimes": []
-    },
-    {
-      "movie": "BADH",
-      "cinema": "UGC Lyon Bastille",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 2,
-      "showtimes": []
-    },
-    {
-      "movie": "EVANOUIS",
-      "cinema": "UGC Lyon Bastille",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 1,
-      "showtimes": []
-    },
-    {
-      "movie": "EVANOUIS",
-      "cinema": "UGC Montparnasse",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 1,
-      "showtimes": []
-    },
-    {
-      "movie": "BADH",
-      "cinema": "UGC Opéra",
-      "showtime_day": "2025-08-10",
-      "nb_showings": 2,
-      "showtimes": []
-    },
-    {
-      "movie": "Blow Out Brian De Palma",
-      "cinema": "Christine",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 1,
-      "showtimes": [
-        "13h40"
-      ]
-    },
-    {
-      "movie": "Blue Velvet",
-      "cinema": "Christine",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 1,
-      "showtimes": [
-        "21h40"
-      ]
-    },
-    {
-      "movie": "Citizen Kane Toujours à l’affiche",
-      "cinema": "Christine",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 1,
-      "showtimes": [
-        "17h30"
-      ]
-    },
-    {
-      "movie": "Drive",
-      "cinema": "Christine",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 1,
-      "showtimes": [
-        "17h00"
-      ]
-    },
-    {
-      "movie": "Le Silence des agneaux",
-      "cinema": "Christine",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 1,
-      "showtimes": [
-        "18h55"
-      ]
-    },
-    {
-      "movie": "Le Train sifflera trois fois",
-      "cinema": "Christine",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 1,
-      "showtimes": [
-        "13h40"
-      ]
-    },
-    {
-      "movie": "Les Parapluies de Cherbourg",
-      "cinema": "Christine",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 1,
-      "showtimes": [
-        "15h15"
-      ]
-    },
-    {
-      "movie": "Mademoiselle",
-      "cinema": "Christine",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 1,
-      "showtimes": [
-        "21h05"
-      ]
-    },
-    {
-      "movie": "Nos années sauvages",
-      "cinema": "Christine",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 1,
-      "showtimes": [
-        "19h45"
-      ]
-    },
-    {
-      "movie": "Rushmore",
-      "cinema": "Christine",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 1,
-      "showtimes": [
-        "15h40"
-      ]
-    },
-    {
-      "movie": "2001: L’Odyssée de l’espace",
-      "cinema": "Ecoles",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 1,
-      "showtimes": [
-        "19h15"
-      ]
-    },
-    {
-      "movie": "Blow-Up Summer of Love",
-      "cinema": "Ecoles",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 1,
-      "showtimes": [
-        "14h00"
-      ]
-    },
-    {
-      "movie": "How to Have Sex",
-      "cinema": "Ecoles",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 1,
-      "showtimes": [
-        "22h05"
-      ]
-    },
-    {
-      "movie": "Il était une fois dans l’Ouest Sergio Leone",
-      "cinema": "Ecoles",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 1,
-      "showtimes": [
-        "16h05"
-      ]
-    },
-    {
-      "movie": "Les Demoiselles de Rochefort",
-      "cinema": "Ecoles",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 1,
-      "showtimes": [
-        "14h00"
-      ]
-    },
-    {
-      "movie": "Spring Breakers",
-      "cinema": "Ecoles",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 1,
-      "showtimes": [
-        "20h20"
-      ]
-    },
-    {
-      "movie": "Théorème",
-      "cinema": "Ecoles",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 1,
-      "showtimes": [
-        "16h20"
-      ]
-    },
-    {
-      "movie": "Usual Suspects",
-      "cinema": "Ecoles",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 1,
-      "showtimes": [
-        "21h50"
-      ]
-    },
-    {
-      "movie": "À l’est d’Éden",
-      "cinema": "Ecoles",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 1,
-      "showtimes": [
-        "18h10"
-      ]
-    },
-    {
-      "movie": "Confidente",
-      "cinema": "Escurial",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 5,
-      "showtimes": [
-        "14:00",
-        "15:40",
-        "17:15",
-        "19:00",
-        "20:40"
-      ]
-    },
-    {
-      "movie": "Jardin d'été (The Friends)",
-      "cinema": "Escurial",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 1,
-      "showtimes": [
-        "11:30"
-      ]
-    },
-    {
-      "movie": "Les Vacances de Mr Hulot",
-      "cinema": "Escurial",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 1,
-      "showtimes": [
-        "11:30"
-      ]
-    },
-    {
-      "movie": "Perla",
-      "cinema": "Escurial",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 4,
-      "showtimes": [
-        "14:00",
-        "16:10",
-        "18:20",
-        "20:30"
-      ]
-    },
-    {
-      "movie": "La Trilogie d'Oslo / Amour",
-      "cinema": "L'Arlequin",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 2,
-      "showtimes": [
-        "15:50",
-        "18:30"
-      ]
-    },
-    {
-      "movie": "La Trilogie d'Oslo / Désir",
-      "cinema": "L'Arlequin",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 1,
-      "showtimes": [
-        "20:50"
-      ]
-    },
-    {
-      "movie": "La Trilogie d'Oslo / Rêves",
-      "cinema": "L'Arlequin",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 1,
-      "showtimes": [
-        "16:15"
-      ]
-    },
-    {
-      "movie": "Oslo, 31 août",
-      "cinema": "L'Arlequin",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 2,
-      "showtimes": [
-        "11:00",
-        "20:30"
-      ]
-    },
-    {
-      "movie": "The Things You Kill",
-      "cinema": "L'Arlequin",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 1,
-      "showtimes": [
-        "18:15"
-      ]
-    },
-    {
-      "movie": "Yi Yi",
-      "cinema": "L'Arlequin",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 3,
-      "showtimes": [
-        "13:00",
-        "16:30",
-        "20:00"
-      ]
-    },
-    {
-      "movie": "Eternal",
-      "cinema": "Majestic Bastille",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 1,
-      "showtimes": [
-        "11:00"
-      ]
-    },
-    {
-      "movie": "Jardin d'été (The Friends)",
-      "cinema": "Majestic Bastille",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 1,
-      "showtimes": [
-        "15:20"
-      ]
-    },
-    {
-      "movie": "Les Filles désir",
-      "cinema": "Majestic Bastille",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 1,
-      "showtimes": [
-        "21:50"
-      ]
-    },
-    {
-      "movie": "Pooja, Sir",
-      "cinema": "Majestic Bastille",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 1,
-      "showtimes": [
-        "11:00"
-      ]
-    },
-    {
-      "movie": "Slow",
-      "cinema": "Majestic Bastille",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 3,
-      "showtimes": [
-        "13:15",
-        "17:30",
-        "19:40"
-      ]
-    },
-    {
-      "movie": "Yi Yi",
-      "cinema": "Majestic Bastille",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 3,
-      "showtimes": [
-        "13:30",
-        "17:00",
-        "20:30"
-      ]
-    },
-    {
-      "movie": "13 jours, 13 nuits",
-      "cinema": "Majestic Passy",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 1,
-      "showtimes": [
-        "20:00"
-      ]
-    },
-    {
-      "movie": "La Venue de l'avenir",
-      "cinema": "Majestic Passy",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 1,
-      "showtimes": [
-        "17:45"
-      ]
-    },
-    {
-      "movie": "Last Stop : Yuma County",
-      "cinema": "Majestic Passy",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 5,
-      "showtimes": [
-        "12:45",
-        "14:40",
-        "16:35",
-        "18:30",
-        "20:25"
-      ]
-    },
-    {
-      "movie": "Les Bad Guys 2",
-      "cinema": "Majestic Passy",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 4,
-      "showtimes": [
-        "13:30",
-        "15:40",
-        "17:50",
-        "20:10"
-      ]
-    },
-    {
-      "movie": "Ponyo sur la falaise",
-      "cinema": "Majestic Passy",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 1,
-      "showtimes": [
-        "15:40"
-      ]
-    },
-    {
-      "movie": "Superman",
-      "cinema": "Majestic Passy",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 1,
-      "showtimes": [
-        "13:00"
-      ]
-    },
-    {
-      "movie": "A Brighter Summer Day",
-      "cinema": "Reflet Medicis",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 1,
-      "showtimes": [
-        "19:00"
-      ]
-    },
-    {
-      "movie": "In Our Time",
-      "cinema": "Reflet Medicis",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 1,
-      "showtimes": [
-        "16:45"
-      ]
-    },
-    {
-      "movie": "L'été de Jahia",
-      "cinema": "Reflet Medicis",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 4,
-      "showtimes": [
-        "13:45",
-        "15:45",
-        "19:30",
-        "21:30"
-      ]
-    },
-    {
-      "movie": "La Dame de Constantinople",
-      "cinema": "Reflet Medicis",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 1,
-      "showtimes": [
-        "17:45"
-      ]
-    },
-    {
-      "movie": "Peut-être demain",
-      "cinema": "Reflet Medicis",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 1,
-      "showtimes": [
-        "14:00"
-      ]
-    },
-    {
-      "movie": "Ryuichi Sakamoto Opus",
-      "cinema": "Reflet Medicis",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 2,
-      "showtimes": [
-        "16:15",
-        "20:50"
-      ]
-    },
-    {
-      "movie": "The Terrorizers",
-      "cinema": "Reflet Medicis",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 1,
-      "showtimes": [
-        "14:30"
-      ]
-    },
-    {
-      "movie": "Un flic sur le toit",
-      "cinema": "Reflet Medicis",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 1,
-      "showtimes": [
-        "18:30"
-      ]
-    },
-    {
-      "movie": "BADH",
-      "cinema": "UGC Ciné Cité Bercy",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 2,
-      "showtimes": []
-    },
-    {
-      "movie": "EVANOUIS",
-      "cinema": "UGC Ciné Cité Bercy",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 1,
-      "showtimes": []
-    },
-    {
-      "movie": "FREAKY FRIDAY 2 ENCORE DANS LA PEAU DE MA MERE",
-      "cinema": "UGC Ciné Cité Bercy",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 2,
-      "showtimes": []
-    },
-    {
-      "movie": "BADH",
-      "cinema": "UGC Ciné Cité Les Halles",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 2,
-      "showtimes": []
-    },
-    {
-      "movie": "CONFIDENTE",
-      "cinema": "UGC Ciné Cité Les Halles",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 2,
-      "showtimes": []
-    },
-    {
-      "movie": "EVANOUIS",
-      "cinema": "UGC Ciné Cité Les Halles",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 1,
-      "showtimes": []
-    },
-    {
-      "movie": "FREAKY FRIDAY 2 ENCORE DANS LA PEAU DE MA MERE",
-      "cinema": "UGC Ciné Cité Les Halles",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 2,
-      "showtimes": []
-    },
-    {
-      "movie": "FREAKY FRIDAY 2 ENCORE DANS LA PEAU DE MA MERE",
-      "cinema": "UGC Ciné Cité Maillot",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 2,
-      "showtimes": []
-    },
-    {
-      "movie": "BADH",
-      "cinema": "UGC Ciné Cité Paris 19",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 2,
-      "showtimes": []
-    },
-    {
-      "movie": "EVANOUIS",
-      "cinema": "UGC Ciné Cité Paris 19",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 2,
-      "showtimes": []
-    },
-    {
-      "movie": "FREAKY FRIDAY 2 ENCORE DANS LA PEAU DE MA MERE",
-      "cinema": "UGC Ciné Cité Paris 19",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 1,
-      "showtimes": []
-    },
-    {
-      "movie": "EVANOUIS",
-      "cinema": "UGC Gobelins",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 1,
-      "showtimes": []
-    },
-    {
-      "movie": "BADH",
-      "cinema": "UGC Lyon Bastille",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 2,
-      "showtimes": []
-    },
-    {
-      "movie": "EVANOUIS",
-      "cinema": "UGC Lyon Bastille",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 1,
-      "showtimes": []
-    },
-    {
-      "movie": "EVANOUIS",
-      "cinema": "UGC Montparnasse",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 1,
-      "showtimes": []
-    },
-    {
-      "movie": "BADH",
-      "cinema": "UGC Opéra",
-      "showtime_day": "2025-08-11",
-      "nb_showings": 2,
-      "showtimes": []
-    },
     {
       "movie": "After Hours",
       "cinema": "Christine",
@@ -2238,7 +478,7 @@
       "movie": "BADH",
       "cinema": "UGC Ciné Cité Bercy",
       "showtime_day": "2025-08-12",
-      "nb_showings": 2,
+      "nb_showings": 1,
       "showtimes": []
     },
     {
@@ -2252,56 +492,56 @@
       "movie": "FREAKY FRIDAY 2 ENCORE DANS LA PEAU DE MA MERE",
       "cinema": "UGC Ciné Cité Bercy",
       "showtime_day": "2025-08-12",
-      "nb_showings": 2,
+      "nb_showings": 1,
       "showtimes": []
     },
     {
       "movie": "BADH",
       "cinema": "UGC Ciné Cité Les Halles",
       "showtime_day": "2025-08-12",
-      "nb_showings": 2,
-      "showtimes": []
-    },
-    {
-      "movie": "CONFIDENTE",
-      "cinema": "UGC Ciné Cité Les Halles",
-      "showtime_day": "2025-08-12",
-      "nb_showings": 2,
+      "nb_showings": 1,
       "showtimes": []
     },
     {
       "movie": "EVANOUIS",
       "cinema": "UGC Ciné Cité Les Halles",
       "showtime_day": "2025-08-12",
-      "nb_showings": 1,
+      "nb_showings": 0,
       "showtimes": []
     },
     {
       "movie": "FREAKY FRIDAY 2 ENCORE DANS LA PEAU DE MA MERE",
       "cinema": "UGC Ciné Cité Les Halles",
       "showtime_day": "2025-08-12",
-      "nb_showings": 2,
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "L'ETE DE JAHIA",
+      "cinema": "UGC Ciné Cité Les Halles",
+      "showtime_day": "2025-08-12",
+      "nb_showings": 1,
       "showtimes": []
     },
     {
       "movie": "FREAKY FRIDAY 2 ENCORE DANS LA PEAU DE MA MERE",
       "cinema": "UGC Ciné Cité Maillot",
       "showtime_day": "2025-08-12",
-      "nb_showings": 2,
+      "nb_showings": 1,
       "showtimes": []
     },
     {
       "movie": "BADH",
       "cinema": "UGC Ciné Cité Paris 19",
       "showtime_day": "2025-08-12",
-      "nb_showings": 2,
+      "nb_showings": 1,
       "showtimes": []
     },
     {
       "movie": "EVANOUIS",
       "cinema": "UGC Ciné Cité Paris 19",
       "showtime_day": "2025-08-12",
-      "nb_showings": 2,
+      "nb_showings": 0,
       "showtimes": []
     },
     {
@@ -2315,21 +555,21 @@
       "movie": "EVANOUIS",
       "cinema": "UGC Gobelins",
       "showtime_day": "2025-08-12",
-      "nb_showings": 1,
+      "nb_showings": 0,
       "showtimes": []
     },
     {
       "movie": "BADH",
       "cinema": "UGC Lyon Bastille",
       "showtime_day": "2025-08-12",
-      "nb_showings": 2,
+      "nb_showings": 0,
       "showtimes": []
     },
     {
       "movie": "EVANOUIS",
       "cinema": "UGC Lyon Bastille",
       "showtime_day": "2025-08-12",
-      "nb_showings": 1,
+      "nb_showings": 0,
       "showtimes": []
     },
     {
@@ -2343,7 +583,7 @@
       "movie": "BADH",
       "cinema": "UGC Opéra",
       "showtime_day": "2025-08-12",
-      "nb_showings": 2,
+      "nb_showings": 1,
       "showtimes": []
     },
     {
@@ -2527,6 +767,339 @@
       ]
     },
     {
+      "movie": "A feu doux",
+      "cinema": "Escurial",
+      "showtime_day": "2025-08-13",
+      "nb_showings": 5,
+      "showtimes": [
+        "13:40",
+        "15:30",
+        "17:20",
+        "19:10",
+        "21:00"
+      ]
+    },
+    {
+      "movie": "Confidente",
+      "cinema": "Escurial",
+      "showtime_day": "2025-08-13",
+      "nb_showings": 5,
+      "showtimes": [
+        "14:00",
+        "15:40",
+        "17:15",
+        "19:00",
+        "20:40"
+      ]
+    },
+    {
+      "movie": "Julie (en 12 chapitres)",
+      "cinema": "L'Arlequin",
+      "showtime_day": "2025-08-13",
+      "nb_showings": 2,
+      "showtimes": [
+        "11:00",
+        "20:40"
+      ]
+    },
+    {
+      "movie": "Jardin d'été (The Friends)",
+      "cinema": "Majestic Bastille",
+      "showtime_day": "2025-08-13",
+      "nb_showings": 1,
+      "showtimes": [
+        "11:00"
+      ]
+    },
+    {
+      "movie": "Slow",
+      "cinema": "Majestic Bastille",
+      "showtime_day": "2025-08-13",
+      "nb_showings": 1,
+      "showtimes": [
+        "11:00"
+      ]
+    },
+    {
+      "movie": "Together",
+      "cinema": "Majestic Bastille",
+      "showtime_day": "2025-08-13",
+      "nb_showings": 5,
+      "showtimes": [
+        "13:40",
+        "15:40",
+        "17:40",
+        "19:40",
+        "21:40"
+      ]
+    },
+    {
+      "movie": "Yi Yi",
+      "cinema": "Majestic Bastille",
+      "showtime_day": "2025-08-13",
+      "nb_showings": 3,
+      "showtimes": [
+        "13:30",
+        "17:00",
+        "20:30"
+      ]
+    },
+    {
+      "movie": "13 jours, 13 nuits",
+      "cinema": "Majestic Passy",
+      "showtime_day": "2025-08-13",
+      "nb_showings": 1,
+      "showtimes": [
+        "15:30"
+      ]
+    },
+    {
+      "movie": "Karate Kid: Legends",
+      "cinema": "Majestic Passy",
+      "showtime_day": "2025-08-13",
+      "nb_showings": 4,
+      "showtimes": [
+        "14:00",
+        "16:10",
+        "18:15",
+        "20:20"
+      ]
+    },
+    {
+      "movie": "Last Stop : Yuma County",
+      "cinema": "Majestic Passy",
+      "showtime_day": "2025-08-13",
+      "nb_showings": 3,
+      "showtimes": [
+        "13:20",
+        "18:30",
+        "20:25"
+      ]
+    },
+    {
+      "movie": "Les Bad Guys 2",
+      "cinema": "Majestic Passy",
+      "showtime_day": "2025-08-13",
+      "nb_showings": 3,
+      "showtimes": [
+        "14:10",
+        "16:20",
+        "17:50"
+      ]
+    },
+    {
+      "movie": "Materialists",
+      "cinema": "Majestic Passy",
+      "showtime_day": "2025-08-13",
+      "nb_showings": 1,
+      "showtimes": [
+        "20:00"
+      ]
+    },
+    {
+      "movie": "A Brighter Summer Day",
+      "cinema": "Reflet Medicis",
+      "showtime_day": "2025-08-13",
+      "nb_showings": 1,
+      "showtimes": [
+        "16:15"
+      ]
+    },
+    {
+      "movie": "Being Bo Widerberg",
+      "cinema": "Reflet Medicis",
+      "showtime_day": "2025-08-13",
+      "nb_showings": 1,
+      "showtimes": [
+        "15:30"
+      ]
+    },
+    {
+      "movie": "Confusion chez Confucius",
+      "cinema": "Reflet Medicis",
+      "showtime_day": "2025-08-13",
+      "nb_showings": 1,
+      "showtimes": [
+        "16:00"
+      ]
+    },
+    {
+      "movie": "L'été de Jahia",
+      "cinema": "Reflet Medicis",
+      "showtime_day": "2025-08-13",
+      "nb_showings": 3,
+      "showtimes": [
+        "13:20",
+        "19:50",
+        "21:45"
+      ]
+    },
+    {
+      "movie": "Mahjong",
+      "cinema": "Reflet Medicis",
+      "showtime_day": "2025-08-13",
+      "nb_showings": 1,
+      "showtimes": [
+        "13:30"
+      ]
+    },
+    {
+      "movie": "Peut-être demain",
+      "cinema": "Reflet Medicis",
+      "showtime_day": "2025-08-13",
+      "nb_showings": 1,
+      "showtimes": [
+        "13:45"
+      ]
+    },
+    {
+      "movie": "Ryuichi Sakamoto Opus",
+      "cinema": "Reflet Medicis",
+      "showtime_day": "2025-08-13",
+      "nb_showings": 2,
+      "showtimes": [
+        "17:45",
+        "20:40"
+      ]
+    },
+    {
+      "movie": "Taipei Story",
+      "cinema": "Reflet Medicis",
+      "showtime_day": "2025-08-13",
+      "nb_showings": 1,
+      "showtimes": [
+        "20:50"
+      ]
+    },
+    {
+      "movie": "The Terrorizers",
+      "cinema": "Reflet Medicis",
+      "showtime_day": "2025-08-13",
+      "nb_showings": 1,
+      "showtimes": [
+        "18:30"
+      ]
+    },
+    {
+      "movie": "BADH",
+      "cinema": "UGC Ciné Cité Bercy",
+      "showtime_day": "2025-08-13",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "EVANOUIS",
+      "cinema": "UGC Ciné Cité Bercy",
+      "showtime_day": "2025-08-13",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "FREAKY FRIDAY 2 ENCORE DANS LA PEAU DE MA MERE",
+      "cinema": "UGC Ciné Cité Bercy",
+      "showtime_day": "2025-08-13",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "BADH",
+      "cinema": "UGC Ciné Cité Les Halles",
+      "showtime_day": "2025-08-13",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "CONFIDENTE",
+      "cinema": "UGC Ciné Cité Les Halles",
+      "showtime_day": "2025-08-13",
+      "nb_showings": 8,
+      "showtimes": []
+    },
+    {
+      "movie": "EVANOUIS",
+      "cinema": "UGC Ciné Cité Les Halles",
+      "showtime_day": "2025-08-13",
+      "nb_showings": 0,
+      "showtimes": []
+    },
+    {
+      "movie": "FREAKY FRIDAY 2 ENCORE DANS LA PEAU DE MA MERE",
+      "cinema": "UGC Ciné Cité Les Halles",
+      "showtime_day": "2025-08-13",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "L'ETE DE JAHIA",
+      "cinema": "UGC Ciné Cité Les Halles",
+      "showtime_day": "2025-08-13",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "FREAKY FRIDAY 2 ENCORE DANS LA PEAU DE MA MERE",
+      "cinema": "UGC Ciné Cité Maillot",
+      "showtime_day": "2025-08-13",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "BADH",
+      "cinema": "UGC Ciné Cité Paris 19",
+      "showtime_day": "2025-08-13",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "EVANOUIS",
+      "cinema": "UGC Ciné Cité Paris 19",
+      "showtime_day": "2025-08-13",
+      "nb_showings": 0,
+      "showtimes": []
+    },
+    {
+      "movie": "FREAKY FRIDAY 2 ENCORE DANS LA PEAU DE MA MERE",
+      "cinema": "UGC Ciné Cité Paris 19",
+      "showtime_day": "2025-08-13",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "EVANOUIS",
+      "cinema": "UGC Gobelins",
+      "showtime_day": "2025-08-13",
+      "nb_showings": 0,
+      "showtimes": []
+    },
+    {
+      "movie": "BADH",
+      "cinema": "UGC Lyon Bastille",
+      "showtime_day": "2025-08-13",
+      "nb_showings": 0,
+      "showtimes": []
+    },
+    {
+      "movie": "EVANOUIS",
+      "cinema": "UGC Lyon Bastille",
+      "showtime_day": "2025-08-13",
+      "nb_showings": 0,
+      "showtimes": []
+    },
+    {
+      "movie": "EVANOUIS",
+      "cinema": "UGC Montparnasse",
+      "showtime_day": "2025-08-13",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "BADH",
+      "cinema": "UGC Opéra",
+      "showtime_day": "2025-08-13",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
       "movie": "Blue Velvet",
       "cinema": "Christine",
       "showtime_day": "2025-08-14",
@@ -2689,6 +1262,32 @@
       ]
     },
     {
+      "movie": "A feu doux",
+      "cinema": "Escurial",
+      "showtime_day": "2025-08-14",
+      "nb_showings": 5,
+      "showtimes": [
+        "13:40",
+        "15:30",
+        "17:20",
+        "19:10",
+        "21:00"
+      ]
+    },
+    {
+      "movie": "Confidente",
+      "cinema": "Escurial",
+      "showtime_day": "2025-08-14",
+      "nb_showings": 5,
+      "showtimes": [
+        "14:00",
+        "15:40",
+        "17:15",
+        "19:00",
+        "20:40"
+      ]
+    },
+    {
       "movie": "En fanfare",
       "cinema": "L'Arlequin",
       "showtime_day": "2025-08-14",
@@ -2696,6 +1295,331 @@
       "showtimes": [
         "20:00"
       ]
+    },
+    {
+      "movie": "Julie (en 12 chapitres)",
+      "cinema": "L'Arlequin",
+      "showtime_day": "2025-08-14",
+      "nb_showings": 2,
+      "showtimes": [
+        "11:00",
+        "17:30"
+      ]
+    },
+    {
+      "movie": "La Trilogie d'Oslo / Amour",
+      "cinema": "L'Arlequin",
+      "showtime_day": "2025-08-14",
+      "nb_showings": 1,
+      "showtimes": [
+        "20:50"
+      ]
+    },
+    {
+      "movie": "Jardin d'été (The Friends)",
+      "cinema": "Majestic Bastille",
+      "showtime_day": "2025-08-14",
+      "nb_showings": 1,
+      "showtimes": [
+        "11:00"
+      ]
+    },
+    {
+      "movie": "Slow",
+      "cinema": "Majestic Bastille",
+      "showtime_day": "2025-08-14",
+      "nb_showings": 1,
+      "showtimes": [
+        "11:00"
+      ]
+    },
+    {
+      "movie": "Together",
+      "cinema": "Majestic Bastille",
+      "showtime_day": "2025-08-14",
+      "nb_showings": 5,
+      "showtimes": [
+        "13:40",
+        "15:40",
+        "17:40",
+        "19:40",
+        "21:40"
+      ]
+    },
+    {
+      "movie": "Yi Yi",
+      "cinema": "Majestic Bastille",
+      "showtime_day": "2025-08-14",
+      "nb_showings": 3,
+      "showtimes": [
+        "13:30",
+        "17:00",
+        "20:30"
+      ]
+    },
+    {
+      "movie": "Karate Kid: Legends",
+      "cinema": "Majestic Passy",
+      "showtime_day": "2025-08-14",
+      "nb_showings": 4,
+      "showtimes": [
+        "14:00",
+        "16:10",
+        "18:15",
+        "20:20"
+      ]
+    },
+    {
+      "movie": "La Venue de l'avenir",
+      "cinema": "Majestic Passy",
+      "showtime_day": "2025-08-14",
+      "nb_showings": 1,
+      "showtimes": [
+        "15:20"
+      ]
+    },
+    {
+      "movie": "Last Stop : Yuma County",
+      "cinema": "Majestic Passy",
+      "showtime_day": "2025-08-14",
+      "nb_showings": 3,
+      "showtimes": [
+        "13:20",
+        "18:30",
+        "20:25"
+      ]
+    },
+    {
+      "movie": "Les Bad Guys 2",
+      "cinema": "Majestic Passy",
+      "showtime_day": "2025-08-14",
+      "nb_showings": 3,
+      "showtimes": [
+        "14:10",
+        "16:20",
+        "17:50"
+      ]
+    },
+    {
+      "movie": "Materialists",
+      "cinema": "Majestic Passy",
+      "showtime_day": "2025-08-14",
+      "nb_showings": 1,
+      "showtimes": [
+        "20:00"
+      ]
+    },
+    {
+      "movie": "Amour 65",
+      "cinema": "Reflet Medicis",
+      "showtime_day": "2025-08-14",
+      "nb_showings": 1,
+      "showtimes": [
+        "15:30"
+      ]
+    },
+    {
+      "movie": "Confusion chez Confucius",
+      "cinema": "Reflet Medicis",
+      "showtime_day": "2025-08-14",
+      "nb_showings": 1,
+      "showtimes": [
+        "18:20"
+      ]
+    },
+    {
+      "movie": "In Our Time",
+      "cinema": "Reflet Medicis",
+      "showtime_day": "2025-08-14",
+      "nb_showings": 1,
+      "showtimes": [
+        "18:30"
+      ]
+    },
+    {
+      "movie": "L'été de Jahia",
+      "cinema": "Reflet Medicis",
+      "showtime_day": "2025-08-14",
+      "nb_showings": 3,
+      "showtimes": [
+        "13:20",
+        "19:50",
+        "21:45"
+      ]
+    },
+    {
+      "movie": "La Dame de Constantinople",
+      "cinema": "Reflet Medicis",
+      "showtime_day": "2025-08-14",
+      "nb_showings": 1,
+      "showtimes": [
+        "14:00"
+      ]
+    },
+    {
+      "movie": "Les Chevaux de feu",
+      "cinema": "Reflet Medicis",
+      "showtime_day": "2025-08-14",
+      "nb_showings": 1,
+      "showtimes": [
+        "16:10"
+      ]
+    },
+    {
+      "movie": "Mahjong",
+      "cinema": "Reflet Medicis",
+      "showtime_day": "2025-08-14",
+      "nb_showings": 1,
+      "showtimes": [
+        "15:50"
+      ]
+    },
+    {
+      "movie": "Ryuichi Sakamoto Opus",
+      "cinema": "Reflet Medicis",
+      "showtime_day": "2025-08-14",
+      "nb_showings": 2,
+      "showtimes": [
+        "17:45",
+        "20:40"
+      ]
+    },
+    {
+      "movie": "Taipei Story",
+      "cinema": "Reflet Medicis",
+      "showtime_day": "2025-08-14",
+      "nb_showings": 1,
+      "showtimes": [
+        "13:45"
+      ]
+    },
+    {
+      "movie": "The Terrorizers",
+      "cinema": "Reflet Medicis",
+      "showtime_day": "2025-08-14",
+      "nb_showings": 1,
+      "showtimes": [
+        "20:50"
+      ]
+    },
+    {
+      "movie": "BADH",
+      "cinema": "UGC Ciné Cité Bercy",
+      "showtime_day": "2025-08-14",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "EVANOUIS",
+      "cinema": "UGC Ciné Cité Bercy",
+      "showtime_day": "2025-08-14",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "FREAKY FRIDAY 2 ENCORE DANS LA PEAU DE MA MERE",
+      "cinema": "UGC Ciné Cité Bercy",
+      "showtime_day": "2025-08-14",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "BADH",
+      "cinema": "UGC Ciné Cité Les Halles",
+      "showtime_day": "2025-08-14",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "CONFIDENTE",
+      "cinema": "UGC Ciné Cité Les Halles",
+      "showtime_day": "2025-08-14",
+      "nb_showings": 8,
+      "showtimes": []
+    },
+    {
+      "movie": "EVANOUIS",
+      "cinema": "UGC Ciné Cité Les Halles",
+      "showtime_day": "2025-08-14",
+      "nb_showings": 0,
+      "showtimes": []
+    },
+    {
+      "movie": "FREAKY FRIDAY 2 ENCORE DANS LA PEAU DE MA MERE",
+      "cinema": "UGC Ciné Cité Les Halles",
+      "showtime_day": "2025-08-14",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "L'ETE DE JAHIA",
+      "cinema": "UGC Ciné Cité Les Halles",
+      "showtime_day": "2025-08-14",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "FREAKY FRIDAY 2 ENCORE DANS LA PEAU DE MA MERE",
+      "cinema": "UGC Ciné Cité Maillot",
+      "showtime_day": "2025-08-14",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "BADH",
+      "cinema": "UGC Ciné Cité Paris 19",
+      "showtime_day": "2025-08-14",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "EVANOUIS",
+      "cinema": "UGC Ciné Cité Paris 19",
+      "showtime_day": "2025-08-14",
+      "nb_showings": 0,
+      "showtimes": []
+    },
+    {
+      "movie": "FREAKY FRIDAY 2 ENCORE DANS LA PEAU DE MA MERE",
+      "cinema": "UGC Ciné Cité Paris 19",
+      "showtime_day": "2025-08-14",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "EVANOUIS",
+      "cinema": "UGC Gobelins",
+      "showtime_day": "2025-08-14",
+      "nb_showings": 0,
+      "showtimes": []
+    },
+    {
+      "movie": "BADH",
+      "cinema": "UGC Lyon Bastille",
+      "showtime_day": "2025-08-14",
+      "nb_showings": 0,
+      "showtimes": []
+    },
+    {
+      "movie": "EVANOUIS",
+      "cinema": "UGC Lyon Bastille",
+      "showtime_day": "2025-08-14",
+      "nb_showings": 0,
+      "showtimes": []
+    },
+    {
+      "movie": "EVANOUIS",
+      "cinema": "UGC Montparnasse",
+      "showtime_day": "2025-08-14",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "BADH",
+      "cinema": "UGC Opéra",
+      "showtime_day": "2025-08-14",
+      "nb_showings": 1,
+      "showtimes": []
     },
     {
       "movie": "Casablanca Toujours à l’affiche",
@@ -2849,6 +1773,2098 @@
       "showtimes": [
         "15h10"
       ]
+    },
+    {
+      "movie": "A feu doux",
+      "cinema": "Escurial",
+      "showtime_day": "2025-08-15",
+      "nb_showings": 5,
+      "showtimes": [
+        "13:40",
+        "15:30",
+        "17:20",
+        "19:10",
+        "21:00"
+      ]
+    },
+    {
+      "movie": "Confidente",
+      "cinema": "Escurial",
+      "showtime_day": "2025-08-15",
+      "nb_showings": 5,
+      "showtimes": [
+        "14:00",
+        "15:40",
+        "17:15",
+        "19:00",
+        "20:40"
+      ]
+    },
+    {
+      "movie": "Jardin d'été (The Friends)",
+      "cinema": "Majestic Bastille",
+      "showtime_day": "2025-08-15",
+      "nb_showings": 1,
+      "showtimes": [
+        "11:00"
+      ]
+    },
+    {
+      "movie": "Slow",
+      "cinema": "Majestic Bastille",
+      "showtime_day": "2025-08-15",
+      "nb_showings": 1,
+      "showtimes": [
+        "11:00"
+      ]
+    },
+    {
+      "movie": "Together",
+      "cinema": "Majestic Bastille",
+      "showtime_day": "2025-08-15",
+      "nb_showings": 5,
+      "showtimes": [
+        "13:40",
+        "15:40",
+        "17:40",
+        "19:40",
+        "21:40"
+      ]
+    },
+    {
+      "movie": "Yi Yi",
+      "cinema": "Majestic Bastille",
+      "showtime_day": "2025-08-15",
+      "nb_showings": 3,
+      "showtimes": [
+        "13:30",
+        "17:00",
+        "20:30"
+      ]
+    },
+    {
+      "movie": "13 jours, 13 nuits",
+      "cinema": "Majestic Passy",
+      "showtime_day": "2025-08-15",
+      "nb_showings": 1,
+      "showtimes": [
+        "15:30"
+      ]
+    },
+    {
+      "movie": "Karate Kid: Legends",
+      "cinema": "Majestic Passy",
+      "showtime_day": "2025-08-15",
+      "nb_showings": 4,
+      "showtimes": [
+        "14:00",
+        "16:10",
+        "18:15",
+        "20:20"
+      ]
+    },
+    {
+      "movie": "Last Stop : Yuma County",
+      "cinema": "Majestic Passy",
+      "showtime_day": "2025-08-15",
+      "nb_showings": 3,
+      "showtimes": [
+        "13:20",
+        "18:30",
+        "20:25"
+      ]
+    },
+    {
+      "movie": "Les Bad Guys 2",
+      "cinema": "Majestic Passy",
+      "showtime_day": "2025-08-15",
+      "nb_showings": 3,
+      "showtimes": [
+        "14:10",
+        "16:20",
+        "17:50"
+      ]
+    },
+    {
+      "movie": "Materialists",
+      "cinema": "Majestic Passy",
+      "showtime_day": "2025-08-15",
+      "nb_showings": 1,
+      "showtimes": [
+        "20:00"
+      ]
+    },
+    {
+      "movie": "A Brighter Summer Day",
+      "cinema": "Reflet Medicis",
+      "showtime_day": "2025-08-15",
+      "nb_showings": 1,
+      "showtimes": [
+        "19:00"
+      ]
+    },
+    {
+      "movie": "Adalen 31",
+      "cinema": "Reflet Medicis",
+      "showtime_day": "2025-08-15",
+      "nb_showings": 1,
+      "showtimes": [
+        "15:20"
+      ]
+    },
+    {
+      "movie": "Confusion chez Confucius",
+      "cinema": "Reflet Medicis",
+      "showtime_day": "2025-08-15",
+      "nb_showings": 1,
+      "showtimes": [
+        "18:40"
+      ]
+    },
+    {
+      "movie": "L'été de Jahia",
+      "cinema": "Reflet Medicis",
+      "showtime_day": "2025-08-15",
+      "nb_showings": 3,
+      "showtimes": [
+        "13:20",
+        "19:50",
+        "21:45"
+      ]
+    },
+    {
+      "movie": "La Fête de Maria",
+      "cinema": "Reflet Medicis",
+      "showtime_day": "2025-08-15",
+      "nb_showings": 1,
+      "showtimes": [
+        "13:30"
+      ]
+    },
+    {
+      "movie": "Mahjong",
+      "cinema": "Reflet Medicis",
+      "showtime_day": "2025-08-15",
+      "nb_showings": 1,
+      "showtimes": [
+        "16:00"
+      ]
+    },
+    {
+      "movie": "Ryuichi Sakamoto Opus",
+      "cinema": "Reflet Medicis",
+      "showtime_day": "2025-08-15",
+      "nb_showings": 2,
+      "showtimes": [
+        "17:45",
+        "21:15"
+      ]
+    },
+    {
+      "movie": "Taipei Story",
+      "cinema": "Reflet Medicis",
+      "showtime_day": "2025-08-15",
+      "nb_showings": 1,
+      "showtimes": [
+        "14:00"
+      ]
+    },
+    {
+      "movie": "The Terrorizers",
+      "cinema": "Reflet Medicis",
+      "showtime_day": "2025-08-15",
+      "nb_showings": 1,
+      "showtimes": [
+        "16:30"
+      ]
+    },
+    {
+      "movie": "BADH",
+      "cinema": "UGC Ciné Cité Bercy",
+      "showtime_day": "2025-08-15",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "EVANOUIS",
+      "cinema": "UGC Ciné Cité Bercy",
+      "showtime_day": "2025-08-15",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "FREAKY FRIDAY 2 ENCORE DANS LA PEAU DE MA MERE",
+      "cinema": "UGC Ciné Cité Bercy",
+      "showtime_day": "2025-08-15",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "BADH",
+      "cinema": "UGC Ciné Cité Les Halles",
+      "showtime_day": "2025-08-15",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "CONFIDENTE",
+      "cinema": "UGC Ciné Cité Les Halles",
+      "showtime_day": "2025-08-15",
+      "nb_showings": 8,
+      "showtimes": []
+    },
+    {
+      "movie": "EVANOUIS",
+      "cinema": "UGC Ciné Cité Les Halles",
+      "showtime_day": "2025-08-15",
+      "nb_showings": 0,
+      "showtimes": []
+    },
+    {
+      "movie": "FREAKY FRIDAY 2 ENCORE DANS LA PEAU DE MA MERE",
+      "cinema": "UGC Ciné Cité Les Halles",
+      "showtime_day": "2025-08-15",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "L'ETE DE JAHIA",
+      "cinema": "UGC Ciné Cité Les Halles",
+      "showtime_day": "2025-08-15",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "FREAKY FRIDAY 2 ENCORE DANS LA PEAU DE MA MERE",
+      "cinema": "UGC Ciné Cité Maillot",
+      "showtime_day": "2025-08-15",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "BADH",
+      "cinema": "UGC Ciné Cité Paris 19",
+      "showtime_day": "2025-08-15",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "EVANOUIS",
+      "cinema": "UGC Ciné Cité Paris 19",
+      "showtime_day": "2025-08-15",
+      "nb_showings": 0,
+      "showtimes": []
+    },
+    {
+      "movie": "FREAKY FRIDAY 2 ENCORE DANS LA PEAU DE MA MERE",
+      "cinema": "UGC Ciné Cité Paris 19",
+      "showtime_day": "2025-08-15",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "EVANOUIS",
+      "cinema": "UGC Gobelins",
+      "showtime_day": "2025-08-15",
+      "nb_showings": 0,
+      "showtimes": []
+    },
+    {
+      "movie": "BADH",
+      "cinema": "UGC Lyon Bastille",
+      "showtime_day": "2025-08-15",
+      "nb_showings": 0,
+      "showtimes": []
+    },
+    {
+      "movie": "EVANOUIS",
+      "cinema": "UGC Lyon Bastille",
+      "showtime_day": "2025-08-15",
+      "nb_showings": 0,
+      "showtimes": []
+    },
+    {
+      "movie": "EVANOUIS",
+      "cinema": "UGC Montparnasse",
+      "showtime_day": "2025-08-15",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "BADH",
+      "cinema": "UGC Opéra",
+      "showtime_day": "2025-08-15",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "American Graffiti",
+      "cinema": "Christine",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 1,
+      "showtimes": [
+        "17h10"
+      ]
+    },
+    {
+      "movie": "Chungking Express",
+      "cinema": "Christine",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 1,
+      "showtimes": [
+        "15h20"
+      ]
+    },
+    {
+      "movie": "Her Toujours à l’affiche",
+      "cinema": "Christine",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 1,
+      "showtimes": [
+        "19h10"
+      ]
+    },
+    {
+      "movie": "La Dernière Piste",
+      "cinema": "Christine",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 1,
+      "showtimes": [
+        "18h00"
+      ]
+    },
+    {
+      "movie": "La Porte du paradis",
+      "cinema": "Christine",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 1,
+      "showtimes": [
+        "20h00"
+      ]
+    },
+    {
+      "movie": "Memories of Murder Toujours à l’affiche",
+      "cinema": "Christine",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 1,
+      "showtimes": [
+        "21h30"
+      ]
+    },
+    {
+      "movie": "Mon nom est Personne",
+      "cinema": "Christine",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 1,
+      "showtimes": [
+        "13h30"
+      ]
+    },
+    {
+      "movie": "The Grand Budapest Hotel",
+      "cinema": "Christine",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 1,
+      "showtimes": [
+        "13h30"
+      ]
+    },
+    {
+      "movie": "The Misfits",
+      "cinema": "Christine",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 1,
+      "showtimes": [
+        "15h40"
+      ]
+    },
+    {
+      "movie": "Annie Hall",
+      "cinema": "Ecoles",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 1,
+      "showtimes": [
+        "22h00"
+      ]
+    },
+    {
+      "movie": "Cinema Paradiso",
+      "cinema": "Ecoles",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 1,
+      "showtimes": [
+        "16h10"
+      ]
+    },
+    {
+      "movie": "Kramer Contre Kramer",
+      "cinema": "Ecoles",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 1,
+      "showtimes": [
+        "20h40"
+      ]
+    },
+    {
+      "movie": "Le Bon, la Brute et le Truand Sergio Leone",
+      "cinema": "Ecoles",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 1,
+      "showtimes": [
+        "20h40"
+      ]
+    },
+    {
+      "movie": "Le Jardin des Finzi-Contini",
+      "cinema": "Ecoles",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 1,
+      "showtimes": [
+        "16h00"
+      ]
+    },
+    {
+      "movie": "Le Lauréat",
+      "cinema": "Ecoles",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 1,
+      "showtimes": [
+        "14h00"
+      ]
+    },
+    {
+      "movie": "Old Boy",
+      "cinema": "Ecoles",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 1,
+      "showtimes": [
+        "18h30"
+      ]
+    },
+    {
+      "movie": "Taxi Driver",
+      "cinema": "Ecoles",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 1,
+      "showtimes": [
+        "14h00"
+      ]
+    },
+    {
+      "movie": "The Swimmer",
+      "cinema": "Ecoles",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 1,
+      "showtimes": [
+        "18h00"
+      ]
+    },
+    {
+      "movie": "A feu doux",
+      "cinema": "Escurial",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 5,
+      "showtimes": [
+        "13:40",
+        "15:30",
+        "17:20",
+        "19:10",
+        "21:00"
+      ]
+    },
+    {
+      "movie": "Confidente",
+      "cinema": "Escurial",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 5,
+      "showtimes": [
+        "14:00",
+        "15:40",
+        "17:15",
+        "19:00",
+        "20:40"
+      ]
+    },
+    {
+      "movie": "Jardin d'été (The Friends)",
+      "cinema": "L'Arlequin",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 1,
+      "showtimes": [
+        "11:00"
+      ]
+    },
+    {
+      "movie": "Julie (en 12 chapitres)",
+      "cinema": "L'Arlequin",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 2,
+      "showtimes": [
+        "13:40",
+        "20:40"
+      ]
+    },
+    {
+      "movie": "La Trilogie d'Oslo / Désir",
+      "cinema": "L'Arlequin",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 1,
+      "showtimes": [
+        "16:10"
+      ]
+    },
+    {
+      "movie": "Oslo, 31 août",
+      "cinema": "L'Arlequin",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 1,
+      "showtimes": [
+        "11:00"
+      ]
+    },
+    {
+      "movie": "The Things You Kill",
+      "cinema": "L'Arlequin",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 1,
+      "showtimes": [
+        "11:00"
+      ]
+    },
+    {
+      "movie": "Forbidden Hollywood : L'Ange blanc",
+      "cinema": "Majestic Bastille",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 1,
+      "showtimes": [
+        "11:00"
+      ]
+    },
+    {
+      "movie": "Le Monde de Némo",
+      "cinema": "Majestic Bastille",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 1,
+      "showtimes": [
+        "10:00"
+      ]
+    },
+    {
+      "movie": "Together",
+      "cinema": "Majestic Bastille",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 5,
+      "showtimes": [
+        "13:40",
+        "15:40",
+        "17:40",
+        "19:40",
+        "21:40"
+      ]
+    },
+    {
+      "movie": "Yi Yi",
+      "cinema": "Majestic Bastille",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 3,
+      "showtimes": [
+        "13:30",
+        "17:00",
+        "20:30"
+      ]
+    },
+    {
+      "movie": "13 jours, 13 nuits",
+      "cinema": "Majestic Passy",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 1,
+      "showtimes": [
+        "13:10"
+      ]
+    },
+    {
+      "movie": "Josée, le tigre et les poissons",
+      "cinema": "Majestic Passy",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 1,
+      "showtimes": [
+        "11:00"
+      ]
+    },
+    {
+      "movie": "Karate Kid: Legends",
+      "cinema": "Majestic Passy",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 4,
+      "showtimes": [
+        "14:00",
+        "16:10",
+        "18:15",
+        "20:20"
+      ]
+    },
+    {
+      "movie": "La Venue de l'avenir",
+      "cinema": "Majestic Passy",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 1,
+      "showtimes": [
+        "11:00"
+      ]
+    },
+    {
+      "movie": "Last Stop : Yuma County",
+      "cinema": "Majestic Passy",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 3,
+      "showtimes": [
+        "11:00",
+        "18:30",
+        "20:25"
+      ]
+    },
+    {
+      "movie": "Les Bad Guys 2",
+      "cinema": "Majestic Passy",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 3,
+      "showtimes": [
+        "14:10",
+        "16:20",
+        "17:50"
+      ]
+    },
+    {
+      "movie": "Materialists",
+      "cinema": "Majestic Passy",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 2,
+      "showtimes": [
+        "15:30",
+        "20:00"
+      ]
+    },
+    {
+      "movie": "Confusion chez Confucius",
+      "cinema": "Reflet Medicis",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 1,
+      "showtimes": [
+        "15:45"
+      ]
+    },
+    {
+      "movie": "In Our Time",
+      "cinema": "Reflet Medicis",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 1,
+      "showtimes": [
+        "13:45"
+      ]
+    },
+    {
+      "movie": "Joe Hill",
+      "cinema": "Reflet Medicis",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 1,
+      "showtimes": [
+        "15:20"
+      ]
+    },
+    {
+      "movie": "L'été de Jahia",
+      "cinema": "Reflet Medicis",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 3,
+      "showtimes": [
+        "13:20",
+        "19:50",
+        "21:45"
+      ]
+    },
+    {
+      "movie": "La Beauté des choses",
+      "cinema": "Reflet Medicis",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 1,
+      "showtimes": [
+        "18:45"
+      ]
+    },
+    {
+      "movie": "La Dame de Constantinople",
+      "cinema": "Reflet Medicis",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 1,
+      "showtimes": [
+        "14:00"
+      ]
+    },
+    {
+      "movie": "Mahjong",
+      "cinema": "Reflet Medicis",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 1,
+      "showtimes": [
+        "20:40"
+      ]
+    },
+    {
+      "movie": "Ryuichi Sakamoto Opus",
+      "cinema": "Reflet Medicis",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 2,
+      "showtimes": [
+        "17:45",
+        "21:15"
+      ]
+    },
+    {
+      "movie": "Taipei Story",
+      "cinema": "Reflet Medicis",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 1,
+      "showtimes": [
+        "16:15"
+      ]
+    },
+    {
+      "movie": "The Terrorizers",
+      "cinema": "Reflet Medicis",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 1,
+      "showtimes": [
+        "18:20"
+      ]
+    },
+    {
+      "movie": "BADH",
+      "cinema": "UGC Ciné Cité Bercy",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "EVANOUIS",
+      "cinema": "UGC Ciné Cité Bercy",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "FREAKY FRIDAY 2 ENCORE DANS LA PEAU DE MA MERE",
+      "cinema": "UGC Ciné Cité Bercy",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "BADH",
+      "cinema": "UGC Ciné Cité Les Halles",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "CONFIDENTE",
+      "cinema": "UGC Ciné Cité Les Halles",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 8,
+      "showtimes": []
+    },
+    {
+      "movie": "EVANOUIS",
+      "cinema": "UGC Ciné Cité Les Halles",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 0,
+      "showtimes": []
+    },
+    {
+      "movie": "FREAKY FRIDAY 2 ENCORE DANS LA PEAU DE MA MERE",
+      "cinema": "UGC Ciné Cité Les Halles",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "L'ETE DE JAHIA",
+      "cinema": "UGC Ciné Cité Les Halles",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "FREAKY FRIDAY 2 ENCORE DANS LA PEAU DE MA MERE",
+      "cinema": "UGC Ciné Cité Maillot",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "BADH",
+      "cinema": "UGC Ciné Cité Paris 19",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "EVANOUIS",
+      "cinema": "UGC Ciné Cité Paris 19",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 0,
+      "showtimes": []
+    },
+    {
+      "movie": "FREAKY FRIDAY 2 ENCORE DANS LA PEAU DE MA MERE",
+      "cinema": "UGC Ciné Cité Paris 19",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "EVANOUIS",
+      "cinema": "UGC Gobelins",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 0,
+      "showtimes": []
+    },
+    {
+      "movie": "BADH",
+      "cinema": "UGC Lyon Bastille",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 0,
+      "showtimes": []
+    },
+    {
+      "movie": "EVANOUIS",
+      "cinema": "UGC Lyon Bastille",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 0,
+      "showtimes": []
+    },
+    {
+      "movie": "EVANOUIS",
+      "cinema": "UGC Montparnasse",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "BADH",
+      "cinema": "UGC Opéra",
+      "showtime_day": "2025-08-16",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "Géant",
+      "cinema": "Christine",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 1,
+      "showtimes": [
+        "20h15"
+      ]
+    },
+    {
+      "movie": "In the Mood for Love",
+      "cinema": "Christine",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 1,
+      "showtimes": [
+        "13h35"
+      ]
+    },
+    {
+      "movie": "John McCabe",
+      "cinema": "Christine",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 1,
+      "showtimes": [
+        "18h05"
+      ]
+    },
+    {
+      "movie": "Le Trésor de la Sierra Madre",
+      "cinema": "Christine",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 1,
+      "showtimes": [
+        "13h35"
+      ]
+    },
+    {
+      "movie": "L’Homme qui tua Liberty Valance",
+      "cinema": "Christine",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 1,
+      "showtimes": [
+        "15h50"
+      ]
+    },
+    {
+      "movie": "Midsommar",
+      "cinema": "Christine",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 1,
+      "showtimes": [
+        "19h10"
+      ]
+    },
+    {
+      "movie": "Moonrise Kingdom",
+      "cinema": "Christine",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 1,
+      "showtimes": [
+        "15h30"
+      ]
+    },
+    {
+      "movie": "Phantom of the Paradise Brian De Palma",
+      "cinema": "Christine",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 1,
+      "showtimes": [
+        "17h20"
+      ]
+    },
+    {
+      "movie": "The Thing Toujours à l’affiche",
+      "cinema": "Christine",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 1,
+      "showtimes": [
+        "21h50"
+      ]
+    },
+    {
+      "movie": "Certains l’aiment chaud",
+      "cinema": "Ecoles",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 1,
+      "showtimes": [
+        "14h00"
+      ]
+    },
+    {
+      "movie": "Il était une fois en Amérique Sergio Leone",
+      "cinema": "Ecoles",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 1,
+      "showtimes": [
+        "17h30"
+      ]
+    },
+    {
+      "movie": "Les Roseaux Sauvages",
+      "cinema": "Ecoles",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 1,
+      "showtimes": [
+        "16h15"
+      ]
+    },
+    {
+      "movie": "Magnolia Paul Thomas Anderson",
+      "cinema": "Ecoles",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 1,
+      "showtimes": [
+        "18h25"
+      ]
+    },
+    {
+      "movie": "Melancholia",
+      "cinema": "Ecoles",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 1,
+      "showtimes": [
+        "21h30"
+      ]
+    },
+    {
+      "movie": "No Country for Old Men",
+      "cinema": "Ecoles",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 1,
+      "showtimes": [
+        "13h45"
+      ]
+    },
+    {
+      "movie": "Vittoria",
+      "cinema": "Ecoles",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 1,
+      "showtimes": [
+        "16h00"
+      ]
+    },
+    {
+      "movie": "À bout de course",
+      "cinema": "Ecoles",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 1,
+      "showtimes": [
+        "21h45"
+      ]
+    },
+    {
+      "movie": "A feu doux",
+      "cinema": "Escurial",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 5,
+      "showtimes": [
+        "13:40",
+        "15:30",
+        "17:20",
+        "19:10",
+        "21:00"
+      ]
+    },
+    {
+      "movie": "Confidente",
+      "cinema": "Escurial",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 5,
+      "showtimes": [
+        "14:00",
+        "15:40",
+        "17:15",
+        "19:00",
+        "20:40"
+      ]
+    },
+    {
+      "movie": "Perla",
+      "cinema": "Escurial",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 1,
+      "showtimes": [
+        "11:30"
+      ]
+    },
+    {
+      "movie": "Ponyo sur la falaise",
+      "cinema": "Escurial",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 1,
+      "showtimes": [
+        "11:00"
+      ]
+    },
+    {
+      "movie": "Jardin d'été (The Friends)",
+      "cinema": "L'Arlequin",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 1,
+      "showtimes": [
+        "11:00"
+      ]
+    },
+    {
+      "movie": "Julie (en 12 chapitres)",
+      "cinema": "L'Arlequin",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 2,
+      "showtimes": [
+        "13:40",
+        "20:40"
+      ]
+    },
+    {
+      "movie": "Oslo, 31 août",
+      "cinema": "L'Arlequin",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 1,
+      "showtimes": [
+        "11:00"
+      ]
+    },
+    {
+      "movie": "The Things You Kill",
+      "cinema": "L'Arlequin",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 1,
+      "showtimes": [
+        "11:00"
+      ]
+    },
+    {
+      "movie": "Les Furies",
+      "cinema": "Majestic Bastille",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 1,
+      "showtimes": [
+        "11:00"
+      ]
+    },
+    {
+      "movie": "Slow",
+      "cinema": "Majestic Bastille",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 1,
+      "showtimes": [
+        "11:00"
+      ]
+    },
+    {
+      "movie": "Together",
+      "cinema": "Majestic Bastille",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 5,
+      "showtimes": [
+        "13:40",
+        "15:40",
+        "17:40",
+        "19:40",
+        "21:40"
+      ]
+    },
+    {
+      "movie": "Yi Yi",
+      "cinema": "Majestic Bastille",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 3,
+      "showtimes": [
+        "13:30",
+        "17:00",
+        "20:30"
+      ]
+    },
+    {
+      "movie": "13 jours, 13 nuits",
+      "cinema": "Majestic Passy",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 1,
+      "showtimes": [
+        "11:00"
+      ]
+    },
+    {
+      "movie": "Karate Kid: Legends",
+      "cinema": "Majestic Passy",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 4,
+      "showtimes": [
+        "14:00",
+        "16:10",
+        "18:15",
+        "20:20"
+      ]
+    },
+    {
+      "movie": "La Venue de l'avenir",
+      "cinema": "Majestic Passy",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 1,
+      "showtimes": [
+        "13:00"
+      ]
+    },
+    {
+      "movie": "Last Stop : Yuma County",
+      "cinema": "Majestic Passy",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 3,
+      "showtimes": [
+        "11:00",
+        "18:30",
+        "20:25"
+      ]
+    },
+    {
+      "movie": "Les Bad Guys 2",
+      "cinema": "Majestic Passy",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 4,
+      "showtimes": [
+        "11:00",
+        "14:10",
+        "16:20",
+        "17:50"
+      ]
+    },
+    {
+      "movie": "Materialists",
+      "cinema": "Majestic Passy",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 2,
+      "showtimes": [
+        "15:30",
+        "20:00"
+      ]
+    },
+    {
+      "movie": "A Brighter Summer Day",
+      "cinema": "Reflet Medicis",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 1,
+      "showtimes": [
+        "16:15"
+      ]
+    },
+    {
+      "movie": "Confusion chez Confucius",
+      "cinema": "Reflet Medicis",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 1,
+      "showtimes": [
+        "13:40"
+      ]
+    },
+    {
+      "movie": "Joe Hill",
+      "cinema": "Reflet Medicis",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 1,
+      "showtimes": [
+        "18:20"
+      ]
+    },
+    {
+      "movie": "L'été de Jahia",
+      "cinema": "Reflet Medicis",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 3,
+      "showtimes": [
+        "13:20",
+        "19:50",
+        "21:45"
+      ]
+    },
+    {
+      "movie": "La Beauté des choses",
+      "cinema": "Reflet Medicis",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 1,
+      "showtimes": [
+        "15:15"
+      ]
+    },
+    {
+      "movie": "La Dame de Constantinople",
+      "cinema": "Reflet Medicis",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 1,
+      "showtimes": [
+        "14:00"
+      ]
+    },
+    {
+      "movie": "Ryuichi Sakamoto Opus",
+      "cinema": "Reflet Medicis",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 2,
+      "showtimes": [
+        "17:45",
+        "20:40"
+      ]
+    },
+    {
+      "movie": "Taipei Story",
+      "cinema": "Reflet Medicis",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 1,
+      "showtimes": [
+        "20:40"
+      ]
+    },
+    {
+      "movie": "The Terrorizers",
+      "cinema": "Reflet Medicis",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 1,
+      "showtimes": [
+        "16:00"
+      ]
+    },
+    {
+      "movie": "BADH",
+      "cinema": "UGC Ciné Cité Bercy",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "EVANOUIS",
+      "cinema": "UGC Ciné Cité Bercy",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "FREAKY FRIDAY 2 ENCORE DANS LA PEAU DE MA MERE",
+      "cinema": "UGC Ciné Cité Bercy",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "BADH",
+      "cinema": "UGC Ciné Cité Les Halles",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "CONFIDENTE",
+      "cinema": "UGC Ciné Cité Les Halles",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 8,
+      "showtimes": []
+    },
+    {
+      "movie": "EVANOUIS",
+      "cinema": "UGC Ciné Cité Les Halles",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 0,
+      "showtimes": []
+    },
+    {
+      "movie": "FREAKY FRIDAY 2 ENCORE DANS LA PEAU DE MA MERE",
+      "cinema": "UGC Ciné Cité Les Halles",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "L'ETE DE JAHIA",
+      "cinema": "UGC Ciné Cité Les Halles",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "FREAKY FRIDAY 2 ENCORE DANS LA PEAU DE MA MERE",
+      "cinema": "UGC Ciné Cité Maillot",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "BADH",
+      "cinema": "UGC Ciné Cité Paris 19",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "EVANOUIS",
+      "cinema": "UGC Ciné Cité Paris 19",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 0,
+      "showtimes": []
+    },
+    {
+      "movie": "FREAKY FRIDAY 2 ENCORE DANS LA PEAU DE MA MERE",
+      "cinema": "UGC Ciné Cité Paris 19",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "EVANOUIS",
+      "cinema": "UGC Gobelins",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 0,
+      "showtimes": []
+    },
+    {
+      "movie": "BADH",
+      "cinema": "UGC Lyon Bastille",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 0,
+      "showtimes": []
+    },
+    {
+      "movie": "EVANOUIS",
+      "cinema": "UGC Lyon Bastille",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 0,
+      "showtimes": []
+    },
+    {
+      "movie": "EVANOUIS",
+      "cinema": "UGC Montparnasse",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "BADH",
+      "cinema": "UGC Opéra",
+      "showtime_day": "2025-08-17",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "Blow Out Brian De Palma",
+      "cinema": "Christine",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 1,
+      "showtimes": [
+        "13h40"
+      ]
+    },
+    {
+      "movie": "Blue Velvet",
+      "cinema": "Christine",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 1,
+      "showtimes": [
+        "21h40"
+      ]
+    },
+    {
+      "movie": "Citizen Kane Toujours à l’affiche",
+      "cinema": "Christine",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 1,
+      "showtimes": [
+        "17h30"
+      ]
+    },
+    {
+      "movie": "Drive",
+      "cinema": "Christine",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 1,
+      "showtimes": [
+        "17h00"
+      ]
+    },
+    {
+      "movie": "Le Silence des agneaux",
+      "cinema": "Christine",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 1,
+      "showtimes": [
+        "18h55"
+      ]
+    },
+    {
+      "movie": "Le Train sifflera trois fois",
+      "cinema": "Christine",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 1,
+      "showtimes": [
+        "13h40"
+      ]
+    },
+    {
+      "movie": "Les Parapluies de Cherbourg",
+      "cinema": "Christine",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 1,
+      "showtimes": [
+        "15h15"
+      ]
+    },
+    {
+      "movie": "Mademoiselle",
+      "cinema": "Christine",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 1,
+      "showtimes": [
+        "21h05"
+      ]
+    },
+    {
+      "movie": "Nos années sauvages",
+      "cinema": "Christine",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 1,
+      "showtimes": [
+        "19h45"
+      ]
+    },
+    {
+      "movie": "Rushmore",
+      "cinema": "Christine",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 1,
+      "showtimes": [
+        "15h40"
+      ]
+    },
+    {
+      "movie": "2001: L’Odyssée de l’espace",
+      "cinema": "Ecoles",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 1,
+      "showtimes": [
+        "19h15"
+      ]
+    },
+    {
+      "movie": "Blow-Up Summer of Love",
+      "cinema": "Ecoles",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 1,
+      "showtimes": [
+        "14h00"
+      ]
+    },
+    {
+      "movie": "How to Have Sex",
+      "cinema": "Ecoles",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 1,
+      "showtimes": [
+        "22h05"
+      ]
+    },
+    {
+      "movie": "Il était une fois dans l’Ouest Sergio Leone",
+      "cinema": "Ecoles",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 1,
+      "showtimes": [
+        "16h05"
+      ]
+    },
+    {
+      "movie": "Les Demoiselles de Rochefort",
+      "cinema": "Ecoles",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 1,
+      "showtimes": [
+        "14h00"
+      ]
+    },
+    {
+      "movie": "Spring Breakers",
+      "cinema": "Ecoles",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 1,
+      "showtimes": [
+        "20h20"
+      ]
+    },
+    {
+      "movie": "Théorème",
+      "cinema": "Ecoles",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 1,
+      "showtimes": [
+        "16h20"
+      ]
+    },
+    {
+      "movie": "Usual Suspects",
+      "cinema": "Ecoles",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 1,
+      "showtimes": [
+        "21h50"
+      ]
+    },
+    {
+      "movie": "À l’est d’Éden",
+      "cinema": "Ecoles",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 1,
+      "showtimes": [
+        "18h10"
+      ]
+    },
+    {
+      "movie": "A feu doux",
+      "cinema": "Escurial",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 5,
+      "showtimes": [
+        "13:40",
+        "15:30",
+        "17:20",
+        "19:10",
+        "21:00"
+      ]
+    },
+    {
+      "movie": "Confidente",
+      "cinema": "Escurial",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 5,
+      "showtimes": [
+        "14:00",
+        "15:40",
+        "17:15",
+        "19:00",
+        "20:40"
+      ]
+    },
+    {
+      "movie": "Jardin d'été (The Friends)",
+      "cinema": "Escurial",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 1,
+      "showtimes": [
+        "11:30"
+      ]
+    },
+    {
+      "movie": "Perla",
+      "cinema": "Escurial",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 1,
+      "showtimes": [
+        "11:30"
+      ]
+    },
+    {
+      "movie": "Julie (en 12 chapitres)",
+      "cinema": "L'Arlequin",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 2,
+      "showtimes": [
+        "11:00",
+        "17:30"
+      ]
+    },
+    {
+      "movie": "La Trilogie d'Oslo / Amour",
+      "cinema": "L'Arlequin",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 1,
+      "showtimes": [
+        "20:50"
+      ]
+    },
+    {
+      "movie": "Renoir",
+      "cinema": "L'Arlequin",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 1,
+      "showtimes": [
+        "20:00"
+      ]
+    },
+    {
+      "movie": "Jardin d'été (The Friends)",
+      "cinema": "Majestic Bastille",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 1,
+      "showtimes": [
+        "11:00"
+      ]
+    },
+    {
+      "movie": "Slow",
+      "cinema": "Majestic Bastille",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 1,
+      "showtimes": [
+        "11:00"
+      ]
+    },
+    {
+      "movie": "Together",
+      "cinema": "Majestic Bastille",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 5,
+      "showtimes": [
+        "13:40",
+        "15:40",
+        "17:40",
+        "19:40",
+        "21:40"
+      ]
+    },
+    {
+      "movie": "Yi Yi",
+      "cinema": "Majestic Bastille",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 3,
+      "showtimes": [
+        "13:30",
+        "17:00",
+        "20:30"
+      ]
+    },
+    {
+      "movie": "Karate Kid: Legends",
+      "cinema": "Majestic Passy",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 4,
+      "showtimes": [
+        "14:00",
+        "16:10",
+        "18:15",
+        "20:20"
+      ]
+    },
+    {
+      "movie": "La Venue de l'avenir",
+      "cinema": "Majestic Passy",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 1,
+      "showtimes": [
+        "15:20"
+      ]
+    },
+    {
+      "movie": "Last Stop : Yuma County",
+      "cinema": "Majestic Passy",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 3,
+      "showtimes": [
+        "13:20",
+        "18:30",
+        "20:25"
+      ]
+    },
+    {
+      "movie": "Les Bad Guys 2",
+      "cinema": "Majestic Passy",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 3,
+      "showtimes": [
+        "14:10",
+        "16:20",
+        "17:50"
+      ]
+    },
+    {
+      "movie": "Materialists",
+      "cinema": "Majestic Passy",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 1,
+      "showtimes": [
+        "20:00"
+      ]
+    },
+    {
+      "movie": "Confusion chez Confucius",
+      "cinema": "Reflet Medicis",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 1,
+      "showtimes": [
+        "16:00"
+      ]
+    },
+    {
+      "movie": "In Our Time",
+      "cinema": "Reflet Medicis",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 1,
+      "showtimes": [
+        "18:30"
+      ]
+    },
+    {
+      "movie": "L'été de Jahia",
+      "cinema": "Reflet Medicis",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 3,
+      "showtimes": [
+        "13:20",
+        "19:50",
+        "21:45"
+      ]
+    },
+    {
+      "movie": "La Fête de Maria",
+      "cinema": "Reflet Medicis",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 1,
+      "showtimes": [
+        "13:20"
+      ]
+    },
+    {
+      "movie": "Le Chemin du serpent",
+      "cinema": "Reflet Medicis",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 1,
+      "showtimes": [
+        "15:45"
+      ]
+    },
+    {
+      "movie": "Les Chevaux de feu",
+      "cinema": "Reflet Medicis",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 1,
+      "showtimes": [
+        "18:30"
+      ]
+    },
+    {
+      "movie": "Mahjong",
+      "cinema": "Reflet Medicis",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 1,
+      "showtimes": [
+        "20:40"
+      ]
+    },
+    {
+      "movie": "Ryuichi Sakamoto Opus",
+      "cinema": "Reflet Medicis",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 2,
+      "showtimes": [
+        "17:45",
+        "20:40"
+      ]
+    },
+    {
+      "movie": "Taipei Story",
+      "cinema": "Reflet Medicis",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 1,
+      "showtimes": [
+        "15:20"
+      ]
+    },
+    {
+      "movie": "The Terrorizers",
+      "cinema": "Reflet Medicis",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 1,
+      "showtimes": [
+        "13:40"
+      ]
+    },
+    {
+      "movie": "BADH",
+      "cinema": "UGC Ciné Cité Bercy",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "EVANOUIS",
+      "cinema": "UGC Ciné Cité Bercy",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "FREAKY FRIDAY 2 ENCORE DANS LA PEAU DE MA MERE",
+      "cinema": "UGC Ciné Cité Bercy",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "BADH",
+      "cinema": "UGC Ciné Cité Les Halles",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "CONFIDENTE",
+      "cinema": "UGC Ciné Cité Les Halles",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 8,
+      "showtimes": []
+    },
+    {
+      "movie": "EVANOUIS",
+      "cinema": "UGC Ciné Cité Les Halles",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 0,
+      "showtimes": []
+    },
+    {
+      "movie": "FREAKY FRIDAY 2 ENCORE DANS LA PEAU DE MA MERE",
+      "cinema": "UGC Ciné Cité Les Halles",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "L'ETE DE JAHIA",
+      "cinema": "UGC Ciné Cité Les Halles",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "FREAKY FRIDAY 2 ENCORE DANS LA PEAU DE MA MERE",
+      "cinema": "UGC Ciné Cité Maillot",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "BADH",
+      "cinema": "UGC Ciné Cité Paris 19",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "EVANOUIS",
+      "cinema": "UGC Ciné Cité Paris 19",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 0,
+      "showtimes": []
+    },
+    {
+      "movie": "FREAKY FRIDAY 2 ENCORE DANS LA PEAU DE MA MERE",
+      "cinema": "UGC Ciné Cité Paris 19",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "EVANOUIS",
+      "cinema": "UGC Gobelins",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 0,
+      "showtimes": []
+    },
+    {
+      "movie": "BADH",
+      "cinema": "UGC Lyon Bastille",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 0,
+      "showtimes": []
+    },
+    {
+      "movie": "EVANOUIS",
+      "cinema": "UGC Lyon Bastille",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 0,
+      "showtimes": []
+    },
+    {
+      "movie": "EVANOUIS",
+      "cinema": "UGC Montparnasse",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "BADH",
+      "cinema": "UGC Opéra",
+      "showtime_day": "2025-08-18",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "BADH",
+      "cinema": "UGC Ciné Cité Bercy",
+      "showtime_day": "2025-08-19",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "EVANOUIS",
+      "cinema": "UGC Ciné Cité Bercy",
+      "showtime_day": "2025-08-19",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "FREAKY FRIDAY 2 ENCORE DANS LA PEAU DE MA MERE",
+      "cinema": "UGC Ciné Cité Bercy",
+      "showtime_day": "2025-08-19",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "BADH",
+      "cinema": "UGC Ciné Cité Les Halles",
+      "showtime_day": "2025-08-19",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "CONFIDENTE",
+      "cinema": "UGC Ciné Cité Les Halles",
+      "showtime_day": "2025-08-19",
+      "nb_showings": 8,
+      "showtimes": []
+    },
+    {
+      "movie": "EVANOUIS",
+      "cinema": "UGC Ciné Cité Les Halles",
+      "showtime_day": "2025-08-19",
+      "nb_showings": 0,
+      "showtimes": []
+    },
+    {
+      "movie": "FREAKY FRIDAY 2 ENCORE DANS LA PEAU DE MA MERE",
+      "cinema": "UGC Ciné Cité Les Halles",
+      "showtime_day": "2025-08-19",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "L'ETE DE JAHIA",
+      "cinema": "UGC Ciné Cité Les Halles",
+      "showtime_day": "2025-08-19",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "FREAKY FRIDAY 2 ENCORE DANS LA PEAU DE MA MERE",
+      "cinema": "UGC Ciné Cité Maillot",
+      "showtime_day": "2025-08-19",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "BADH",
+      "cinema": "UGC Ciné Cité Paris 19",
+      "showtime_day": "2025-08-19",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "EVANOUIS",
+      "cinema": "UGC Ciné Cité Paris 19",
+      "showtime_day": "2025-08-19",
+      "nb_showings": 0,
+      "showtimes": []
+    },
+    {
+      "movie": "FREAKY FRIDAY 2 ENCORE DANS LA PEAU DE MA MERE",
+      "cinema": "UGC Ciné Cité Paris 19",
+      "showtime_day": "2025-08-19",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "EVANOUIS",
+      "cinema": "UGC Gobelins",
+      "showtime_day": "2025-08-19",
+      "nb_showings": 0,
+      "showtimes": []
+    },
+    {
+      "movie": "BADH",
+      "cinema": "UGC Lyon Bastille",
+      "showtime_day": "2025-08-19",
+      "nb_showings": 0,
+      "showtimes": []
+    },
+    {
+      "movie": "EVANOUIS",
+      "cinema": "UGC Lyon Bastille",
+      "showtime_day": "2025-08-19",
+      "nb_showings": 0,
+      "showtimes": []
+    },
+    {
+      "movie": "EVANOUIS",
+      "cinema": "UGC Montparnasse",
+      "showtime_day": "2025-08-19",
+      "nb_showings": 1,
+      "showtimes": []
+    },
+    {
+      "movie": "BADH",
+      "cinema": "UGC Opéra",
+      "showtime_day": "2025-08-19",
+      "nb_showings": 1,
+      "showtimes": []
     }
   ]
 }

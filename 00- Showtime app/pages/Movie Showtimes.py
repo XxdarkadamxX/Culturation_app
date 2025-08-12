@@ -4,13 +4,17 @@ import unicodedata
 from pathlib import Path
 import datetime
 from streamlit import column_config
+import subprocess
+import sys
+import os
 
 
 st.title("Séances de ciné")
 
 
 # First get the showtimes previously scraped
-showtimes_csv_path = Path(r"C:\Users\adamh\OneDrive\Bureau\Cinema showtime app\Cinema-showtimes-app\combined_showtimes.csv")
+showtimes_csv_path = Path(__file__).parent.parent.parent / "combined_showtimes.csv"
+
 showtimes_df = pd.read_csv(showtimes_csv_path)
 
 # Add a button to refresh the showtime programs 
@@ -18,7 +22,22 @@ col1, col2, col3 = st.columns([1, 1, 1])
 with col3:
     st.write("*Prog du* " + str(min(showtimes_df['showtime_day']))+" *-* "+str(max(showtimes_df['showtime_day'])))
     if st.button("Charger la prog de la semaine"):
-        st.success("Programmes chargés jusqu'au " + str(max(showtimes_df['showtime_day'])))
+        # Find the main.py path relative to this Streamlit app
+        main_py_path = os.path.abspath(
+            os.path.join(os.path.dirname(__file__), "..", "..", "main.py")
+        )
+
+        # Run main.py as a subprocess
+        result = subprocess.run(
+            [sys.executable, main_py_path],
+            capture_output=True,
+            text=True
+        )
+
+        if result.returncode == 0:
+            st.success("Prog chargés jusqu'au " + str(max(showtimes_df['showtime_day'])))
+        else:
+            st.error("Erreur lors de la mise à jour des programmes :\n\n" + result.stderr)
 
 shows_available = showtimes_df['movie'].unique() # All movies available
 
