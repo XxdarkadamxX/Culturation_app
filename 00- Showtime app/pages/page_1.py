@@ -2,6 +2,9 @@ import streamlit as st
 import pandas as pd
 import unicodedata
 from pathlib import Path
+import datetime
+from streamlit import column_config
+
 
 st.write("Showtimes")
 
@@ -9,8 +12,12 @@ st.write("Showtimes")
 showtimes_csv_path = Path(r"C:\Users\adamh\OneDrive\Bureau\Cinema showtime app\Cinema-showtimes-app\combined_showtimes.csv")
 showtimes_df = pd.read_csv(showtimes_csv_path)
 
+shows_available = showtimes_df['movie'].unique() # All movies available
 
-import datetime
+# Allow user to filter either by date (with pills) or by movie name (with a dropdown)
+filter_by = st.segmented_control(
+    "Filter by", ["Date", "Movie"], selection_mode="single",default="Date"
+)
 
 # French day and month names
 jours = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"]
@@ -19,63 +26,101 @@ mois = [
     "Juillet", "Aout", "Septembre", "Octobre", "Novembre", "Décembre"
 ]
 
-def date_to_french(date_str):
+def date_to_french(date_str,month_only=False):
     # date_str: "2025-08-11"
     d = datetime.datetime.strptime(date_str, "%Y-%m-%d")
     jour = jours[d.weekday()]
     nom_mois = mois[d.month - 1]
-    return f"{jour} {d.day} {nom_mois}"
+    if month_only:
+        return f"{jour} {d.day}"
+    else : 
+        return f"{jour} {d.day} {nom_mois}"
 
 dates_raw = showtimes_df['showtime_day'].unique()
 dates = [date_to_french(d) for d in dates_raw]
-dates_selection = st.pills("Selectionner la date", dates, selection_mode="single")
 
-# Convert selected French dates back to raw date strings for filtering
-if dates_selection:
-    selected_raw_dates = [d for d, f in zip(dates_raw, dates) if f in dates_selection]
-else : selected_raw_dates=showtimes_df['showtime_day'].unique()
+# si on filtre par date
+if filter_by=="Date":
 
+    dates_selection = st.pills("Selectionner une date", dates, selection_mode="single")
+    if not dates_selection:
+        st.info(' Selectionner une date pour voir le programme', icon="🗓️")
+    else:
+        # Convert selected French dates back to raw date strings for filtering
+            selected_raw_dates = [d for d, f in zip(dates_raw, dates) if f in dates_selection]
+        # Prepare DataFrame for display
+            df_display = showtimes_df.loc[
+                showtimes_df['showtime_day'].isin(selected_raw_dates)
+            ].copy()
+            # Drop 'showtime_day' column
+            if 'showtime_day' in df_display.columns:
+                df_display = df_display.drop(columns=['showtime_day'])
+            # Rename columns: capitalize all, and special case for 'nb_showings'
+            rename_dict = {col: col.capitalize() for col in df_display.columns}
+            if 'nb_showings' in df_display.columns:
+                rename_dict['nb_showings'] = 'Nb of showings'
+            df_display = df_display.rename(columns=rename_dict)
+            # Use st.dataframe with column_config to wrap or expand the 'Showtimes' column
+            # so that long lists are not truncated visually.
 
-if not dates_selection:
-    st.info('Selectionner une date pour voir le programme', icon="ℹ️")
-else:
-    # Prepare DataFrame for display
-        df_display = showtimes_df.loc[
-            showtimes_df['showtime_day'].isin(selected_raw_dates)
-        ].copy()
-        # Drop 'showtime_day' column
-        if 'showtime_day' in df_display.columns:
-            df_display = df_display.drop(columns=['showtime_day'])
-        # Rename columns: capitalize all, and special case for 'nb_showings'
-        rename_dict = {col: col.capitalize() for col in df_display.columns}
-        if 'nb_showings' in df_display.columns:
-            rename_dict['nb_showings'] = 'Nb of showings'
-        df_display = df_display.rename(columns=rename_dict)
-        # Use st.dataframe with column_config to wrap or expand the 'Showtimes' column
-        # so that long lists are not truncated visually.
-        from streamlit import column_config
-
-        # If 'Showtimes' column exists, set it to display as a wide, wrapped column
-        col_config = {}
-        if 'Showtimes' in df_display.columns:
-            col_config['Showtimes'] = st.column_config.TextColumn(
-                "Showtimes",
-                width="large",  # or "medium", or a pixel value like 400
-                help="All showtimes for this movie"
+            # If 'Showtimes' column exists, set it to display as a wide, wrapped column
+            col_config = {}
+            if 'Showtimes' in df_display.columns:
+                col_config['Showtimes'] = st.column_config.TextColumn(
+                    "Showtimes",
+                    width="large",  # or "medium", or a pixel value like 400
+                    help="All showtimes for this movie"
+                )
+            st.dataframe(
+                df_display,
+                use_container_width=True,
+                hide_index=True,
+                column_config=col_config if col_config else None
             )
-        st.dataframe(
-            df_display,
-            use_container_width=True,
-            hide_index=True,
-            column_config=col_config if col_config else None
-        )
+# si on filtre par film
+else :
+    movie_selection = st.selectbox(
+        "Selectionner un film",
+        shows_available,
+        index=None,
+        placeholder="Qu'est-ce que tu veux regarder mon cochon ?"
+    )
+    if not movie_selection:
+        st.info(' Selectionner un film pour voir le programme', icon="🎬")
+    else:
+        # Prepare DataFrame for display
+            df_display = showtimes_df.loc[
+                showtimes_df['movie'].str.contains(movie_selection)
+            ].copy()
+            df_display['Showtime day'] = df_display['showtime_day'].apply(lambda d: date_to_french(d, True))
+            # Rename columns: capitalize all, and special case for 'nb_showings'
+           
+            rename_dict = {col: col.capitalize() for col in df_display.columns}
+            rename_dict['nb_showings'] = 'Nb of showings'
+
+            df_display = df_display.rename(columns=rename_dict)
+            # Use st.dataframe with column_config to wrap or expand the 'Showtimes' column
+            # so that long lists are not truncated visually.
+
+            # If 'Showtimes' column exists, set it to display as a wide, wrapped column
+            col_config = {}
+            if 'Showtimes' in df_display.columns:
+                col_config['Showtimes'] = st.column_config.TextColumn(
+                    "Showtimes",
+                    width="large",  # or "medium", or a pixel value like 400
+                    help="All showtimes for this movie"
+                )
+            st.dataframe(
+                df_display[['Movie','Cinema','Showtime day','Nb of showings','Showtimes']],
+                use_container_width=True,
+                hide_index=True,
+                column_config=col_config if col_config else None
+            )
 
 
 # Then we get the movies from the watchlist
 watchlist_csv_path = Path(r"C:\Users\adamh\OneDrive\Bureau\Cinema showtime app\Cinema-showtimes-app\watchlist_culturation.csv")
 watchlist_df = pd.read_csv(watchlist_csv_path)
-
-shows_available = showtimes_df['movie'].unique()
         
 # Finally we find movies in watchlist that are available in cinemas
 
@@ -100,8 +145,34 @@ available_in_watchlist = watchlist_df[
     watchlist_df['Nom Anglais norm'].isin(normalized_shows_available) |
     watchlist_df['Nom Francais norm'].isin(normalized_shows_available)
 ]
+
+# Map showtime days (in French) to watchlist entries
+showtimes_with_days = showtimes_df.copy()
+showtimes_with_days['showtime_day_french'] = showtimes_with_days['showtime_day'].apply(lambda d: date_to_french(d, True))
+
+# Normalize for matching
+showtimes_with_days['movie_norm'] = showtimes_with_days['movie'].apply(normalize_str)
+
+# Group showtimes by movie
+movie_days_map = (
+    showtimes_with_days
+    .groupby('movie_norm')
+    .apply(lambda df: " / ".join(
+        # Sort by the raw date value
+        [date_to_french(d, True) for d in sorted(df['showtime_day'].unique())]
+    ))
+    .to_dict()
+)
+
+# Add column to available_in_watchlist
+available_in_watchlist['Showtime Days'] = available_in_watchlist.apply(
+    lambda row: movie_days_map.get(row['Nom Anglais norm']) 
+                or movie_days_map.get(row['Nom Francais norm']),
+    axis=1
+)
+
 st.write("Movies from watchlist that are available:")
-st.write(available_in_watchlist[['Nom Francais','Nom Anglais','Classification','Lien trailer']])
+st.write(available_in_watchlist[['Nom Francais','Nom Anglais','Showtime Days','Classification','Lien trailer']])
 
 
 
