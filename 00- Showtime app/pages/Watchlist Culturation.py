@@ -9,10 +9,9 @@ watchlist_csv_path = Path(r"C:\Users\adamh\OneDrive\Bureau\Cinema showtime app\C
 
 watchlist_df = pd.read_csv(watchlist_csv_path)
 
-
+st.write("### Watchlist actuelle")
 
 if not watchlist_df.empty:
-    st.write("### Watchlist actuelle")
 
     edited_df = st.data_editor(
         watchlist_df,
@@ -34,7 +33,7 @@ if not watchlist_df.empty:
         st.success("Removed watched movies from the list.")
         st.rerun()
 else:
-    st.write("No movies in your watchlist.")
+    st.warning('Pas de film dans la watchlist. Prière de se ressaisir.', icon="⚠️")
 
 st.write("### Ajouter un film à la watchlist")
 
@@ -44,7 +43,7 @@ english_title = st.text_input("Nom du film en anglais", placeholder="Ex: French 
 
 trailer=st.text_input("Lien du trailer", placeholder="Ex: https://www.youtube.com/watch?v=Fm8QaJS65nc")
 
-add=st.button("Add movie")
+add=st.button("Ajouter à la watchlist")
 
 if add and (french_title=='' and english_title=='') :# If the movie name isn't given don't add a row
     st.error("Ajoute le nom du film puto")

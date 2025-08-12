@@ -16,6 +16,7 @@ showtimes_df = pd.read_csv(showtimes_csv_path)
 # Add a button to refresh the showtime programs 
 col1, col2, col3 = st.columns([1, 1, 1])
 with col3:
+    st.write("*Prog du* " + str(min(showtimes_df['showtime_day']))+" *-* "+str(max(showtimes_df['showtime_day'])))
     if st.button("Charger la prog de la semaine"):
         st.success("Programmes chargés jusqu'au " + str(max(showtimes_df['showtime_day'])))
 
