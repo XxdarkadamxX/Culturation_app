@@ -6,17 +6,24 @@ import datetime
 from streamlit import column_config
 
 
-st.write("Showtimes")
+st.title("Séances de ciné")
+
 
 # First get the showtimes previously scraped
 showtimes_csv_path = Path(r"C:\Users\adamh\OneDrive\Bureau\Cinema showtime app\Cinema-showtimes-app\combined_showtimes.csv")
 showtimes_df = pd.read_csv(showtimes_csv_path)
 
+# Add a button to refresh the showtime programs 
+col1, col2, col3 = st.columns([1, 1, 1])
+with col3:
+    if st.button("Charger la prog de la semaine"):
+        st.success("Programmes chargés jusqu'au " + str(max(showtimes_df['showtime_day'])))
+
 shows_available = showtimes_df['movie'].unique() # All movies available
 
 # Allow user to filter either by date (with pills) or by movie name (with a dropdown)
 filter_by = st.segmented_control(
-    "Filter by", ["Date", "Movie"], selection_mode="single",default="Date"
+    "Recherche par", ["Date", "Film"], selection_mode="single",default="Date"
 )
 
 # French day and month names
@@ -171,13 +178,12 @@ available_in_watchlist['Showtime Days'] = available_in_watchlist.apply(
     axis=1
 )
 
-st.write("Movies from watchlist that are available:")
+st.write("Films de la watchlist culturation en salle:")
 st.dataframe(
                 available_in_watchlist[['Nom Francais','Nom Anglais','Showtime Days','Classification','Lien trailer']],
                 use_container_width=True,
                 hide_index=True
             )
-
 
 
 
