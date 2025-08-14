@@ -40,6 +40,7 @@ with col3:
             st.error("Erreur lors de la mise à jour des programmes :\n\n" + result.stderr)
 
 shows_available = showtimes_df['movie'].unique() # All movies available
+cinemas_available = showtimes_df['cinema'].unique() # All cinemas available
 
 # Allow user to filter either by date (with pills) or by movie name (with a dropdown)
 filter_by = st.segmented_control(
@@ -70,15 +71,30 @@ dates = [date_to_french(d) for d in dates_raw]
 if filter_by=="Date":
 
     dates_selection = st.pills("Selectionner une date", dates, selection_mode="single")
+    
+    cine_selection = st.selectbox(
+        "Selectionner un cinema",
+        cinemas_available,
+        index=None,
+        placeholder="On se pète où ?"
+        )
     if not dates_selection:
         st.info(' Selectionner une date pour voir le programme', icon="🗓️")
     else:
         # Convert selected French dates back to raw date strings for filtering
             selected_raw_dates = [d for d, f in zip(dates_raw, dates) if f in dates_selection]
         # Prepare DataFrame for display
-            df_display = showtimes_df.loc[
-                showtimes_df['showtime_day'].isin(selected_raw_dates)
-            ].copy()
+            # If no cinema is selected display all showtimes
+            if cine_selection is None:
+                df_display = showtimes_df.loc[
+                showtimes_df['showtime_day'].isin(selected_raw_dates) 
+                ].copy()
+
+            # If a cinema is selected display the corresponding showtimes
+            else: 
+                df_display = showtimes_df.loc[
+                showtimes_df['showtime_day'].isin(selected_raw_dates) & showtimes_df['cinema'].str.contains(cine_selection) 
+                ].copy()
             # Drop 'showtime_day' column
             if 'showtime_day' in df_display.columns:
                 df_display = df_display.drop(columns=['showtime_day'])
@@ -200,7 +216,7 @@ available_in_watchlist['Showtime Days'] = available_in_watchlist.apply(
 
 st.write("Films de la watchlist culturation en salle:")
 st.dataframe(
-                available_in_watchlist[['Nom Francais','Nom Anglais','Showtime Days','Classification','Lien trailer']],
+                available_in_watchlist[['Nom Francais','Nom Anglais','Showtime Days','Type','Lien trailer']],
                 use_container_width=True,
                 hide_index=True
             )

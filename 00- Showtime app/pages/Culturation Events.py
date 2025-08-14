@@ -28,10 +28,13 @@ type_ = st.selectbox(
         "Type",
         ("Exposition/Musée","Festival","Théatre","Event musique","Plan Grrr"),
         index=None,
+        accept_new_options=True,
         placeholder="Ex: Exposition/Musée"
     )
 
 lieu=st.text_input("Lieu", placeholder="Ex: Musée du Louvre")
+
+prix= st.text_input("Prix", placeholder="Ex: 10e en -26ans / 25e pr les 👴")
 
 certif = st.selectbox(
         "Certification CC",
@@ -48,7 +51,7 @@ add=st.button("Ajouter le plan")
 if add and (nom in plan_cult_df['Nom'].values):
     st.error("Ya deja le plan mon gars concentres-toi")
 elif add and (nom not in plan_cult_df['Nom'].values):
-    plan_cult_df.loc[len(plan_cult_df)] = [nom, type_,lieu,certif,end_date,res_url]
+    plan_cult_df.loc[len(plan_cult_df)] = [nom, type_,lieu,prix,certif,end_date,res_url]
     plan_cult_df.to_csv(plan_cult_csv_path, index=False)
     st.success("Plan ajouté bsahtek")
     time.sleep(2)
