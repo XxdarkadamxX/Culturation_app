@@ -2,6 +2,8 @@ import streamlit as st
 import pandas as pd
 from pathlib import Path
 import time
+import datetime
+
 
 st.title("Plans Culturation")
 
@@ -9,12 +11,30 @@ plan_cult_csv_path = Path(r"C:\Users\adamh\OneDrive\Bureau\Cinema showtime app\C
 
 plan_cult_df = pd.read_csv(plan_cult_csv_path)
 
-st.write("### Plans culturation")
+# Write end dates in french for easier comprehension
+mois = [
+    "Janvier", "Février", "Mars", "Avril", "Mai", "Juin",
+    "Juillet", "Aout", "Septembre", "Octobre", "Novembre", "Décembre"
+]
+
+def date_to_french(date_str):
+    # date_str: "2025-08-11"
+    d = datetime.datetime.strptime(date_str, "%Y-%m-%d")
+    nom_mois = mois[d.month - 1]
+
+    return f"{d.day} {nom_mois} {d.year}"
+
+st.write("### Liste des plans")
 
 if not plan_cult_df.empty:
     
+    # We display the culturation plans sorted by end date
+    plan_cult_df['end_date_datetime'] = pd.to_datetime(plan_cult_df['Date de fin'], errors='coerce')
+    sorted_df = plan_cult_df.sort_values(by='end_date_datetime', ascending=True)
+    sorted_df['Date de fin'] = sorted_df['Date de fin'].apply(date_to_french)  # write dates in words for lisibility
+
     st.dataframe(
-        plan_cult_df,
+        sorted_df[['Nom','Type','Lieu','Date de fin','Certification','Prix','Lien de reservation']],
         hide_index=True)
 
 else:
@@ -44,6 +64,7 @@ certif = st.selectbox(
     )
 
 end_date=st.date_input("Date de fin")
+
 res_url=st.text_input("Lien de reservation", placeholder="https://www.louvre.fr/expositions-et-evenements/evenements-activites/les-nocturnes-du-mercredi-et-du-vendredi")
 
 add=st.button("Ajouter le plan")
@@ -51,8 +72,10 @@ add=st.button("Ajouter le plan")
 if add and (nom in plan_cult_df['Nom'].values):
     st.error("Ya deja le plan mon gars concentres-toi")
 elif add and (nom not in plan_cult_df['Nom'].values):
-    plan_cult_df.loc[len(plan_cult_df)] = [nom, type_,lieu,prix,certif,end_date,res_url]
-    plan_cult_df.to_csv(plan_cult_csv_path, index=False)
-    st.success("Plan ajouté bsahtek")
+    plan_cult_df.loc[len(plan_cult_df)] = [nom, type_,lieu,prix,certif,str(end_date),res_url,None]
+    # Exclude 'end_date_datetime' column before saving to CSV if it exists
+    save_df = plan_cult_df.drop(columns=['end_date_datetime'], errors='ignore')
+    save_df.to_csv(plan_cult_csv_path, index=False)
+    st.success("Plan ajouté bsahtek👌")
     time.sleep(2)
     st.rerun()
