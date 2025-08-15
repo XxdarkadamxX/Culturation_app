@@ -162,7 +162,8 @@ else :
 
 
 # Then we get the movies from the watchlist
-watchlist_csv_path = Path(r"C:\Users\adamh\OneDrive\Bureau\Cinema showtime app\Cinema-showtimes-app\watchlist_culturation.csv")
+watchlist_csv_path = Path(__file__).parent.parent.parent / "watchlist_culturation.csv"
+
 watchlist_df = pd.read_csv(watchlist_csv_path)
         
 # Finally we find movies in watchlist that are available in cinemas

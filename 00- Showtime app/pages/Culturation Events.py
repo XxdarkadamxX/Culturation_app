@@ -3,13 +3,18 @@ import pandas as pd
 from pathlib import Path
 import time
 import datetime
+from datetime import date
 
 
 st.title("Plans Culturation")
 
-plan_cult_csv_path = Path(r"C:\Users\adamh\OneDrive\Bureau\Cinema showtime app\Cinema-showtimes-app\plan_culturation.csv")
+plan_cult_csv_path = Path(__file__).parent.parent.parent / "plan_culturation.csv"
 
-plan_cult_df = pd.read_csv(plan_cult_csv_path)
+plan_cult_df_w_old_plans = pd.read_csv(plan_cult_csv_path)
+
+# Automatically delete expired plans (plans with a datetime in the past)
+plan_cult_df_w_old_plans['end_date_datetime'] = pd.to_datetime(plan_cult_df_w_old_plans['Date de fin'], errors='coerce')
+plan_cult_df = plan_cult_df_w_old_plans[plan_cult_df_w_old_plans['end_date_datetime'] >= pd.Timestamp(date.today())].copy()
 
 # Write end dates in french for easier comprehension
 mois = [
@@ -29,7 +34,6 @@ st.write("### Liste des plans")
 if not plan_cult_df.empty:
     
     # We display the culturation plans sorted by end date
-    plan_cult_df['end_date_datetime'] = pd.to_datetime(plan_cult_df['Date de fin'], errors='coerce')
     sorted_df = plan_cult_df.sort_values(by='end_date_datetime', ascending=True)
     sorted_df['Date de fin'] = sorted_df['Date de fin'].apply(date_to_french)  # write dates in words for lisibility
 
@@ -67,7 +71,14 @@ end_date=st.date_input("Date de fin")
 
 res_url=st.text_input("Lien de reservation", placeholder="https://www.louvre.fr/expositions-et-evenements/evenements-activites/les-nocturnes-du-mercredi-et-du-vendredi")
 
-add=st.button("Ajouter le plan")
+col1, col2 = st.columns([1, 4])
+with col1:
+    add=st.button("Ajouter le plan")
+with col2:
+    if end_date==date.today():
+        st.warning("Date de fin = Aujourd'hui : le plan sera supp. demain !",icon="⚠️")
+    if end_date<date.today():
+        st.warning("Date de fin dans le passé : le plan ne sera pas ajouté !",icon="⚠️")
 
 if add and (nom in plan_cult_df['Nom'].values):
     st.error("Ya deja le plan mon gars concentres-toi")

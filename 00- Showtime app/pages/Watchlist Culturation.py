@@ -72,14 +72,14 @@ trailer=st.text_input("Lien du trailer", placeholder="Ex: https://www.youtube.co
 add=st.button("Ajouter à la watchlist")
 
 if add and (french_title=='' and english_title=='') :# If the movie name isn't given don't add a row
-    st.error("Ajoutes le nom du film puto")
+    st.error("Ajoutes le nom du film puto 🫵")
 elif add and (french_title in watchlist_df['Nom Francais'].values or english_title in watchlist_df['Nom Anglais'].values):
-    st.error("Ya déjà le film mon gars concentres-toi")
+    st.error("Ya déjà le film mon gars concentres-toi 🥴")
 elif add and (type is None):
-    st.error("Renseigne le type plz")
+    st.error("Renseignes le type de film le san 🙏")
 elif add and (french_title !='' or english_title !='') :
     watchlist_df.loc[len(watchlist_df)] = [french_title, english_title,type_logo,trailer,False]
     watchlist_df.to_csv(watchlist_csv_path, index=False)
-    st.success("Film ajouté bsahtek")
+    st.success("Film ajouté bsahtek 👌")
     time.sleep(2)
     st.rerun()
