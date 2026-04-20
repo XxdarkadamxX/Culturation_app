@@ -81,9 +81,8 @@ class DulacShowtimesFetcher:
             return 0
 
         supabase = self.create_supabase_client()
-        dates = sorted({record["showtime_day"] for record in records})
 
-        supabase.table("dulac_showtimes").delete().in_("showtime_day", dates).execute()
+        supabase.table("dulac_showtimes").delete().execute()
 
         batch_size = 500
         inserted_count = 0
