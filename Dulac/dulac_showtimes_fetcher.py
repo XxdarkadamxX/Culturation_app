@@ -82,7 +82,7 @@ class DulacShowtimesFetcher:
 
         supabase = self.create_supabase_client()
 
-        supabase.table("dulac_showtimes").delete().execute()
+        supabase.table("dulac_showtimes").delete().neq("movie", 0).execute()
 
         batch_size = 500
         inserted_count = 0
