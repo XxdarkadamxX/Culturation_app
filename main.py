@@ -80,18 +80,10 @@ def run_paris_cinema_club(skip_download: bool = False) -> None:
 
 
 def run_dulac() -> None:
-    """Fetch Dulac showtimes for next 7 days and save under Dulac/dulac_showtimes.json."""
-    dulac_dir = os.path.join(PROJECT_ROOT, "Dulac")
-    ensure_dir(dulac_dir)
-
+    """Fetch Dulac showtimes for next 7 days and sync to Supabase."""
     fetcher = DulacShowtimesFetcher()
     showtimes_data = fetcher.fetch_showtimes_for_next_7_days()
-
-    output_path = os.path.join(dulac_dir, "dulac_showtimes.json")
-    fetcher.save_showtimes_to_file(showtimes_data, output_path)
-
-    if not os.path.exists(output_path):
-        raise FileNotFoundError("Dulac showtimes JSON not created")
+    fetcher.write_showtimes_to_supabase(showtimes_data)
 
 
 def run_ugc(max_films: Optional[int] = 5) -> None:
