@@ -30,7 +30,7 @@ class DulacShowtimesFetcher:
             'Upgrade-Insecure-Requests': '1',
         }
 
-    def flatten_showtimes_for_supabase(self, showtimes_data: Dict[str, Any]) -> List[Dict[str, Any]]:
+    def flatten_showtimes_format(self, showtimes_data: Dict[str, Any]) -> List[Dict[str, Any]]:
         """
         Flatten scraped showtimes into one record per movie/cinema/day for Supabase.
         """
@@ -66,16 +66,16 @@ class DulacShowtimesFetcher:
 
         return create_client(supabase_url, supabase_key)
 
-    def write_showtimes_to_supabase(self, showtimes_data: Dict[str, Any]) -> int:
+    def save_showtimes(self, showtimes_data: Dict[str, Any]) -> int:
         """
-        Write Dulac showtimes directly to Supabase.
+        Write Dulac showtimes directly to Supabase database.
 
         Existing rows for the fetched dates are removed first to avoid duplicates.
 
         Returns:
             Number of records written
         """
-        records = self.flatten_showtimes_for_supabase(showtimes_data)
+        records = self.flatten_showtimes_format(showtimes_data)
         if not records:
             print("No Dulac showtime records to write to Supabase.")
             return 0
@@ -295,7 +295,7 @@ def main():
     showtimes_data = fetcher.fetch_showtimes_for_next_7_days()
     
     if showtimes_data['dates']:
-        fetcher.write_showtimes_to_supabase(showtimes_data)
+        fetcher.save_showtimes(showtimes_data)
         fetcher.print_showtimes_summary(showtimes_data)
     else:
         print("No showtimes data found")
