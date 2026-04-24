@@ -42,10 +42,8 @@ def ensure_dir(path: str) -> None:
 
 
 def run_paris_cinema_club(skip_download: bool = False) -> None:
-    """Download PCC PDFs and parse to JSON in Paris_Cinema_Club directory."""
+    """Download PCC PDFs to Supabase Storage and parse them into Supabase."""
     pcc_dir = os.path.join(PROJECT_ROOT, "Paris_Cinema_Club")
-    pdf_dir = os.path.join(pcc_dir, "Paris_Cinema_Club_pdf")
-    ensure_dir(pdf_dir)
 
     with pushd(pcc_dir):
         if not skip_download:
@@ -60,7 +58,6 @@ def run_paris_cinema_club(skip_download: bool = False) -> None:
                         filename = "semainier_ecoles.pdf"
                     else:
                         filename = f"semainier_extra_{i+1}.pdf"
-                    # download_pdf saves into 'Paris_Cinema_Club_pdf/' inside current cwd
                     path = download_pdf(url, filename)
                     if path:
                         downloaded.append(path)
@@ -69,29 +66,15 @@ def run_paris_cinema_club(skip_download: bool = False) -> None:
         else:
             print("Skipping PCC PDF download as requested.")
 
-        # Parse PDFs -> paris_cinema_club_showtimes.json (in Paris_Cinema_Club)
-        parser = ParisCinemaClubPDFParser(pdf_dir="Paris_Cinema_Club_pdf")
+        parser = ParisCinemaClubPDFParser()
         parser.run()
-
-        # Ensure output exists
-        expected_output = os.path.join(os.getcwd(), "paris_cinema_club_showtimes.json")
-        if not os.path.exists(expected_output):
-            raise FileNotFoundError("paris_cinema_club_showtimes.json was not created by PCC parser")
 
 
 def run_dulac() -> None:
-    """Fetch Dulac showtimes for next 7 days and save under Dulac/dulac_showtimes.json."""
-    dulac_dir = os.path.join(PROJECT_ROOT, "Dulac")
-    ensure_dir(dulac_dir)
-
+    """Fetch Dulac showtimes for next 7 days and sync to Supabase."""
     fetcher = DulacShowtimesFetcher()
     showtimes_data = fetcher.fetch_showtimes_for_next_7_days()
-
-    output_path = os.path.join(dulac_dir, "dulac_showtimes.json")
-    fetcher.save_showtimes_to_file(showtimes_data, output_path)
-
-    if not os.path.exists(output_path):
-        raise FileNotFoundError("Dulac showtimes JSON not created")
+    fetcher.save_showtimes(showtimes_data)
 
 
 def run_ugc(max_films: Optional[int] = 5) -> None:
@@ -160,17 +143,17 @@ def main():
     else:
         print("Skipping Dulac step")
 
-    if not args.skip_ugc:
-        print("\n=== Step 3: UGC ===")
-        run_ugc(max_films=args.max_ugc_films)
-    else:
-        print("Skipping UGC step")
+    # if not args.skip_ugc:
+    #     print("\n=== Step 3: UGC ===")
+    #     run_ugc(max_films=args.max_ugc_films)
+    # else:
+    #     print("Skipping UGC step")
 
-    print("\n=== Step 4: Combine to CSV ===")
-    csv_path = combine_to_csv()
+    # print("\n=== Step 4: Combine to CSV ===")
+    # csv_path = combine_to_csv()
 
-    print("\nAll done!")
-    print(f"Output: {csv_path}")
+    # print("\nAll done!")
+    # print(f"Output: {csv_path}")
 
 
 if __name__ == "__main__":

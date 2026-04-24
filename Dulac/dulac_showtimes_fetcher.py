@@ -1,10 +1,14 @@
 import requests
-import json
 import re
-from typing import Dict, Any, Optional, List
+from typing import Dict, Any, List
 from bs4 import BeautifulSoup
 from datetime import datetime, date, timedelta
 import time
+from dotenv import load_dotenv
+from supabase import Client, create_client
+import os
+
+
 #test
 class DulacShowtimesFetcher:
     """
@@ -14,6 +18,7 @@ class DulacShowtimesFetcher:
     def __init__(self):
         self.base_url = "https://dulaccinemas.com"
         self.showtimes_endpoint = "https://dulaccinemas.com/portail/seances"
+        self.supabase_table = os.getenv("DULAC_SUPABASE_TABLE", "dulac_showtimes")
         
         # Headers to mimic a real browser request
         self.headers = {
@@ -24,6 +29,71 @@ class DulacShowtimesFetcher:
             'Connection': 'keep-alive',
             'Upgrade-Insecure-Requests': '1',
         }
+
+    def flatten_showtimes_format(self, showtimes_data: Dict[str, Any]) -> List[Dict[str, Any]]:
+        """
+        Flatten scraped showtimes into one record per movie/cinema/day for Supabase.
+        """
+        records: List[Dict[str, Any]] = []
+
+        for date_str, date_data in showtimes_data.get("dates", {}).items():
+            for cinema in date_data.get("cinemas", []):
+                cinema_name = cinema.get("name", "Unknown")
+
+                for film in cinema.get("films", []):
+                    showtimes = film.get("showtimes", [])
+                    records.append({
+                        "movie": film.get("title", "Unknown"),
+                        "cinema": cinema_name,
+                        "showtime_day": date_str,
+                        "nb_showings": film.get("showtime_count", len(showtimes)),
+                        "showtimes": showtimes,
+                    })
+
+        return records
+
+    def create_supabase_client(self) -> Client:
+        """
+        Create and return a Supabase client using environment variables.
+        """
+        load_dotenv()
+
+        supabase_url = os.getenv("SUPABASE_URL")
+        supabase_key = os.getenv("SUPABASE_KEY")
+
+        if not supabase_url or not supabase_key:
+            raise ValueError("SUPABASE_URL and SUPABASE_KEY must be set in your environment.")
+
+        return create_client(supabase_url, supabase_key)
+
+    def save_showtimes(self, showtimes_data: Dict[str, Any]) -> int:
+        """
+        Write Dulac showtimes directly to Supabase database.
+
+        Existing rows for the fetched dates are removed first to avoid duplicates.
+
+        Returns:
+            Number of records written
+        """
+        records = self.flatten_showtimes_format(showtimes_data)
+        if not records:
+            print("No Dulac showtime records to write to Supabase.")
+            return 0
+
+        supabase = self.create_supabase_client()
+
+        supabase.table("dulac_showtimes").delete().neq("movie", 0).execute()
+
+        batch_size = 500
+        inserted_count = 0
+
+        for i in range(0, len(records), batch_size):
+            batch = records[i:i + batch_size]
+            supabase.table("dulac_showtimes").insert(batch).execute()
+            inserted_count += len(batch)
+
+        print(f"Wrote {inserted_count} records to Supabase table '{self.supabase_table}'.")
+        return inserted_count
     
     def get_showtimes_for_date(self, date_str: str) -> Dict[str, Any]:
         """
@@ -167,28 +237,6 @@ class DulacShowtimesFetcher:
         
         return all_showtimes
     
-    def save_showtimes_to_file(self, showtimes_data: Dict[str, Any], filename: str) -> bool:
-        """
-        Save showtimes data to a JSON file
-        
-        Args:
-            showtimes_data: The showtimes data to save
-            filename: Name of the file to save to
-            
-        Returns:
-            True if successful, False otherwise
-        """
-        try:
-            with open(filename, 'w', encoding='utf-8') as f:
-                json.dump(showtimes_data, f, indent=2, ensure_ascii=False)
-            
-            print(f"Showtimes data saved to {filename}")
-            return True
-            
-        except Exception as e:
-            print(f"Error saving showtimes data: {e}")
-            return False
-    
     def print_showtimes_summary(self, showtimes_data: Dict[str, Any]) -> None:
         """
         Print a summary of the fetched showtimes
@@ -247,10 +295,7 @@ def main():
     showtimes_data = fetcher.fetch_showtimes_for_next_7_days()
     
     if showtimes_data['dates']:
-        # Save the showtimes data
-        fetcher.save_showtimes_to_file(showtimes_data, 'dulac_showtimes.json')
-        
-        # Print summary
+        fetcher.save_showtimes(showtimes_data)
         fetcher.print_showtimes_summary(showtimes_data)
     else:
         print("No showtimes data found")

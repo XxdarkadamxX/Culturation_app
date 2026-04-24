@@ -5,23 +5,23 @@ Extracts movie showtime data from PDF files and organizes by date
 """
 
 import os
-import json
 import re
+from io import BytesIO
 from datetime import datetime, timedelta
-from dateutil import parser as date_parser
 import pdfplumber
 from typing import Dict, List, Any, Optional
+from dotenv import load_dotenv
+from supabase import Client, create_client
 
 class ParisCinemaClubPDFParser:
-    def __init__(self, pdf_dir: str = "Paris_Cinema_Club_pdf"):
+    def __init__(self):
         """
         Initialize the PDF parser
-        
-        Args:
-            pdf_dir: Directory containing the PDF files
         """
-        self.pdf_dir = pdf_dir
-        self.output_file = "paris_cinema_club_showtimes.json"
+        load_dotenv()
+        self.supabase_table = os.getenv("PCC_SUPABASE_TABLE", "paris_cinema_showtimes")
+        self.pdf_bucket = os.getenv("PDF_BUCKET")
+        self.pdf_folder = "semainier_paris_cinema_club"
         
         # Common French month names and their English equivalents
         self.month_mapping = {
@@ -37,26 +37,46 @@ class ParisCinemaClubPDFParser:
             'jeudi': 'Thursday', 'vendredi': 'Friday', 'samedi': 'Saturday', 'dimanche': 'Sunday'
         }
 
-    def extract_text_from_pdf(self, pdf_path: str) -> str:
+    def create_supabase_client(self) -> Client:
         """
-        Extract text content from a PDF file
-        
-        Args:
-            pdf_path: Path to the PDF file
-            
-        Returns:
-            Extracted text content
+        Create and return a Supabase client using environment variables.
+        """
+        load_dotenv()
+
+        supabase_url = os.getenv("SUPABASE_URL")
+        supabase_key = os.getenv("SUPABASE_KEY")
+
+        if not supabase_url or not supabase_key:
+            raise ValueError("SUPABASE_URL and SUPABASE_KEY must be set in your environment.")
+
+        return create_client(supabase_url, supabase_key)
+
+    def get_pdf_from_storage(self, filename: str) -> bytes:
+        """
+        Download a PDF file from Supabase Storage.
+        """
+        if not self.pdf_bucket:
+            raise ValueError("PDF_BUCKET must be set in your environment.")
+
+        storage_path = f"{self.pdf_folder}/{filename}"
+        supabase = self.create_supabase_client()
+
+        return supabase.storage.from_(self.pdf_bucket).download(storage_path)
+
+    def extract_text_from_pdf(self, pdf_content: bytes, pdf_name: str) -> str:
+        """
+        Extract text content from a PDF file.
         """
         try:
             text_content = ""
-            with pdfplumber.open(pdf_path) as pdf:
+            with pdfplumber.open(BytesIO(pdf_content)) as pdf:
                 for page in pdf.pages:
                     text = page.extract_text()
                     if text:
                         text_content += text + "\n"
             return text_content
         except Exception as e:
-            print(f"Error extracting text from {pdf_path}: {e}")
+            print(f"Error extracting text from {pdf_name}: {e}")
             return ""
 
     def parse_date_range_from_header(self, text: str) -> Optional[tuple]:
@@ -324,35 +344,76 @@ class ParisCinemaClubPDFParser:
         
         return dates_data
 
+    def flatten_showtimes_format(self, showtimes_data: Dict[str, Any]) -> List[Dict[str, Any]]:
+        """
+        Flatten parsed showtimes into one record per movie/cinema/day for Supabase.
+        """
+        grouped_records: Dict[tuple, Dict[str, Any]] = {}
+
+        for date_str, date_data in showtimes_data.get("dates", {}).items():
+            for cinema_name, cinema_data in date_data.get("cinemas", {}).items():
+                for film in cinema_data.get("films", []):
+                    key = (film.get("title", "Unknown"), cinema_name, date_str)
+                    showtime = film.get("showtime")
+
+                    if key not in grouped_records:
+                        grouped_records[key] = {
+                            "movie": film.get("title", "Unknown"),
+                            "cinema": cinema_name,
+                            "showtime_day": date_str,
+                            "nb_showings": 0,
+                            "showtimes": [],
+                        }
+
+                    if showtime:
+                        grouped_records[key]["showtimes"].append(showtime)
+                        grouped_records[key]["nb_showings"] += 1
+
+        return list(grouped_records.values())
+
+    def save_showtimes(self, showtimes_data: Dict[str, Any]) -> int:
+        """
+        Write Paris Cinema Club showtimes directly to Supabase database.
+
+        Existing rows are removed first to avoid duplicates.
+
+        Returns:
+            Number of records written
+        """
+        records = self.flatten_showtimes_format(showtimes_data)
+        if not records:
+            print("No Paris Cinema Club showtime records to write to Supabase.")
+            return 0
+
+        supabase = self.create_supabase_client()
+
+        supabase.table(self.supabase_table).delete().neq("movie", 0).execute()
+
+        batch_size = 500
+        inserted_count = 0
+
+        for i in range(0, len(records), batch_size):
+            batch = records[i:i + batch_size]
+            supabase.table(self.supabase_table).insert(batch).execute()
+            inserted_count += len(batch)
+
+        print(f"Wrote {inserted_count} records to Supabase table '{self.supabase_table}'.")
+        return inserted_count
+
     def run(self):
         """
         Main method to run the PDF parser
         """
         print("Starting Paris Cinema Club PDF Parser...")
         
-        # Check if PDF directory exists
-        if not os.path.exists(self.pdf_dir):
-            print(f"PDF directory {self.pdf_dir} not found!")
-            return
-        
-        # Define PDF file paths
-        christine_pdf = os.path.join(self.pdf_dir, "semainier_christine.pdf")
-        ecoles_pdf = os.path.join(self.pdf_dir, "semainier_ecoles.pdf")
-        
-        # Check if PDF files exist
-        if not os.path.exists(christine_pdf):
-            print(f"Christine PDF not found: {christine_pdf}")
-            return
-        
-        if not os.path.exists(ecoles_pdf):
-            print(f"Ecoles PDF not found: {ecoles_pdf}")
-            return
-        
         print("Extracting text from PDFs...")
-        
+
+        christine_pdf = self.get_pdf_from_storage("semainier_christine.pdf")
+        ecoles_pdf = self.get_pdf_from_storage("semainier_ecoles.pdf")
+
         # Extract text from both PDFs
-        christine_text = self.extract_text_from_pdf(christine_pdf)
-        ecoles_text = self.extract_text_from_pdf(ecoles_pdf)
+        christine_text = self.extract_text_from_pdf(christine_pdf, "semainier_christine.pdf")
+        ecoles_text = self.extract_text_from_pdf(ecoles_pdf, "semainier_ecoles.pdf")
         
         if not christine_text and not ecoles_text:
             print("No text could be extracted from PDFs!")
@@ -372,12 +433,9 @@ class ParisCinemaClubPDFParser:
             },
             'dates': dates_data
         }
-        
-        # Save to JSON file
-        print(f"Saving data to {self.output_file}...")
-        with open(self.output_file, 'w', encoding='utf-8') as f:
-            json.dump(output_data, f, ensure_ascii=False, indent=2)
-        
+
+        self.save_showtimes(output_data)
+
         print("Parsing completed successfully!")
         
         # Print summary
@@ -391,7 +449,7 @@ class ParisCinemaClubPDFParser:
         print(f"  Dates processed: {len(dates_data)}")
         print(f"  Total cinemas: {total_cinemas}")
         print(f"  Total movies: {total_movies}")
-        print(f"  Output file: {self.output_file}")
+        print(f"  Output table: {self.supabase_table}")
 
 if __name__ == "__main__":
     parser = ParisCinemaClubPDFParser()

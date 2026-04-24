@@ -1,9 +1,12 @@
 import requests
 import os
+from dotenv import load_dotenv
 from urllib.parse import urlparse
 import time
 from bs4 import BeautifulSoup
+from supabase import Client, create_client
 import re
+
 
 def get_pdf_urls_from_website():
     """
@@ -43,9 +46,23 @@ def get_pdf_urls_from_website():
         print(f"Error scraping website: {e}")
         return []
 
+def create_supabase_client():
+    """
+    Create and return a Supabase client using environment variables.
+    """
+    load_dotenv()
+
+    supabase_url = os.getenv("SUPABASE_URL")
+    supabase_key = os.getenv("SUPABASE_KEY")
+
+    if not supabase_url or not supabase_key:
+        raise ValueError("SUPABASE_URL and SUPABASE_KEY must be set in your environment.")
+
+    return create_client(supabase_url, supabase_key)
+
 def download_pdf(url, filename):
     """
-    Download a PDF file from the given URL with a specific filename
+    Download the pdf files and save them in database
     """
     try:
         print(f"Downloading: {url}")
@@ -58,20 +75,22 @@ def download_pdf(url, filename):
         
         response = requests.get(url, headers=headers, stream=True)
         response.raise_for_status()
+
+        supabase_client = create_supabase_client()
+
+        bucket = os.getenv("PDF_BUCKET")
+        if not bucket:
+            raise ValueError("PDF_BUCKET must be set in the environment.")
         
-        # Create directory if it doesn't exist
-        os.makedirs('Paris_Cinema_Club_pdf', exist_ok=True)
+        # Upload the file to the supabase bucket
+        supabase_client.storage.from_(bucket).update(
+            f"semainier_paris_cinema_club/{filename}",
+            response.content,
+            file_options={"content-type": "application/pdf", "upsert":"true"}
+        )
         
-        filepath = os.path.join('Paris_Cinema_Club_pdf', filename)
-        
-        # Download the file
-        with open(filepath, 'wb') as f:
-            for chunk in response.iter_content(chunk_size=8192):
-                if chunk:
-                    f.write(chunk)
-        
-        print(f"Successfully downloaded: {filepath}")
-        return filepath
+        print(f"Successfully downloaded: {bucket}/{filename}")
+        return f"{bucket}/{filename}"
         
     except requests.exceptions.RequestException as e:
         print(f"Error downloading {url}: {e}")
@@ -118,9 +137,6 @@ def main():
     print(f"Successfully downloaded {len(downloaded_files)} files:")
     for filepath in downloaded_files:
         print(f"  - {filepath}")
-    
-    if downloaded_files:
-        print(f"\nFiles saved in: {os.path.abspath('Paris_Cinema_Club_pdf')}")
 
 if __name__ == "__main__":
     main() 
