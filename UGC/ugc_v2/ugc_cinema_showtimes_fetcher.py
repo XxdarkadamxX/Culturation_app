@@ -3,10 +3,12 @@ import re
 import time
 from datetime import date, datetime, timedelta
 from typing import Any, Dict, List
+from dotenv import load_dotenv
+from supabase import Client, create_client
+import os
 
 import requests
 from bs4 import BeautifulSoup
-
 
 class UGCCinemaShowtimesFetcher:
     """
@@ -14,10 +16,14 @@ class UGCCinemaShowtimesFetcher:
     """
 
     def __init__(self):
+        load_dotenv()
         self.base_url = "https://www.ugc.fr"
         self.showings_endpoint = (
             "https://www.ugc.fr/showingsCinemaAjaxAction!getShowingsForCinemaPage.action"
         )
+        self.supabase_table = os.getenv("UGC_SUPABASE_TABLE")
+        if not self.supabase_table:
+            raise ValueError("UGC_SUPABASE_TABLE must be set in the environment.")
         self.paris_cinemas = [
             {"cinema_id": "1", "name": "UGC Ciné Cité Châtelet Les Halles"},
             {"cinema_id": "2", "name": "UGC Ciné Cité Bercy"},
@@ -45,6 +51,20 @@ class UGCCinemaShowtimesFetcher:
             "Connection": "keep-alive",
             "Upgrade-Insecure-Requests": "1",
         }
+
+    def create_supabase_client(self) -> Client:
+        """
+        Create and return a Supabase client using environment variables.
+        """
+        load_dotenv()
+
+        supabase_url = os.getenv("SUPABASE_URL")
+        supabase_key = os.getenv("SUPABASE_KEY")
+
+        if not supabase_url or not supabase_key:
+            raise ValueError("SUPABASE_URL and SUPABASE_KEY must be set in your environment.")
+
+        return create_client(supabase_url, supabase_key)
 
     def parse_film_blocks(self, soup: BeautifulSoup) -> List[Dict[str, Any]]:
         """
@@ -79,39 +99,6 @@ class UGCCinemaShowtimesFetcher:
 
         return films
 
-    # def get_showtimes_for_cinema(self, cinema: Dict[str, str], date_str: str) -> Dict[str, Any]:
-    #     """
-    #     Fetch all film showtimes for one cinema on one date.
-    #     """
-    #     try:
-    #         response = requests.get(
-    #             self.showings_endpoint,
-    #             params={"cinemaId": cinema["cinema_id"], "date": date_str},
-    #             headers=self.headers,
-    #             timeout=30,
-    #         )
-    #         response.raise_for_status()
-
-    #         soup = BeautifulSoup(response.text, "html.parser")
-    #         films = self.parse_film_blocks(soup)
-
-    #         return {
-    #             "date": date_str,
-    #             "cinema_id": cinema["cinema_id"],
-    #             "name": cinema["name"],
-    #             "films": films,
-    #         }
-
-    #     except Exception as e:
-    #         print(f"Error getting UGC showtimes for {cinema['name']} on {date_str}: {e}")
-    #         return {
-    #             "date": date_str,
-    #             "cinema_id": cinema["cinema_id"],
-    #             "name": cinema["name"],
-    #             "films": [],
-    #             "error": str(e),
-    #         }
-
     def get_showtimes_for_cinema(self, cinema: Dict[str, str], date_str: str) -> Dict[str, Any]:
         try:
             response = requests.get(
@@ -141,7 +128,6 @@ class UGCCinemaShowtimesFetcher:
                 "films": [],
                 "error": str(e),
             }
-
 
     def fetch_showtimes_for_next_7_days(self) -> Dict[str, Any]:
         """
@@ -185,20 +171,58 @@ class UGCCinemaShowtimesFetcher:
 
         return all_showtimes
 
-    def save_showtimes_to_file(self, showtimes_data: Dict[str, Any], filename: str) -> bool:
+    def flatten_showtimes_format(self, showtimes_data: Dict[str, Any]) -> List[Dict[str, Any]]:
         """
-        Save fetched UGC cinema showtimes to a JSON file.
+        Flatten scraped showtimes into one record per movie/cinema/day for Supabase.
         """
-        try:
-            with open(filename, "w", encoding="utf-8") as f:
-                json.dump(showtimes_data, f, indent=2, ensure_ascii=False)
+        records: List[Dict[str, Any]] = []
 
-            print(f"UGC cinema showtimes saved to {filename}")
-            return True
+        for date_str, date_data in showtimes_data.get("dates", {}).items():
+            for cinema in date_data.get("cinemas", []):
+                cinema_name = cinema.get("name", "Unknown")
 
-        except Exception as e:
-            print(f"Error saving UGC cinema showtimes: {e}")
-            return False
+                for film in cinema.get("films", []):
+                    showtimes = film.get("showtimes", [])
+                    records.append({
+                        "movie": film.get("title", "Unknown"),
+                        "cinema": cinema_name,
+                        "showtime_day": date_str,
+                        "nb_showings": film.get("showtime_count", len(showtimes)),
+                        "showtimes": showtimes,
+                    })
+
+        return records
+
+    def save_showtimes(self, showtimes_data: Dict[str, Any]) -> int:
+        """
+        Write UGC showtimes directly to Supabase database.
+
+        Existing rows for the fetched dates are removed first to avoid duplicates.
+
+        Returns:
+            Number of records written
+        """
+        records = self.flatten_showtimes_format(showtimes_data)
+        if not records:
+            print("No ugc showtime records to write to Supabase.")
+            return 0
+
+        supabase = self.create_supabase_client()
+
+        print(self.supabase_table)
+
+        supabase.table(self.supabase_table).delete().neq("movie", 0).execute()
+
+        batch_size = 500
+        inserted_count = 0
+
+        for i in range(0, len(records), batch_size):
+            batch = records[i:i + batch_size]
+            supabase.table(self.supabase_table).insert(batch).execute()
+            inserted_count += len(batch)
+
+        print(f"Wrote {inserted_count} records to Supabase table '{self.supabase_table}'.")
+        return inserted_count
 
 
 def main():
@@ -208,7 +232,7 @@ def main():
     showtimes_data = fetcher.fetch_showtimes_for_next_7_days()
 
     if showtimes_data.get("dates"):
-        fetcher.save_showtimes_to_file(showtimes_data, "ugc_cinema_showtimes_v2.json")
+        fetcher.save_showtimes(showtimes_data)
     else:
         print("No UGC cinema showtimes data found")
 
