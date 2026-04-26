@@ -89,13 +89,15 @@ class UGCCinemaShowtimesFetcher:
             showtimes = sorted(set(re.findall(r"(\d{2}:\d{2})", block_text)))
 
             seen_titles.add(title)
-            films.append(
-                {
-                    "title": title,
-                    "showtimes": showtimes,
-                    "showtime_count": len(showtimes),
-                }
-            )
+
+            if len(showtimes) !=0 : # some movies are shown only to announce showings on future dates, we don't need them
+                films.append(
+                    {
+                        "title": title,
+                        "showtimes": showtimes,
+                        "showtime_count": len(showtimes),
+                    }
+                )
 
         return films
 
