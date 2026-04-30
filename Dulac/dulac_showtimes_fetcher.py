@@ -16,9 +16,10 @@ class DulacShowtimesFetcher:
     """
     
     def __init__(self):
+        load_dotenv()
         self.base_url = "https://dulaccinemas.com"
         self.showtimes_endpoint = "https://dulaccinemas.com/portail/seances"
-        self.supabase_table = os.getenv("DULAC_SUPABASE_TABLE", "dulac_showtimes")
+        self.supabase_table = os.getenv("DULAC_SUPABASE_TABLE")
         
         # Headers to mimic a real browser request
         self.headers = {
@@ -82,14 +83,14 @@ class DulacShowtimesFetcher:
 
         supabase = self.create_supabase_client()
 
-        supabase.table("dulac_showtimes").delete().neq("movie", 0).execute()
+        supabase.table(self.supabase_table).delete().neq("movie", 0).execute()
 
         batch_size = 500
         inserted_count = 0
 
         for i in range(0, len(records), batch_size):
             batch = records[i:i + batch_size]
-            supabase.table("dulac_showtimes").insert(batch).execute()
+            supabase.table(self.supabase_table).insert(batch).execute()
             inserted_count += len(batch)
 
         print(f"Wrote {inserted_count} records to Supabase table '{self.supabase_table}'.")
