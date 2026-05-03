@@ -2,11 +2,64 @@ import streamlit as st
 import pandas as pd
 from pathlib import Path
 import time
+from dotenv import load_dotenv
+from supabase import Client, create_client
+import os
 
 st.title("Watchlist Culturation")
 
-watchlist_csv_path = Path(__file__).parent.parent.parent / "watchlist_culturation.csv"
-watchlist_df = pd.read_csv(watchlist_csv_path)
+#Connect to DB and load watchlist
+
+def load_watchlist():
+
+    load_dotenv()
+    supabase_table = os.getenv("WATCHLIST_TABLE")
+    supabase_url = os.getenv("SUPABASE_URL")
+    supabase_key = os.getenv("SUPABASE_KEY")
+
+    if not supabase_url or not supabase_key:
+            raise ValueError("SUPABASE_URL and SUPABASE_KEY must be set in your environment.")
+
+    db_client=create_client(supabase_url, supabase_key)
+
+    watchlist_df=db_client.table(supabase_table).select("*").execute()
+
+    return pd.DataFrame(watchlist_df.data)
+
+# def save_showtimes(self, showtimes_data: Dict[str, Any]) -> int:
+#         """
+#         Write Dulac showtimes directly to Supabase database.
+
+#         Existing rows for the fetched dates are removed first to avoid duplicates.
+
+#         Returns:
+#             Number of records written
+#         """
+#         records = self.flatten_showtimes_format(showtimes_data)
+#         if not records:
+#             print("No Dulac showtime records to write to Supabase.")
+#             return 0
+
+#         supabase = self.create_supabase_client()
+
+#         supabase.table(self.supabase_table).delete().neq("movie", 0).execute()
+
+#         batch_size = 500
+#         inserted_count = 0
+
+#         for i in range(0, len(records), batch_size):
+#             batch = records[i:i + batch_size]
+#             supabase.table(self.supabase_table).insert(batch).execute()
+#             inserted_count += len(batch)
+
+#         print(f"Wrote {inserted_count} records to Supabase table '{self.supabase_table}'.")
+#         return inserted_count
+
+
+
+
+# watchlist_csv_path = Path(__file__).parent.parent.parent / "watchlist_culturation.csv"
+watchlist_df = load_watchlist()
 
 st.write("### Watchlist actuelle")
 
