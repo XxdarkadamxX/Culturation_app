@@ -1,7 +1,5 @@
 import streamlit as st
 import pandas as pd
-from pathlib import Path
-import time
 from dotenv import load_dotenv
 from supabase import Client, create_client
 import os
@@ -10,7 +8,7 @@ st.title("Watchlist Culturation")
 
 #Connect to DB and load watchlist
 
-def load_watchlist():
+def create_supabase_client():
 
     load_dotenv()
     supabase_table = os.getenv("WATCHLIST_TABLE")
@@ -19,46 +17,48 @@ def load_watchlist():
 
     if not supabase_url or not supabase_key:
             raise ValueError("SUPABASE_URL and SUPABASE_KEY must be set in your environment.")
+    if not supabase_table:
+            raise ValueError("WATCHLIST_TABLE must be set in your environment.")
 
-    db_client=create_client(supabase_url, supabase_key)
+    db_client = create_client(supabase_url, supabase_key)
+
+    return db_client, supabase_table
+
+def load_watchlist():
+
+    db_client, supabase_table = create_supabase_client()
 
     watchlist_df=db_client.table(supabase_table).select("*").execute()
 
     return pd.DataFrame(watchlist_df.data)
 
-# def save_showtimes(self, showtimes_data: Dict[str, Any]) -> int:
-#         """
-#         Write Dulac showtimes directly to Supabase database.
+def remove_watched_movies(updated_df):
+    db_client, supabase_table = create_supabase_client()
+    watched_movies = updated_df[updated_df["Vu?"].fillna(False)]
 
-#         Existing rows for the fetched dates are removed first to avoid duplicates.
+    for _, row in watched_movies.iterrows():
+        delete_query = db_client.table(supabase_table).delete()
 
-#         Returns:
-#             Number of records written
-#         """
-#         records = self.flatten_showtimes_format(showtimes_data)
-#         if not records:
-#             print("No Dulac showtime records to write to Supabase.")
-#             return 0
+        if pd.notna(row.get("Nom Francais")) and row.get("Nom Francais") != "":
+            delete_query = delete_query.eq("Nom Francais", row["Nom Francais"])
+        elif pd.notna(row.get("Nom Anglais")) and row.get("Nom Anglais") != "":
+            delete_query = delete_query.eq("Nom Anglais", row["Nom Anglais"])
+        else:
+            delete_query = delete_query.eq("Lien trailer", row.get("Lien trailer", ""))
 
-#         supabase = self.create_supabase_client()
+        delete_query.execute()
 
-#         supabase.table(self.supabase_table).delete().neq("movie", 0).execute()
+def add_movie_to_watchlist(french_title, english_title, type_logo, trailer):
+    db_client, supabase_table = create_supabase_client()
+    movie = {
+        "Nom Francais": french_title,
+        "Nom Anglais": english_title,
+        "Type": type_logo,
+        "Lien trailer": trailer,
+        "Vu?": False
+    }
+    db_client.table(supabase_table).insert(movie).execute()
 
-#         batch_size = 500
-#         inserted_count = 0
-
-#         for i in range(0, len(records), batch_size):
-#             batch = records[i:i + batch_size]
-#             supabase.table(self.supabase_table).insert(batch).execute()
-#             inserted_count += len(batch)
-
-#         print(f"Wrote {inserted_count} records to Supabase table '{self.supabase_table}'.")
-#         return inserted_count
-
-
-
-
-# watchlist_csv_path = Path(__file__).parent.parent.parent / "watchlist_culturation.csv"
 watchlist_df = load_watchlist()
 
 st.write("### Watchlist actuelle")
@@ -94,7 +94,7 @@ if not watchlist_df.empty:
     complete_list_df=pd.concat([watchlist_df.loc[~mask],edited_df]) 
     if st.button("Supp. les films vus"):
         updated_df = complete_list_df[~complete_list_df["Vu?"].fillna(False)] # Remove movies marked as seen
-        updated_df.to_csv(watchlist_csv_path, index=False)
+        remove_watched_movies(complete_list_df)
         st.success("Removed watched movies from the list.")
         st.rerun()
 else:
@@ -131,8 +131,6 @@ elif add and (french_title in watchlist_df['Nom Francais'].values or english_tit
 elif add and (type is None):
     st.error("Renseignes le type de film le san 🙏")
 elif add and (french_title !='' or english_title !='') :
-    watchlist_df.loc[len(watchlist_df)] = [french_title, english_title,type_logo,trailer,False]
-    watchlist_df.to_csv(watchlist_csv_path, index=False)
+    add_movie_to_watchlist(french_title, english_title, type_logo, trailer)
     st.success("Film ajouté bsahtek 👌")
-    time.sleep(2)
     st.rerun()
