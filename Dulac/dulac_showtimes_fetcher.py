@@ -9,7 +9,6 @@ from supabase import Client, create_client
 import os
 
 
-#test
 class DulacShowtimesFetcher:
     """
     A class to fetch movie showtimes from Dulac Cinemas

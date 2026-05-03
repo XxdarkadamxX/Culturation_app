@@ -3,11 +3,13 @@ import pandas as pd
 from dotenv import load_dotenv
 from supabase import Client, create_client
 import os
+import time 
 
 st.title("Watchlist Culturation")
 
 #Connect to DB and load watchlist
 
+@st.cache_resource
 def create_supabase_client():
 
     load_dotenv()
@@ -126,11 +128,12 @@ add=st.button("Ajouter à la watchlist")
 
 if add and (french_title=='' and english_title=='') :# If the movie name isn't given don't add a row
     st.error("Ajoutes le nom du film puto 🫵")
-elif add and (french_title in watchlist_df['Nom Francais'].values or english_title in watchlist_df['Nom Anglais'].values):
+elif add and (french_title in watchlist_df.loc[lambda x: x['Nom Francais']!='']['Nom Francais'].values or english_title in watchlist_df.loc[lambda x: x['Nom Anglais']!='']['Nom Anglais'].values):
     st.error("Ya déjà le film mon gars concentres-toi 🥴")
 elif add and (type is None):
     st.error("Renseignes le type de film le san 🙏")
 elif add and (french_title !='' or english_title !='') :
     add_movie_to_watchlist(french_title, english_title, type_logo, trailer)
     st.success("Film ajouté bsahtek 👌")
+    time.sleep(2)
     st.rerun()
