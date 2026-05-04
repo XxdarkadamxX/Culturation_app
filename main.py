@@ -1,6 +1,7 @@
 import argparse
 import os
 import sys
+import time
 from contextlib import contextmanager
 from typing import Optional
 
@@ -11,8 +12,7 @@ os.chdir(PROJECT_ROOT)
 # Import modules from subdirectories (namespace packages)
 try:
     from Dulac.dulac_showtimes_fetcher import DulacShowtimesFetcher
-    from UGC.ugc_films_parser import UGCFilmsParser
-    from UGC.ugc_showtimes_fetcher import UGCShowtimesFetcher
+    from UGC.ugc_cinema_showtimes_fetcher import UGCCinemaShowtimesFetcher
     from Paris_Cinema_Club.paris_cinema_club_pdf_downloader import (
         get_pdf_urls_from_website,
         download_pdf,
@@ -77,33 +77,16 @@ def run_dulac() -> None:
     fetcher.save_showtimes(showtimes_data)
 
 
-def run_ugc(max_films: Optional[int] = 5) -> None:
-    """Fetch UGC films list and film date availability, save under UGC/."""
-    ugc_dir = os.path.join(PROJECT_ROOT, "UGC")
-    ensure_dir(ugc_dir)
+def run_ugc() -> None:
+    """Fetch UGC films list and film date availability, save to database."""
+    fetcher = UGCCinemaShowtimesFetcher()
 
-    # Step 1: Parse films list
-    films_parser = UGCFilmsParser()
-    films_data = films_parser.fetch_and_parse_films()
-    if not films_data:
-        raise RuntimeError("Failed to fetch/parse UGC films data")
+    showtimes_data = fetcher.fetch_showtimes_for_next_7_days()
 
-    films_parsed_path = os.path.join(ugc_dir, "ugc_films_parsed.json")
-    films_parser.save_data_to_file(films_data, films_parsed_path)
-
-    # Step 2: Fetch dates/cinemas
-    showtimes_fetcher = UGCShowtimesFetcher()
-    loaded_films = showtimes_fetcher.load_films_data(films_parsed_path)
-    if not loaded_films:
-        raise RuntimeError("Failed to load ugc_films_parsed.json for UGC showtimes fetching")
-
-    dates_data = showtimes_fetcher.fetch_all_film_dates(loaded_films, max_films=max_films or 5)
-
-    dates_output_path = os.path.join(ugc_dir, "ugc_film_dates.json")
-    showtimes_fetcher.save_dates_to_file(dates_data, dates_output_path)
-
-    if not os.path.exists(dates_output_path):
-        raise FileNotFoundError("UGC film dates JSON not created")
+    if showtimes_data.get("dates"):
+        fetcher.save_showtimes(showtimes_data)
+    else:
+        print("No UGC cinema showtimes data found")
 
 
 def combine_to_csv() -> str:
@@ -122,6 +105,14 @@ def combine_to_csv() -> str:
     return csv_path
 
 
+def timed_step(label: str, func, *args, **kwargs):
+    start = time.perf_counter()
+    result = func(*args, **kwargs)
+    elapsed = time.perf_counter() - start
+    print(f"{label} completed in {elapsed:.2f}s")
+    return result
+
+
 def main():
     parser = argparse.ArgumentParser(description="Run all showtime fetchers/parsers and produce combined_showtimes.csv")
     parser.add_argument("--skip-pcc", action="store_true", help="Skip Paris Cinema Club PDF parsing")
@@ -131,28 +122,31 @@ def main():
     parser.add_argument("--max-ugc-films", type=int, default=5, help="Max number of UGC films to process (for speed)")
     args = parser.parse_args()
 
+    total_start = time.perf_counter()
+
     if not args.skip_pcc:
         print("\n=== Step 1: Paris Cinema Club ===")
-        run_paris_cinema_club(skip_download=args.skip_pcc_download)
+        timed_step("Paris Cinema Club", run_paris_cinema_club, skip_download=args.skip_pcc_download)
     else:
         print("Skipping Paris Cinema Club step")
 
     if not args.skip_dulac:
         print("\n=== Step 2: Dulac Cinemas ===")
-        run_dulac()
+        timed_step("Dulac", run_dulac)
     else:
         print("Skipping Dulac step")
 
-    # if not args.skip_ugc:
-    #     print("\n=== Step 3: UGC ===")
-    #     run_ugc(max_films=args.max_ugc_films)
-    # else:
-    #     print("Skipping UGC step")
+    if not args.skip_ugc:
+        print("\n=== Step 3: UGC ===")
+        timed_step("UGC", run_ugc)
+    else:
+        print("Skipping UGC step")
 
     # print("\n=== Step 4: Combine to CSV ===")
     # csv_path = combine_to_csv()
 
-    # print("\nAll done!")
+    total_elapsed = time.perf_counter() - total_start
+    print(f"\nAll done! Total runtime: {total_elapsed:.2f}s")
     # print(f"Output: {csv_path}")
 
 
