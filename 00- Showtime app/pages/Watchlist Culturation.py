@@ -30,14 +30,9 @@ def load_watchlist():
 
     db_client, supabase_table = create_supabase_client()
 
-    watchlist=db_client.table(supabase_table).select("*").execute()
+    watchlist_df=db_client.table(supabase_table).select("*").execute()
 
-    watchlist_df=pd.DataFrame(watchlist.data)
-
-    if watchlist_df.empty :
-        return pd.DataFrame(columns=["Nom Francais", "Nom Anglais", "Type", "Lien trailer", "Vu?"])
-    else :
-        return watchlist_df
+    return pd.DataFrame(watchlist_df.data)
 
 def remove_watched_movies(updated_df):
     db_client, supabase_table = create_supabase_client()
