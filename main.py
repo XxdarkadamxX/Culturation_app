@@ -87,23 +87,6 @@ def run_ugc() -> None:
     else:
         print("No UGC cinema showtimes data found")
 
-
-def combine_to_csv() -> str:
-    """Combine all sources into a single CSV and JSON using combine_showtimes module."""
-    df = combine_showtimes.combine_all_showtimes()
-    if df is None or df.empty:
-        raise RuntimeError("No data combined. Ensure source JSON files exist and contain data.")
-
-    # Save JSON via module helper
-    combine_showtimes.save_combined_data(df, output_file="combined_showtimes.json")
-
-    # Save CSV
-    csv_path = os.path.join(PROJECT_ROOT, "combined_showtimes.csv")
-    df.to_csv(csv_path, index=False, encoding="utf-8")
-    print(f"Combined CSV saved to {csv_path}")
-    return csv_path
-
-
 def timed_step(label: str, func, *args, **kwargs):
     start = time.perf_counter()
     result = func(*args, **kwargs)
