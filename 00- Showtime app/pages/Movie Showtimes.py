@@ -70,12 +70,13 @@ with col3:
         )
 
         # Run main.py as a subprocess
-        result = subprocess.run(
-            [sys.executable, main_py_path],
-            capture_output=True,
-            text=True
-        )
-
+        with st.spinner("Mise à jour des programmes en cours..."):
+            result = subprocess.run(
+                [sys.executable, main_py_path],
+                capture_output=True,
+                text=True
+            )
+            
         if result.returncode == 0:
             st.success("Prog chargés jusqu'au " + str(max(showtimes_df['showtime_day'])))
         else:
