@@ -18,7 +18,6 @@ try:
         download_pdf,
     )
     from Paris_Cinema_Club.paris_cinema_club_pdf_parser import ParisCinemaClubPDFParser
-    import combine_showtimes
 except Exception as import_error:
     print(f"Error importing modules: {import_error}")
     print("Make sure you run this script from the 'Cinema-showtimes-app' directory and that dependencies are installed (pip install -r requirements.txt).")
