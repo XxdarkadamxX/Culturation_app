@@ -3,7 +3,7 @@ from pathlib import Path
 import streamlit as st
 
 
-PROJECT_ROOT = Path(__file__).resolve().parent.parent
+PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 LOGO_PATH = PROJECT_ROOT / "visuals/Logo sidebar.png"
 
 
@@ -21,3 +21,4 @@ def render_sidebar() -> None:
     st.sidebar.page_link("pages/Movie Showtimes.py", label="Séances de ciné", icon="🎬")
     st.sidebar.page_link("pages/Culturation Events.py", label="Plans Culturation", icon="🎭")
     st.sidebar.page_link("pages/Watchlist Culturation.py", label="Watchlist", icon="📼")
+    st.sidebar.page_link("pages/Chatbot.py", label="Chat avec Confussio !", icon="🐼")
