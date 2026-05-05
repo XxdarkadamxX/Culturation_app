@@ -3,7 +3,7 @@ from pathlib import Path
 import streamlit as st
 
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
 LOGO_PATH = PROJECT_ROOT / "Logo sidebar.png"
 
 
