@@ -9,7 +9,7 @@ if str(APP_ROOT) not in sys.path:
 
 import branding
 
-branding.apply_branding()
+branding.render_sidebar()
 
 st.write("Salut les culturateurs. Vous voilÃƒÂ  dans l'antre de la culturation elle-mÃƒÂªme: "
     "Ici vous pourrez voir les diffÃƒÂ©rents programmes que nous avons pu vous cook ainsi "

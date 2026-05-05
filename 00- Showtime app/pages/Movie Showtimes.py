@@ -16,7 +16,7 @@ if str(PROJECT_ROOT) not in sys.path:
 
 import branding
 
-branding.apply_branding()
+branding.render_sidebar()
 
 import main as scraper_main
 
