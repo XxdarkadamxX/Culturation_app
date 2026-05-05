@@ -9,4 +9,6 @@ LOGO_PATH = PROJECT_ROOT / "Logo sidebar.png"
 
 def apply_branding() -> None:
     if LOGO_PATH.exists():
-        st.logo(str(LOGO_PATH),size='large')
+        st.sidebar.image(str(LOGO_PATH), width='stretch')
+        st.logo(str(LOGO_PATH), size="large", icon_image=str(LOGO_PATH))
+        
