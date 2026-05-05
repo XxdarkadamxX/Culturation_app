@@ -19,8 +19,8 @@ st.write(
 )
 
 PROJECT_ROOT = APP_ROOT.parent
-gif_path = PROJECT_ROOT / "Accueil.gif"
-logo_path = PROJECT_ROOT / "Logo accueil.png"
+gif_path = PROJECT_ROOT / "visuals/Accueil.gif"
+logo_path = PROJECT_ROOT / "visuals/Logo accueil.png"
 
 if gif_path.exists():
     st.image(str(gif_path), width='stretch')

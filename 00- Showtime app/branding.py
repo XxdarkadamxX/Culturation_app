@@ -4,7 +4,7 @@ import streamlit as st
 
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
-LOGO_PATH = PROJECT_ROOT / "Logo sidebar.png"
+LOGO_PATH = PROJECT_ROOT / "visuals/Logo sidebar.png"
 
 
 def apply_branding() -> None:
