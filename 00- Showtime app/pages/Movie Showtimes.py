@@ -4,40 +4,75 @@ import unicodedata
 from pathlib import Path
 import datetime
 from streamlit import column_config
-import subprocess
 import sys
 import os
+from dotenv import load_dotenv
+from supabase import Client,create_client
+
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+
+import main as scraper_main
 
 
 st.title("Séances de ciné")
 
 
-# First get the showtimes previously scraped
-showtimes_csv_path = Path(__file__).parent.parent.parent / "combined_showtimes.csv"
+#Connect to DB and load scrapped movies
 
-showtimes_df = pd.read_csv(showtimes_csv_path)
+@st.cache_resource
+def create_supabase_client():
+
+    load_dotenv()
+    supabase_url = os.getenv("SUPABASE_URL")
+    supabase_key = os.getenv("SUPABASE_KEY")
+
+    if not supabase_url or not supabase_key:
+            raise ValueError("SUPABASE_URL and SUPABASE_KEY must be set in your environment.")
+
+    db_client = create_client(supabase_url, supabase_key)
+
+    return db_client
+
+def load_scraped_movies(table_list):
+
+    db_client = create_supabase_client()
+
+    all_showtimes = pd.DataFrame(columns=['movie','cinema','showtime_day','nb_showings','showtimes'])
+
+    for cinema in table_list :
+        supabase_table = os.getenv(cinema)
+
+        if not supabase_table:
+            raise ValueError(f'{cinema} must be set in your environment')
+        
+        cinema_showtimes = (db_client
+                             .table(supabase_table)
+                             .select("movie, cinema, showtime_day, nb_showings, showtimes")
+                             .execute()
+                             )
+    
+        all_showtimes = pd.concat([all_showtimes, pd.DataFrame(cinema_showtimes.data)], ignore_index=True)
+
+    if all_showtimes.empty :
+            raise ValueError('No showtimes gathered !')
+    
+    return all_showtimes
+
+table_list=['UGC_SUPABASE_TABLE','PCC_SUPABASE_TABLE','DULAC_SUPABASE_TABLE']
+ 
+showtimes_df = load_scraped_movies(table_list)
 
 # Add a button to refresh the showtime programs 
 col1, col2, col3 = st.columns([1, 1, 1])
 with col3:
     st.write("*Prog du* " + str(min(showtimes_df['showtime_day']))+" *-* "+str(max(showtimes_df['showtime_day'])))
     if st.button("Charger la prog de la semaine"):
-        # Find the main.py path relative to this Streamlit app
-        main_py_path = os.path.abspath(
-            os.path.join(os.path.dirname(__file__), "..", "..", "main.py")
-        )
+        with st.spinner("Mise à jour des programmes en cours..."):
+            scraper_main.run_pipeline()
 
-        # Run main.py as a subprocess
-        result = subprocess.run(
-            [sys.executable, main_py_path],
-            capture_output=True,
-            text=True
-        )
-
-        if result.returncode == 0:
-            st.success("Prog chargés jusqu'au " + str(max(showtimes_df['showtime_day'])))
-        else:
-            st.error("Erreur lors de la mise à jour des programmes :\n\n" + result.stderr)
+        st.success("Prog chargés jusqu'au " + str(max(showtimes_df['showtime_day'])))
 
 shows_available = showtimes_df['movie'].unique() # All movies available
 cinemas_available = showtimes_df['cinema'].unique() # All cinemas available
@@ -116,7 +151,7 @@ if filter_by=="Date":
                 )
             st.dataframe(
                 df_display,
-                use_container_width=True,
+                width='stretch',
                 hide_index=True,
                 column_config=col_config if col_config else None
             )
@@ -155,17 +190,21 @@ else :
                 )
             st.dataframe(
                 df_display[['Movie','Cinema','Showtime day','Nb of showings','Showtimes']],
-                use_container_width=True,
+                width='stretch',
                 hide_index=True,
                 column_config=col_config if col_config else None
             )
 
 
 # Then we get the movies from the watchlist
-watchlist_csv_path = Path(__file__).parent.parent.parent / "watchlist_culturation.csv"
+db_client = create_supabase_client()
 
-watchlist_df = pd.read_csv(watchlist_csv_path)
-        
+watch_list_supabase_table = os.getenv("WATCHLIST_TABLE")
+
+watchlist=db_client.table(watch_list_supabase_table).select("*").execute()
+
+watchlist_df=pd.DataFrame(watchlist.data)
+
 # Finally we find movies in watchlist that are available in cinemas
 
 # Remove accents and convert to lowercase so that syntax errors are minimized 
@@ -218,7 +257,7 @@ available_in_watchlist['Showtime Days'] = available_in_watchlist.apply(
 st.write("Films de la watchlist culturation en salle:")
 st.dataframe(
                 available_in_watchlist[['Nom Francais','Nom Anglais','Showtime Days','Type','Lien trailer']],
-                use_container_width=True,
+                width='stretch',
                 hide_index=True
             )
 
