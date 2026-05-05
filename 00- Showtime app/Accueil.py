@@ -9,6 +9,7 @@ if str(APP_ROOT) not in sys.path:
 
 import branding
 
+branding.apply_branding()
 branding.render_sidebar()
 
 st.markdown(
@@ -55,5 +56,5 @@ if gif_path.exists():
 col1, col2 = st.columns([2, 1], vertical_alignment="center")
 with col2:
     if logo_path.exists():
-        st.image(str(logo_path), use_container_width=True)
+        st.image(str(logo_path), width='stretch')
 

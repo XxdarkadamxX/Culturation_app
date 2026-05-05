@@ -6,8 +6,16 @@ import streamlit as st
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 LOGO_PATH = PROJECT_ROOT / "visuals/Logo sidebar.png"
 
-
 def apply_branding() -> None:
+    st.set_page_config(
+    page_title="Culturation App",
+    page_icon=str(PROJECT_ROOT / "visuals/Favicon.png")
+    )   
+
+    st.set_page_config(
+        layout="wide"
+    )
+
     return
 
 

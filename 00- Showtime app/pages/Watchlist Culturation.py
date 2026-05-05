@@ -13,6 +13,7 @@ if str(APP_ROOT) not in sys.path:
 
 import branding
 
+branding.apply_branding()
 branding.render_sidebar()
 
 st.title("Watchlist Culturation")

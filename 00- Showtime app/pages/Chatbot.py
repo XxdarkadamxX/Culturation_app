@@ -4,16 +4,16 @@ import random
 import sys 
 from pathlib import Path
 
-st.subheader("Discutes avec Confussio 🐼")
+branding.apply_branding()
+branding.render_sidebar()
+
+st.title("Discutes avec Confussio 🐼")
 
 st.markdown(
     """
     Réalises le rêve de tant de femmes et glisse dans les dms de ce bon vieux **Confussio** 😉"""
 )
-
 st.divider()
-
-branding.render_sidebar()
 
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
