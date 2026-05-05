@@ -4,6 +4,16 @@ from dotenv import load_dotenv
 from supabase import Client, create_client
 import os
 import time 
+from pathlib import Path
+import sys
+
+APP_ROOT = Path(__file__).resolve().parents[1]
+if str(APP_ROOT) not in sys.path:
+    sys.path.insert(0, str(APP_ROOT))
+
+import branding
+
+branding.render_sidebar()
 
 st.title("Watchlist Culturation")
 
@@ -85,7 +95,7 @@ if not watchlist_df.empty:
 
     edited_df = st.data_editor(
         watchlist_df.loc[mask],
-        use_container_width=True,
+        width='stretch',
         hide_index=True,
         column_config={
             "Vu?": st.column_config.CheckboxColumn(

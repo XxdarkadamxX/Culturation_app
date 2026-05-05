@@ -14,6 +14,10 @@ PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
+import branding
+
+branding.render_sidebar()
+
 import main as scraper_main
 
 
@@ -125,7 +129,7 @@ def format_latest_date(value):
 
 
 st.info(
-    "Disclaimer: latest available showing dates by cinema group\n"
+    "Disclaimer: Dernières séances disponibles par groupe de cinema\n"
     + "\n".join(
         f"- {SOURCE_LABELS.get(source_key, source_key)}: {format_latest_date(latest_dates_by_source.get(source_key))}"
         for source_key in table_list
