@@ -7,6 +7,15 @@ from datetime import date
 from dotenv import load_dotenv
 import os
 from supabase import Client,create_client
+import sys
+
+APP_ROOT = Path(__file__).resolve().parents[1]
+if str(APP_ROOT) not in sys.path:
+    sys.path.insert(0, str(APP_ROOT))
+
+import branding
+
+branding.apply_branding()
 
 st.title("Plans Culturation")
 
