@@ -95,30 +95,27 @@ def timed_step(label: str, func, *args, **kwargs):
     return result
 
 
-def main():
-    parser = argparse.ArgumentParser(description="Run all showtime fetchers/parsers and produce combined_showtimes.csv")
-    parser.add_argument("--skip-pcc", action="store_true", help="Skip Paris Cinema Club PDF parsing")
-    parser.add_argument("--skip-pcc-download", action="store_true", help="Skip downloading PCC PDFs (use existing files)")
-    parser.add_argument("--skip-dulac", action="store_true", help="Skip Dulac showtimes fetching")
-    parser.add_argument("--skip-ugc", action="store_true", help="Skip UGC fetching/parsing")
-    parser.add_argument("--max-ugc-films", type=int, default=5, help="Max number of UGC films to process (for speed)")
-    args = parser.parse_args()
-
+def run_pipeline(
+    skip_pcc: bool = False,
+    skip_pcc_download: bool = False,
+    skip_dulac: bool = False,
+    skip_ugc: bool = False,
+):
     total_start = time.perf_counter()
 
-    if not args.skip_pcc:
+    if not skip_pcc:
         print("\n=== Step 1: Paris Cinema Club ===")
-        timed_step("Paris Cinema Club", run_paris_cinema_club, skip_download=args.skip_pcc_download)
+        timed_step("Paris Cinema Club", run_paris_cinema_club, skip_download=skip_pcc_download)
     else:
         print("Skipping Paris Cinema Club step")
 
-    if not args.skip_dulac:
+    if not skip_dulac:
         print("\n=== Step 2: Dulac Cinemas ===")
         timed_step("Dulac", run_dulac)
     else:
         print("Skipping Dulac step")
 
-    if not args.skip_ugc:
+    if not skip_ugc:
         print("\n=== Step 3: UGC ===")
         timed_step("UGC", run_ugc)
     else:
@@ -130,6 +127,23 @@ def main():
     total_elapsed = time.perf_counter() - total_start
     print(f"\nAll done! Total runtime: {total_elapsed:.2f}s")
     # print(f"Output: {csv_path}")
+    return total_elapsed
+
+
+def main():
+    parser = argparse.ArgumentParser(description="Run all showtime fetchers/parsers and produce combined_showtimes.csv")
+    parser.add_argument("--skip-pcc", action="store_true", help="Skip Paris Cinema Club PDF parsing")
+    parser.add_argument("--skip-pcc-download", action="store_true", help="Skip downloading PCC PDFs (use existing files)")
+    parser.add_argument("--skip-dulac", action="store_true", help="Skip Dulac showtimes fetching")
+    parser.add_argument("--skip-ugc", action="store_true", help="Skip UGC fetching/parsing")
+    args = parser.parse_args()
+
+    run_pipeline(
+        skip_pcc=args.skip_pcc,
+        skip_pcc_download=args.skip_pcc_download,
+        skip_dulac=args.skip_dulac,
+        skip_ugc=args.skip_ugc,
+    )
 
 
 if __name__ == "__main__":

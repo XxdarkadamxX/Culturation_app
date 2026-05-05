@@ -4,11 +4,16 @@ import unicodedata
 from pathlib import Path
 import datetime
 from streamlit import column_config
-import subprocess
 import sys
 import os
 from dotenv import load_dotenv
 from supabase import Client,create_client
+
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+
+import main as scraper_main
 
 
 st.title("Séances de ciné")
@@ -64,23 +69,10 @@ col1, col2, col3 = st.columns([1, 1, 1])
 with col3:
     st.write("*Prog du* " + str(min(showtimes_df['showtime_day']))+" *-* "+str(max(showtimes_df['showtime_day'])))
     if st.button("Charger la prog de la semaine"):
-        # Find the main.py path relative to this Streamlit app
-        main_py_path = os.path.abspath(
-            os.path.join(os.path.dirname(__file__), "..", "..", "main.py")
-        )
-
-        # Run main.py as a subprocess
         with st.spinner("Mise à jour des programmes en cours..."):
-            result = subprocess.run(
-                [sys.executable, main_py_path],
-                capture_output=True,
-                text=True
-            )
-            
-        if result.returncode == 0:
-            st.success("Prog chargés jusqu'au " + str(max(showtimes_df['showtime_day'])))
-        else:
-            st.error("Erreur lors de la mise à jour des programmes :\n\n" + result.stderr)
+            scraper_main.run_pipeline()
+
+        st.success("Prog chargés jusqu'au " + str(max(showtimes_df['showtime_day'])))
 
 shows_available = showtimes_df['movie'].unique() # All movies available
 cinemas_available = showtimes_df['cinema'].unique() # All cinemas available
