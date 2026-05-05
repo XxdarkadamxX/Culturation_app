@@ -85,7 +85,7 @@ if not watchlist_df.empty:
 
     edited_df = st.data_editor(
         watchlist_df.loc[mask],
-        use_container_width=True,
+        width='stretch',
         hide_index=True,
         column_config={
             "Vu?": st.column_config.CheckboxColumn(
