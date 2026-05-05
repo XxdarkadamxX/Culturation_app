@@ -72,7 +72,9 @@ def load_scraped_movies(table_list):
     if all_showtimes.empty :
             raise ValueError('No showtimes found !')
     
-    return all_showtimes.loc[lambda x: x.showtime_day>=date.today()], latest_dates_by_source # we do not need past showtimes
+    return all_showtimes.loc[
+        lambda x: pd.to_datetime(x.showtime_day, errors='coerce').dt.date >= date.today()
+    ], latest_dates_by_source # we only need future showings
     
 
 table_list=['UGC_SUPABASE_TABLE','PCC_SUPABASE_TABLE','DULAC_SUPABASE_TABLE']
