@@ -3,6 +3,7 @@ import pandas as pd
 import unicodedata
 from pathlib import Path
 import datetime
+from datetime import date
 from streamlit import column_config
 import sys
 import os
@@ -20,6 +21,12 @@ st.title("Séances de ciné")
 
 
 #Connect to DB and load scrapped movies
+
+SOURCE_LABELS = {
+    "UGC_SUPABASE_TABLE": "UGC",
+    "PCC_SUPABASE_TABLE": "Paris Cinema Club",
+    "DULAC_SUPABASE_TABLE": "Dulac",
+}
 
 @st.cache_resource
 def create_supabase_client():
@@ -40,6 +47,7 @@ def load_scraped_movies(table_list):
     db_client = create_supabase_client()
 
     all_showtimes = pd.DataFrame(columns=['movie','cinema','showtime_day','nb_showings','showtimes'])
+    latest_dates_by_source = {}
 
     for cinema in table_list :
         supabase_table = os.getenv(cinema)
@@ -53,16 +61,23 @@ def load_scraped_movies(table_list):
                              .execute()
                              )
     
-        all_showtimes = pd.concat([all_showtimes, pd.DataFrame(cinema_showtimes.data)], ignore_index=True)
+        cinema_df = pd.DataFrame(cinema_showtimes.data)
+        all_showtimes = pd.concat([all_showtimes, cinema_df], ignore_index=True)
+
+        if not cinema_df.empty and 'showtime_day' in cinema_df.columns:
+            latest_dates_by_source[cinema] = cinema_df['showtime_day'].max()
+        else:
+            latest_dates_by_source[cinema] = None
 
     if all_showtimes.empty :
-            raise ValueError('No showtimes gathered !')
+            raise ValueError('No showtimes found !')
     
-    return all_showtimes
+    return all_showtimes.loc[lambda x: x.showtime_day>=date.today()], latest_dates_by_source # we do not need past showtimes
+    
 
 table_list=['UGC_SUPABASE_TABLE','PCC_SUPABASE_TABLE','DULAC_SUPABASE_TABLE']
  
-showtimes_df = load_scraped_movies(table_list)
+showtimes_df, latest_dates_by_source = load_scraped_movies(table_list)
 
 # Add a button to refresh the showtime programs 
 col1, col2, col3 = st.columns([1, 1, 1])
@@ -73,6 +88,7 @@ with col3:
             scraper_main.run_pipeline()
 
         st.success("Prog chargés jusqu'au " + str(max(showtimes_df['showtime_day'])))
+        st.rerun()
 
 shows_available = showtimes_df['movie'].unique() # All movies available
 cinemas_available = showtimes_df['cinema'].unique() # All cinemas available
@@ -98,6 +114,21 @@ def date_to_french(date_str,month_only=False):
         return f"{jour} {d.day}"
     else : 
         return f"{jour} {d.day} {nom_mois}"
+
+
+def format_latest_date(value):
+    if value is None or pd.isna(value):
+        return "indisponible"
+    return date_to_french(str(pd.to_datetime(value).date()))
+
+
+st.info(
+    "Disclaimer: latest available showing dates by cinema group\n"
+    + "\n".join(
+        f"- {SOURCE_LABELS.get(source_key, source_key)}: {format_latest_date(latest_dates_by_source.get(source_key))}"
+        for source_key in table_list
+    )
+)
 
 dates_raw = showtimes_df['showtime_day'].unique()
 dates = [date_to_french(d) for d in dates_raw]
