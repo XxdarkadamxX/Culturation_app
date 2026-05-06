@@ -34,7 +34,7 @@ st.markdown(
             Maintenant on a un site mon gars.
         </div>
         <div style="
-            font-size: 1.05rem;
+            font-size: 0.75rem;
             line-height: 1.6;
             color: rgba(243, 238, 231, 0.8);
             max-width: 1000px;">
