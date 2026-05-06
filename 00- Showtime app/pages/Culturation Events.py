@@ -4,8 +4,6 @@ from pathlib import Path
 import time
 import datetime
 from datetime import date
-from dotenv import load_dotenv
-import os
 from supabase import Client,create_client
 import sys
 
@@ -30,16 +28,14 @@ st.divider()
 
 @st.cache_resource
 def create_supabase_client():
-
-    load_dotenv()
-    supabase_table = os.getenv("EVENTS_TABLE")
-    supabase_url = os.getenv("SUPABASE_URL")
-    supabase_key = os.getenv("SUPABASE_KEY")
+    supabase_table = st.secrets["EVENTS_TABLE"]
+    supabase_url = st.secrets["SUPABASE_URL"]
+    supabase_key = st.secrets["SUPABASE_KEY"]
 
     if not supabase_url or not supabase_key:
-            raise ValueError("SUPABASE_URL and SUPABASE_KEY must be set in your environment.")
+            raise ValueError("SUPABASE_URL and SUPABASE_KEY must be set in your secrets.")
     if not supabase_table:
-            raise ValueError("EVENTS_TABLE must be set in your environment.")
+            raise ValueError("EVENTS_TABLE must be set in your secrets.")
 
     db_client = create_client(supabase_url, supabase_key)
 

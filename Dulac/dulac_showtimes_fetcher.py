@@ -4,7 +4,6 @@ from typing import Dict, Any, List
 from bs4 import BeautifulSoup
 from datetime import datetime, date, timedelta
 import time
-from dotenv import load_dotenv
 from supabase import Client, create_client
 import os
 
@@ -14,11 +13,10 @@ class DulacShowtimesFetcher:
     A class to fetch movie showtimes from Dulac Cinemas
     """
     
-    def __init__(self):
-        load_dotenv()
+    def __init__(self, supabase_table: str = None):
         self.base_url = "https://dulaccinemas.com"
         self.showtimes_endpoint = "https://dulaccinemas.com/portail/seances"
-        self.supabase_table = os.getenv("DULAC_SUPABASE_TABLE")
+        self.supabase_table = supabase_table or os.getenv("DULAC_SUPABASE_TABLE")
         
         # Headers to mimic a real browser request
         self.headers = {
@@ -52,17 +50,15 @@ class DulacShowtimesFetcher:
 
         return records
 
-    def create_supabase_client(self) -> Client:
+    def create_supabase_client(self, supabase_url: str = None, supabase_key: str = None) -> Client:
         """
-        Create and return a Supabase client using environment variables.
+        Create and return a Supabase client using environment variables or provided credentials.
         """
-        load_dotenv()
-
-        supabase_url = os.getenv("SUPABASE_URL")
-        supabase_key = os.getenv("SUPABASE_KEY")
+        supabase_url = supabase_url or os.getenv("SUPABASE_URL")
+        supabase_key = supabase_key or os.getenv("SUPABASE_KEY")
 
         if not supabase_url or not supabase_key:
-            raise ValueError("SUPABASE_URL and SUPABASE_KEY must be set in your environment.")
+            raise ValueError("SUPABASE_URL and SUPABASE_KEY must be set in your environment or passed as arguments.")
 
         return create_client(supabase_url, supabase_key)
 

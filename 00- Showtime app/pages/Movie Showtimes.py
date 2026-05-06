@@ -6,8 +6,6 @@ import datetime
 from datetime import date
 from streamlit import column_config
 import sys
-import os
-from dotenv import load_dotenv
 from supabase import Client,create_client
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
@@ -41,13 +39,11 @@ SOURCE_LABELS = {
 
 @st.cache_resource
 def create_supabase_client():
-
-    load_dotenv()
-    supabase_url = os.getenv("SUPABASE_URL")
-    supabase_key = os.getenv("SUPABASE_KEY")
+    supabase_url = st.secrets["SUPABASE_URL"]
+    supabase_key = st.secrets["SUPABASE_KEY"]
 
     if not supabase_url or not supabase_key:
-            raise ValueError("SUPABASE_URL and SUPABASE_KEY must be set in your environment.")
+            raise ValueError("SUPABASE_URL and SUPABASE_KEY must be set in your secrets.")
 
     db_client = create_client(supabase_url, supabase_key)
 
@@ -61,10 +57,10 @@ def load_scraped_movies(table_list):
     latest_dates_by_source = {}
 
     for cinema in table_list :
-        supabase_table = os.getenv(cinema)
+        supabase_table = st.secrets[cinema]
 
         if not supabase_table:
-            raise ValueError(f'{cinema} must be set in your environment')
+            raise ValueError(f'{cinema} must be set in your secrets')
         
         cinema_showtimes = (db_client
                              .table(supabase_table)
@@ -241,7 +237,7 @@ else :
 # Then we get the movies from the watchlist
 db_client = create_supabase_client()
 
-watch_list_supabase_table = os.getenv("WATCHLIST_TABLE")
+watch_list_supabase_table = st.secrets["WATCHLIST_TABLE"]
 
 watchlist=db_client.table(watch_list_supabase_table).select("*").execute()
 

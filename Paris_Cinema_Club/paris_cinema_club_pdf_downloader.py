@@ -1,6 +1,5 @@
 import requests
 import os
-from dotenv import load_dotenv
 from urllib.parse import urlparse
 import time
 from bs4 import BeautifulSoup
@@ -46,17 +45,15 @@ def get_pdf_urls_from_website():
         print(f"Error scraping website: {e}")
         return []
 
-def create_supabase_client():
+def create_supabase_client(supabase_url: str = None, supabase_key: str = None):
     """
-    Create and return a Supabase client using environment variables.
+    Create and return a Supabase client using environment variables or provided credentials.
     """
-    load_dotenv()
-
-    supabase_url = os.getenv("SUPABASE_URL")
-    supabase_key = os.getenv("SUPABASE_KEY")
+    supabase_url = supabase_url or os.getenv("SUPABASE_URL")
+    supabase_key = supabase_key or os.getenv("SUPABASE_KEY")
 
     if not supabase_url or not supabase_key:
-        raise ValueError("SUPABASE_URL and SUPABASE_KEY must be set in your environment.")
+        raise ValueError("SUPABASE_URL and SUPABASE_KEY must be set in your environment or passed as arguments.")
 
     return create_client(supabase_url, supabase_key)
 
@@ -80,7 +77,7 @@ def download_pdf(url, filename):
 
         bucket = os.getenv("PDF_BUCKET")
         if not bucket:
-            raise ValueError("PDF_BUCKET must be set in the environment.")
+            raise ValueError("PDF_BUCKET must be set in the environment or secrets.")
         
         # Upload the file to the supabase bucket
         supabase_client.storage.from_(bucket).update(

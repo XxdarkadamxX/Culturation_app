@@ -10,17 +10,15 @@ from io import BytesIO
 from datetime import datetime, timedelta
 import pdfplumber
 from typing import Dict, List, Any, Optional
-from dotenv import load_dotenv
 from supabase import Client, create_client
 
 class ParisCinemaClubPDFParser:
-    def __init__(self):
+    def __init__(self, supabase_table: str = None, pdf_bucket: str = None):
         """
         Initialize the PDF parser
         """
-        load_dotenv()
-        self.supabase_table = os.getenv("PCC_SUPABASE_TABLE", "paris_cinema_showtimes")
-        self.pdf_bucket = os.getenv("PDF_BUCKET")
+        self.supabase_table = supabase_table or os.getenv("PCC_SUPABASE_TABLE", "paris_cinema_showtimes")
+        self.pdf_bucket = pdf_bucket or os.getenv("PDF_BUCKET")
         self.pdf_folder = "semainier_paris_cinema_club"
         
         # Common French month names and their English equivalents
@@ -37,14 +35,12 @@ class ParisCinemaClubPDFParser:
             'jeudi': 'Thursday', 'vendredi': 'Friday', 'samedi': 'Saturday', 'dimanche': 'Sunday'
         }
 
-    def create_supabase_client(self) -> Client:
+    def create_supabase_client(self, supabase_url: str = None, supabase_key: str = None) -> Client:
         """
-        Create and return a Supabase client using environment variables.
+        Create and return a Supabase client using environment variables or provided credentials.
         """
-        load_dotenv()
-
-        supabase_url = os.getenv("SUPABASE_URL")
-        supabase_key = os.getenv("SUPABASE_KEY")
+        supabase_url = supabase_url or os.getenv("SUPABASE_URL")
+        supabase_key = supabase_key or os.getenv("SUPABASE_KEY")
 
         if not supabase_url or not supabase_key:
             raise ValueError("SUPABASE_URL and SUPABASE_KEY must be set in your environment.")

@@ -3,7 +3,6 @@ import re
 import time
 from datetime import date, datetime, timedelta
 from typing import Any, Dict, List
-from dotenv import load_dotenv
 from supabase import Client, create_client
 import os
 
@@ -15,13 +14,12 @@ class UGCCinemaShowtimesFetcher:
     Fetch UGC showtimes by cinema page for Paris cinemas.
     """
 
-    def __init__(self):
-        load_dotenv()
+    def __init__(self, supabase_table: str = None):
         self.base_url = "https://www.ugc.fr"
         self.showings_endpoint = (
             "https://www.ugc.fr/showingsCinemaAjaxAction!getShowingsForCinemaPage.action"
         )
-        self.supabase_table = os.getenv("UGC_SUPABASE_TABLE")
+        self.supabase_table = supabase_table or os.getenv("UGC_SUPABASE_TABLE")
         if not self.supabase_table:
             raise ValueError("UGC_SUPABASE_TABLE must be set in the environment.")
         self.paris_cinemas = [
@@ -52,17 +50,15 @@ class UGCCinemaShowtimesFetcher:
             "Upgrade-Insecure-Requests": "1",
         }
 
-    def create_supabase_client(self) -> Client:
+    def create_supabase_client(self, supabase_url: str = None, supabase_key: str = None) -> Client:
         """
-        Create and return a Supabase client using environment variables.
+        Create and return a Supabase client using environment variables or provided credentials.
         """
-        load_dotenv()
-
-        supabase_url = os.getenv("SUPABASE_URL")
-        supabase_key = os.getenv("SUPABASE_KEY")
+        supabase_url = supabase_url or os.getenv("SUPABASE_URL")
+        supabase_key = supabase_key or os.getenv("SUPABASE_KEY")
 
         if not supabase_url or not supabase_key:
-            raise ValueError("SUPABASE_URL and SUPABASE_KEY must be set in your environment.")
+            raise ValueError("SUPABASE_URL and SUPABASE_KEY must be set in your environment or passed as arguments.")
 
         return create_client(supabase_url, supabase_key)
 
