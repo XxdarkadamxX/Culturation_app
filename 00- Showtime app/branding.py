@@ -34,7 +34,7 @@ def apply_branding() -> None:
 
 def render_sidebar() -> None:
     if LOGO_PATH.exists():
-        st.sidebar.image(str(LOGO_PATH), use_container_width=True)
+        st.sidebar.image(str(LOGO_PATH), width='stretch')
 
     st.sidebar.divider()
     st.sidebar.caption("Navigation")
