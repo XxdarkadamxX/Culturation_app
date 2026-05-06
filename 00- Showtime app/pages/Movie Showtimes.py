@@ -294,7 +294,7 @@ available_in_watchlist['Showtime Days'] = available_in_watchlist.apply(
     axis=1
 )
 
-st.write("###Films de la watchlist culturation en salle:")
+st.write("### Films de la watchlist culturation en salle:")
 st.dataframe(
                 available_in_watchlist[['Nom Francais','Nom Anglais','Showtime Days','Type','Lien trailer']],
                 width='stretch',
