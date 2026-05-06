@@ -109,6 +109,8 @@ table_list=['UGC_SUPABASE_TABLE','PCC_SUPABASE_TABLE','DULAC_SUPABASE_TABLE']
  
 showtimes_df, latest_dates_by_source = load_scraped_movies(table_list)
 
+st.write("### Programmation de la semaine")
+
 # Add a button to refresh the showtime programs 
 col1, col2, col3 = st.columns([1, 1, 1])
 with col1: 
@@ -292,7 +294,7 @@ available_in_watchlist['Showtime Days'] = available_in_watchlist.apply(
     axis=1
 )
 
-st.write("Films de la watchlist culturation en salle:")
+st.write("###Films de la watchlist culturation en salle:")
 st.dataframe(
                 available_in_watchlist[['Nom Francais','Nom Anglais','Showtime Days','Type','Lien trailer']],
                 width='stretch',
