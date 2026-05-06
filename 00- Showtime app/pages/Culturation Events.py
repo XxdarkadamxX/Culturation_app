@@ -20,6 +20,14 @@ branding.render_sidebar()
 
 st.title("Plans Culturation")
 
+st.markdown(
+    """
+    :grey[*Tiens toi au courant des ***plans suggérés par tes culturateurs pref*** et surtout ramènes toi ou ça va mal finir igo*]"""
+)
+st.divider()
+
+
+
 @st.cache_resource
 def create_supabase_client():
 

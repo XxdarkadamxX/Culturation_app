@@ -17,6 +17,12 @@ branding.apply_branding()
 branding.render_sidebar()
 
 st.title("Watchlist Culturation")
+st.markdown(
+    """
+    :grey[*Renseignes-toi sur ***les films que le gang compte regarder*** et prends des notes. Avec tes vieux goûts éclatés là.*]"""
+)
+st.divider()
+
 
 #Connect to DB and load watchlist
 

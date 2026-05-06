@@ -24,6 +24,12 @@ import main as scraper_main
 
 st.title("Séances de ciné")
 
+st.markdown(
+    """
+    :grey[*Tu veux savoir où emmener la miss voir le dernier film de Kad Merad ? Paniques pas poto, le CC a ***rassemblé les séances des cinés les plus stylés de Paname*** pour toi* 😌]"""
+)
+st.divider()
+
 
 #Connect to DB and load scrapped movies
 
@@ -80,30 +86,6 @@ def load_scraped_movies(table_list):
     return all_showtimes.loc[
         lambda x: pd.to_datetime(x.showtime_day, errors='coerce').dt.date >= date.today()
     ], latest_dates_by_source # we only need future showings
-    
-
-table_list=['UGC_SUPABASE_TABLE','PCC_SUPABASE_TABLE','DULAC_SUPABASE_TABLE']
- 
-showtimes_df, latest_dates_by_source = load_scraped_movies(table_list)
-
-# Add a button to refresh the showtime programs 
-col1, col2, col3 = st.columns([1, 1, 1])
-with col3:
-    st.write("*Prog du* " + str(min(showtimes_df['showtime_day']))+" *-* "+str(max(showtimes_df['showtime_day'])))
-    if st.button("Charger la prog de la semaine"):
-        with st.spinner("Mise à jour des programmes en cours..."):
-            scraper_main.run_pipeline()
-
-        st.success("Prog chargés jusqu'au " + str(max(showtimes_df['showtime_day'])))
-        st.rerun()
-
-shows_available = showtimes_df['movie'].unique() # All movies available
-cinemas_available = showtimes_df['cinema'].unique() # All cinemas available
-
-# Allow user to filter either by date (with pills) or by movie name (with a dropdown)
-filter_by = st.segmented_control(
-    "Recherche par", ["Date", "Film"], selection_mode="single",default="Date"
-)
 
 # French day and month names
 jours = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"]
@@ -122,20 +104,42 @@ def date_to_french(date_str,month_only=False):
     else : 
         return f"{jour} {d.day} {nom_mois}"
 
-
 def format_latest_date(value):
     if value is None or pd.isna(value):
         return "indisponible"
-    return date_to_french(str(pd.to_datetime(value).date()))
+    return date_to_french(str(pd.to_datetime(value).date()))    
 
+table_list=['UGC_SUPABASE_TABLE','PCC_SUPABASE_TABLE','DULAC_SUPABASE_TABLE']
+ 
+showtimes_df, latest_dates_by_source = load_scraped_movies(table_list)
 
-st.info(
+# Add a button to refresh the showtime programs 
+col1, col2, col3 = st.columns([1, 1, 1])
+with col1: 
+     st.info(
     "Disclaimer: Dernières séances disponibles par groupe de cinema\n"
     + "\n".join(
         f"- {SOURCE_LABELS.get(source_key, source_key)}: {format_latest_date(latest_dates_by_source.get(source_key))}"
         for source_key in table_list
     )
+    )
+with col3:
+    st.write("*Prog du* " + str(min(showtimes_df['showtime_day']))+" *-* "+str(max(showtimes_df['showtime_day'])))
+    if st.button("Charger la prog de la semaine"):
+        with st.spinner("Mise à jour des programmes en cours..."):
+            scraper_main.run_pipeline()
+
+        st.success("Prog chargés jusqu'au " + str(max(showtimes_df['showtime_day'])))
+        st.rerun()
+
+shows_available = showtimes_df['movie'].unique() # All movies available
+cinemas_available = showtimes_df['cinema'].unique() # All cinemas available
+
+# Allow user to filter either by date (with pills) or by movie name (with a dropdown)
+filter_by = st.segmented_control(
+    "Recherche par", ["Date", "Film"], selection_mode="single",default="Date"
 )
+
 
 dates_raw = showtimes_df['showtime_day'].unique()
 dates = [date_to_french(d) for d in dates_raw]

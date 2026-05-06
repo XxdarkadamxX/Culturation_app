@@ -11,7 +11,7 @@ st.title("Discutes avec Confussio 🐼")
 
 st.markdown(
     """
-    Réalises le rêve de tant de femmes et glisse dans les dms de ce bon vieux **Confussio** 😉"""
+    :grey[*Réalises le rêve de tant de femmes et glisse dans les dms du séduisant* ***Confussio*** 😉]"""
 )
 st.divider()
 

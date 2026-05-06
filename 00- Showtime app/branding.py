@@ -16,6 +16,19 @@ def apply_branding() -> None:
         layout="wide"
     )
 
+    # Add custom CSS for golden headings and reduced divider spacing
+    st.markdown("""
+    <style>
+    h1 {
+        color: #cfb86e !important;
+    }
+    hr {
+        margin-top: 0 !important;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
+
     return
 
 
