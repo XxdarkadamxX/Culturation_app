@@ -14,7 +14,8 @@ branding.render_sidebar()
 
 st.markdown(
     """
-    <div style="padding: 0.5rem 0 1.25rem 0;">
+    </style>
+    <div style="padding: 0rem 0 0.25rem 0;">
         <div style="
             font-size: 0.78rem;
             letter-spacing: 0.22em;
@@ -28,7 +29,7 @@ st.markdown(
             font-weight: 800;
             line-height: 1.02;
             color: #f3eee7;
-            margin-bottom: 0.85rem;
+            margin-bottom: 0.1rem;
             max-width: 760px;">
             Maintenant on a un site mon gars.
         </div>
@@ -36,7 +37,7 @@ st.markdown(
             font-size: 1.05rem;
             line-height: 1.6;
             color: rgba(243, 238, 231, 0.8);
-            max-width: 760px;">
+            max-width: 1000px;">
             Salut les culturateurs. Eh ouais c'est du sérieux là. Confussio vous a cook un petit site pour voir les différents programmes qu'on a pu vous cook et 
             check les séances de cinéma dans Paris. Plus d'excuse mtn #sortezdechezvous. 
             Ps: Les culturatrices ajoutez moi sur snap @admmharzi 😉
