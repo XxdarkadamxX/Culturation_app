@@ -17,7 +17,7 @@ st.markdown(
     </style>
     <div style="padding: 0rem 0 0.5rem 0;">
         <div style="
-            font-size: 0.78rem;
+            font-size: 0.70rem;
             letter-spacing: 0.22em;
             text-transform: uppercase;
             color: #d4af37;
@@ -25,7 +25,7 @@ st.markdown(
             Culturation Club
         </div>
         <div style="
-            font-size: 3rem;
+            font-size: 2.5rem;
             font-weight: 800;
             line-height: 1.02;
             color: #f3eee7;
