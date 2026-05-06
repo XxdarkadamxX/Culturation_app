@@ -15,7 +15,7 @@ branding.render_sidebar()
 st.markdown(
     """
     </style>
-    <div style="padding: 0rem 0 0.25rem 0;">
+    <div style="padding: 0rem 0 0.5rem 0;">
         <div style="
             font-size: 0.78rem;
             letter-spacing: 0.22em;
