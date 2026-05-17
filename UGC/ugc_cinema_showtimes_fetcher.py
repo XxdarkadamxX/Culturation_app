@@ -81,8 +81,13 @@ class UGCCinemaShowtimesFetcher:
             if not title or title in seen_titles:
                 continue
 
-            block_text = block.get_text("\n", strip=True)
-            showtimes = sorted(set(re.findall(r"(\d{2}:\d{2})", block_text)))
+            # Only collect screening start times, not end times.
+            start_time_nodes = block.select(".screening-time-start")
+            start_times: List[str] = []
+            for node in start_time_nodes:
+                start_times.extend(re.findall(r"(\d{2}:\d{2})", node.get_text(" ", strip=True)))
+
+            showtimes = sorted(set(start_times))
 
             seen_titles.add(title)
 
